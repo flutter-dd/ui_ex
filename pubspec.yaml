@@ -1,6 +1,6 @@
 name: ui_ex
 description: flutter about ui extension
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/flutter-dd/ui_ex.git
 
 environment:
@@ -16,7 +16,7 @@ dependencies:
   tuple: ^2.0.0
   line_icons: ^2.0.1
   path_drawing: ^0.5.1
-  vector_math: ^2.0.0
+  vector_math: ^2.1.0
 
 dev_dependencies:
   flutter_test:
