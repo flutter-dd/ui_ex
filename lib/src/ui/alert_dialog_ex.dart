@@ -135,3 +135,8 @@ extension AlertDialogListEx on List<Widget>? {
         scrollable: scrollable,
       );
 }
+
+extension DialogShowEx on AlertDialog {
+  Future<T?> show<T>(BuildContext context) =>
+      showDialog(context: context, builder: (ctx) => this);
+}

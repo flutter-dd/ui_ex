@@ -2,7 +2,7 @@ part of ui_ex;
 
 extension CupertinoTextFieldEx on String? {
 
-  CupertinoTextField textField({
+  CupertinoTextField cupertinoTextField({
     Key? key,
     TextEditingController? controller,
     FocusNode? focusNode,
