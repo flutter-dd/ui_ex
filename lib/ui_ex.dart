@@ -16,7 +16,6 @@ import 'package:flutter/semantics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:skeleton_text/skeleton_text.dart';
@@ -26,6 +25,9 @@ import 'package:tuple/tuple.dart';
 import 'package:vector_math/vector_math_64.dart' as v;
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:markdown/markdown.dart' as md;
+import 'package:flutter_easyrefresh/easy_refresh.dart';
+// ignore: implementation_imports
+import 'package:flutter_easyrefresh/src/behavior/scroll_behavior.dart' as sb;
 
 part 'src/context_ex.dart';
 part 'src/state_ex.dart';
@@ -42,7 +44,6 @@ part 'src/painters/sweet_chinese_painter.dart';
 part 'src/views/stroke_view.dart';
 part 'src/views/background_view.dart';
 part 'src/views/loading_view.dart';
-part 'src/views/pull_up_controller.dart';
 part 'src/views/button.dart';
 
 part 'src/ui/text_style_ex.dart';
@@ -242,3 +243,5 @@ part 'src/ui/flat_button_ex.dart';
 part 'src/ui/icon_button_ex.dart';
 part 'src/ui/raised_button_ex.dart';
 part 'src/ui/markdown_ex.dart';
+part 'src/ui/easy_refresh_ex.dart';
+part 'src/ui/cupertino_app_ex.dart';

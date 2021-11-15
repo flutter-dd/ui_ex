@@ -11,25 +11,68 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+add this line to pubspec.yaml
+```
+dev_dependencies:
+  ui_ex: ^0.0.4
+
+```
+
+import package
+
+```
+import 'package:ui_ex/ui_ex.dart';
+```
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+simple example,
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:ui_ex/ui_ex.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) => 'Flutter Demo'.materialApp(
+      theme: ThemeData(primarySwatch: Colors.blue), home: const MyHomePage());
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  String get title => "MyHomePage";
+
+  String mathStr =
+      r'$$\hat f(\xi) = \int_{-\infty}^\infty f(x)e^{- 2\pi i \xi x}\mathrm{d}x$$';
+
+  bool _showLoading = false;
+  bool get showLoading => _showLoading;
+  set showLoading(bool value) => fresh(() => _showLoading = value);
+
+  @override
+  Widget build(BuildContext context) => mathStr
+      .markdown(textStyle: 16.size(), enableInteractiveSelection: false)
+      .container()
+      .scaffold(
+        appBar: title.text().cupertinoMiddleAppBar(context: context),
+        showLoading: showLoading,
+      );
+}
+
 ```
 
 ## Additional information
