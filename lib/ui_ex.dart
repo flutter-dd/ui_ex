@@ -28,6 +28,9 @@ import 'package:markdown/markdown.dart' as md;
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 // ignore: implementation_imports
 import 'package:flutter_easyrefresh/src/behavior/scroll_behavior.dart' as sb;
+import 'package:card_swiper/card_swiper.dart';
+// ignore: implementation_imports
+import 'package:card_swiper/src/transformer_page_view/transformer_page_view.dart';
 
 part 'src/context_ex.dart';
 part 'src/state_ex.dart';
@@ -247,3 +250,4 @@ part 'src/ui/raised_button_ex.dart';
 part 'src/ui/markdown_ex.dart';
 part 'src/ui/easy_refresh_ex.dart';
 part 'src/ui/cupertino_app_ex.dart';
+part 'src/ui/card_swiper_ex.dart';

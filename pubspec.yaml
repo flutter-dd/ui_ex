@@ -1,6 +1,6 @@
 name: ui_ex
 description: flutter about ui extension
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/flutter-dd/ui_ex.git
 
 environment:
@@ -20,6 +20,7 @@ dependencies:
   flutter_markdown: ^0.6.8
   markdown: ^4.0.0
   flutter_easyrefresh: ^2.2.1
+  card_swiper: ^1.0.4
 
 dev_dependencies:
   flutter_test:
