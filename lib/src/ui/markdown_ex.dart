@@ -69,6 +69,10 @@ extension MarkdownEx on String {
                 textStyle: textStyle,
                 toolbarOptions: toolbarOptions,
               )
+              .singleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: 8.edgeAll(),
+              )
               .center()
           : MarkdownBody(
               data: this,

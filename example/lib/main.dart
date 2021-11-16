@@ -22,21 +22,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String get title => "测试页";
 
-  String mathStr =
+  String get mathStr =>
       r'$$\hat f(\xi) = \int_{-\infty}^\infty f(x)e^{- 2\pi i \xi x}\mathrm{d}x$$';
 
   bool _showLoading = false;
   bool get showLoading => _showLoading;
   set showLoading(bool value) => fresh(() => _showLoading = value);
 
-  aa() {
-    CupertinoApp();
-  }
-
   @override
-  Widget build(BuildContext context) => mathStr
-      .markdown(textStyle: 16.size(), enableInteractiveSelection: false)
-      .container()
+  Widget build(BuildContext context) => (mathStr)
+      .replaceAll(r'$', '')
+      .math()
+      .singleChildScrollView(
+          scrollDirection: Axis.horizontal, padding: 8.edgeAll())
+      .center()
+      .container(color: 0xFFFFFFFF.color)
       .scaffold(
         appBar: title.text().cupertinoMiddleAppBar(context: context),
         showLoading: showLoading,
