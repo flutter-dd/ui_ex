@@ -19,7 +19,7 @@ and the Flutter guide for
 add this line to pubspec.yaml
 ```
 dev_dependencies:
-  ui_ex: ^0.0.7
+  ui_ex: ^0.0.8
 
 ```
 
@@ -43,7 +43,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => 'Flutter Demo'.materialApp(
-      theme: ThemeData(primarySwatch: Colors.blue), home: const MyHomePage());
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: const MyHomePage(),
+      );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -56,7 +58,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String get title => "MyHomePage";
 
-  String mathStr =
+  String get mathStr =>
       r'$$\hat f(\xi) = \int_{-\infty}^\infty f(x)e^{- 2\pi i \xi x}\mathrm{d}x$$';
 
   bool _showLoading = false;
@@ -64,13 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
   set showLoading(bool value) => fresh(() => _showLoading = value);
 
   @override
-  Widget build(BuildContext context) => mathStr
-      .markdown(textStyle: 16.size(), enableInteractiveSelection: false)
-      .container()
-      .scaffold(
-        appBar: title.text().cupertinoMiddleAppBar(context: context),
-        showLoading: showLoading,
-      );
+  Widget build(BuildContext context) => mathStr.markdown().scaffold(
+      appBar: title.text().cupertinoMiddleAppBar(context: context),
+      showLoading: showLoading);
 }
 
 ```
