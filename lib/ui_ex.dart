@@ -45,6 +45,8 @@ part 'src/views/stroke_view.dart';
 part 'src/views/background_view.dart';
 part 'src/views/loading_view.dart';
 part 'src/views/button.dart';
+part 'src/views/fresh_footer.dart';
+part 'src/views/fresh_header.dart';
 
 part 'src/ui/text_style_ex.dart';
 

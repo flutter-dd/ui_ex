@@ -19,7 +19,7 @@ and the Flutter guide for
 add this line to pubspec.yaml
 ```
 dev_dependencies:
-  ui_ex: ^0.0.4
+  ui_ex: ^0.0.6
 
 ```
 

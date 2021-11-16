@@ -22,4 +22,6 @@ extension IntEx on int {
     }
     return str;
   }
+
+  Color get color => Color(this);
 }
