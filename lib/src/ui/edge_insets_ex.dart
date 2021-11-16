@@ -66,7 +66,6 @@ extension EdgeInsetsEx on double {
         right: right,
         bottom: this,
       );
-
 }
 
 extension EdgeInsetsIntEx on int {
@@ -135,5 +134,4 @@ extension EdgeInsetsIntEx on int {
         right: right,
         bottom: toDouble(),
       );
-
 }

@@ -54,7 +54,6 @@ extension ListTileEx on Tuple4<Widget?, Widget?, Widget?, Widget?> {
 }
 
 extension ListTileWidgetEx on Widget? {
-
   ListTile leadingListTile({
     Key? key,
     Widget? title,

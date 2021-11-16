@@ -1,6 +1,6 @@
 name: ui_ex
-description: flutter about ui extension
-version: 0.0.8
+description: ui_ex is a solution that provides chain programming, which can easily solve the addition and removal of controls.
+version: 0.0.9
 homepage: https://github.com/flutter-dd/ui_ex.git
 
 environment:
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  adaptive_breakpoints: ^0.0.4
-  flutter_math_fork: ^0.3.3+1
+  adaptive_breakpoints: ^0.1.0
+  flutter_math_fork: ^0.5.0
   skeleton_text: ^3.0.0
   tuple: ^2.0.0
   line_icons: ^2.0.1

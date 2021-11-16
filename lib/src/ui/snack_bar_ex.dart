@@ -32,7 +32,6 @@ extension SnackBarEx on Widget {
         animation: animation,
         onVisible: onVisible,
       );
-
 }
 
 extension SnackEx on SnackBar {

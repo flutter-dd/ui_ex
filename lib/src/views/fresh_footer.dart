@@ -1,7 +1,6 @@
 part of ui_ex;
 
 class FreshFooter extends ClassicalFooter {
-
   /// 加载中的 loading 展示
   Widget _loadingView() => <Widget>[]
       .append(10.0.cupertinoActivityIndicator())

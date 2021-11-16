@@ -1,6 +1,6 @@
 part of ui_ex;
 
-extension RadioEx on Tuple2<dynamic, dynamic>{
+extension RadioEx on Tuple2<dynamic, dynamic> {
   Radio radio({
     Key? key,
     required void Function(dynamic)? onChanged,

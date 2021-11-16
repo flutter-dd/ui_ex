@@ -10,8 +10,4 @@ extension StateEx on State {
       if (action != null) action();
     });
   }
-
-  
-
-
 }

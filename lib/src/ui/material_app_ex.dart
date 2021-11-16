@@ -77,7 +77,6 @@ extension MaterialAppEx on Widget? {
       );
 }
 
-
 extension MaterialAppStrEx on String? {
   /// MaterialApp
   MaterialApp materialApp({
@@ -154,4 +153,3 @@ extension MaterialAppStrEx on String? {
         scrollBehavior: scrollBehavior,
       );
 }
-

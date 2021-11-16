@@ -13,13 +13,14 @@ and the Flutter guide for
 
 ## Features
 
+`ui_ex` is a solution that provides chain programming, which can easily solve the addition and removal of controls.
 
 ## Getting started
 
 add this line to pubspec.yaml
 ```
 dev_dependencies:
-  ui_ex: ^0.0.8
+  ui_ex: ^0.0.9
 
 ```
 
@@ -73,8 +74,5 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ```
 
-## Additional information
+<!-- ## Additional information -->
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.

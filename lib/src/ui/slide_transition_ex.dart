@@ -14,5 +14,4 @@ extension SlideTransitionEx on Widget? {
         transformHitTests: transformHitTests,
         textDirection: textDirection,
       );
-      
 }

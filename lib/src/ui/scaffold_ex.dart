@@ -34,9 +34,8 @@ extension ScaffoldEx on Widget? {
   }) {
     PreferredSizeWidget? _appBar;
     if (context != null) {
-      _appBar = context.widget.name
-          .text()
-          .cupertinoMiddleAppBar(context: context);
+      _appBar =
+          context.widget.name.text().cupertinoMiddleAppBar(context: context);
     }
     if (appBar != null) _appBar = appBar;
     List<Widget> views = [];

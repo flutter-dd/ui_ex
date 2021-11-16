@@ -44,7 +44,6 @@ extension ImageEx on ImageProvider<Object> {
       );
 }
 
-
 extension NetImageEx on String {
   Image image({
     Key? key,

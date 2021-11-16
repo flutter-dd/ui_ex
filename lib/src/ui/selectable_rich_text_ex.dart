@@ -1,7 +1,7 @@
 part of ui_ex;
 
 extension SelectableRichTextEx on TextSpan {
-    SelectableText selectableRichText({
+  SelectableText selectableRichText({
     Key? key,
     FocusNode? focusNode,
     TextStyle? style,
@@ -54,6 +54,4 @@ extension SelectableRichTextEx on TextSpan {
         textWidthBasis: textWidthBasis,
         onSelectionChanged: onSelectionChanged,
       );
-
-
 }

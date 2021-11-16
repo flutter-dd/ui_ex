@@ -21,7 +21,6 @@ extension ListText<T extends InlineSpan> on List<T> {
 }
 
 extension InlineSpanEx on String? {
-  
   InlineSpan textSpan({
     TextStyle? style,
     GestureRecognizer? recognizer,
@@ -31,7 +30,7 @@ extension InlineSpanEx on String? {
     String? semanticsLabel,
   }) =>
       TextSpan(
-        text: this?? "",
+        text: this ?? "",
         style: style,
         recognizer: recognizer,
         mouseCursor: mouseCursor,

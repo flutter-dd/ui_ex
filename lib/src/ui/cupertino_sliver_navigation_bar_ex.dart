@@ -8,8 +8,8 @@ const Border _kDefaultNavBarBorder = Border(
   ),
 );
 
-extension CupertinoSliverNavigationBarEx on Tuple4<Widget?, Widget?, Widget?, Widget?> {
-
+extension CupertinoSliverNavigationBarEx
+    on Tuple4<Widget?, Widget?, Widget?, Widget?> {
   CupertinoSliverNavigationBar cupertinoSliverAppBar({
     Key? key,
     bool automaticallyImplyLeading = true,
@@ -38,11 +38,9 @@ extension CupertinoSliverNavigationBarEx on Tuple4<Widget?, Widget?, Widget?, Wi
         transitionBetweenRoutes: transitionBetweenRoutes,
         stretch: stretch,
       );
-
 }
 
 extension AutocompleteWidgetEx on Widget? {
-
   CupertinoSliverNavigationBar largeTitleCupertinoSliverAppBar({
     Key? key,
     Widget? leading,
@@ -170,5 +168,4 @@ extension AutocompleteWidgetEx on Widget? {
         transitionBetweenRoutes: transitionBetweenRoutes,
         stretch: stretch,
       );
-
 }

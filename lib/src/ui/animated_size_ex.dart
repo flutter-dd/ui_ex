@@ -22,4 +22,3 @@ extension AnimatedSizeEx on Widget? {
         clipBehavior: clipBehavior,
       );
 }
-

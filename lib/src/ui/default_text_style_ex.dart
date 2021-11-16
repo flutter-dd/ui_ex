@@ -21,5 +21,4 @@ extension DefaultTextStyleEx on Tuple2<TextStyle, Widget> {
         style: item1,
         child: item2,
       );
-
 }

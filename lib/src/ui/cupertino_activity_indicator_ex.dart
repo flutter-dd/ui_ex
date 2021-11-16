@@ -11,5 +11,3 @@ extension CupertinoActivityIndicatorEx on double? {
         animating: animating,
       );
 }
-
-

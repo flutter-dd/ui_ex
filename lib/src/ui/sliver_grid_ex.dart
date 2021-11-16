@@ -2,7 +2,7 @@ part of ui_ex;
 
 extension SliverGridEx<T extends Widget> on List<T> {
   SliverGrid sliverGrid({
-    required int crossAxisCount, 
+    required int crossAxisCount,
     Key? key,
     double mainAxisSpacing = 0.0,
     double crossAxisSpacing = 0.0,

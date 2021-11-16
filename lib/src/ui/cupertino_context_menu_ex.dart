@@ -25,4 +25,3 @@ extension CupertinoContextMenuListEx on List<Widget> {
         previewBuilder: previewBuilder,
       );
 }
-
