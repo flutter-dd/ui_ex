@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DecoratedBoxTransitionEx on Widget {
+  /// DecoratedBoxTransition
   DecoratedBoxTransition decoratedBoxTransition({
     Key? key,
     required Animation<Decoration> decoration,

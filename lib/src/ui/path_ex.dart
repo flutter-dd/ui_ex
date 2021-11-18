@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension PathEx on Path {
+  /// Path line
   Path line(List<Offset> ps) {
     ps
         .asMap()

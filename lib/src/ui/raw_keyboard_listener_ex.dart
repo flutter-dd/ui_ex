@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RawKeyboardListenerEx on Widget {
+  /// RawKeyboardListener
   RawKeyboardListener rawKeyboardListener({
     Key? key,
     required FocusNode focusNode,

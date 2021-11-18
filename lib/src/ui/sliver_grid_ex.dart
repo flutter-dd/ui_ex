@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverGridEx<T extends Widget> on List<T> {
+  /// SliverGrid
   SliverGrid sliverGrid({
     required int crossAxisCount,
     Key? key,

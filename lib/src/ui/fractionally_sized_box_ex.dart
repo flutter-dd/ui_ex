@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension FractionallySizedBoxEx on Widget? {
+  /// FractionallySizedBox
   FractionallySizedBox fractionallySizedBox({
     Key? key,
     AlignmentGeometry alignment = Alignment.center,

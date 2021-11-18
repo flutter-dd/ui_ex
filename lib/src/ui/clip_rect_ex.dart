@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ClipRectEx on Widget? {
+  /// ClipRect
   ClipRect clipRect({
     Key? key,
     CustomClipper<Rect>? clipper,

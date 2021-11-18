@@ -7,6 +7,7 @@ const Color _kDefaultTabBarBorderColor = CupertinoDynamicColor.withBrightness(
 const Color _kDefaultTabBarInactiveColor = CupertinoColors.inactiveGray;
 
 extension CupertinoTabBarEx on List<BottomNavigationBarItem> {
+  /// CupertinoTabBar
   CupertinoTabBar cupertinoTabBar({
     Key? key,
     void Function(int)? onTap,

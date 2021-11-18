@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoActionSheetEx on Widget? {
+  /// CupertinoActionSheet
   CupertinoActionSheet cupertinoMessageActionSheet({
     Key? key,
     Widget? title,
@@ -19,6 +20,7 @@ extension CupertinoActionSheetEx on Widget? {
         cancelButton: cancelButton,
       );
 
+  /// CupertinoActionSheet
   CupertinoActionSheet cupertinoTitleActionSheet({
     Key? key,
     Widget? message,

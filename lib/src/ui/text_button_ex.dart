@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TextButtonEx on Widget {
+  /// TextButton
   TextButton textButton({
     Key? key,
     required void Function()? onPressed,

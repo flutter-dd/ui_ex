@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SwiperEx on Widget Function(BuildContext, int)? {
+  /// Swiper
   Swiper swiper({
     required int itemCount,
     PageIndicatorLayout indicatorLayout = PageIndicatorLayout.NONE,

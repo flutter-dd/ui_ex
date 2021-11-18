@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoAppEx on Widget {
+  /// CupertinoApp
   CupertinoApp cupertinoApp({
     Key? key,
     GlobalKey<NavigatorState>? navigatorKey,
@@ -67,6 +68,7 @@ extension CupertinoAppEx on Widget {
 }
 
 extension CupertinoAppStrEx on String? {
+  /// CupertinoApp
   CupertinoApp cupertinoApp({
     Key? key,
     GlobalKey<NavigatorState>? navigatorKey,

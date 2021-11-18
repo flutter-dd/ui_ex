@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TabPageSelectorEx on TabController? {
+  /// TabPageSelector
   TabPageSelector tabPageSelector({
     Key? key,
     TabController? controller,

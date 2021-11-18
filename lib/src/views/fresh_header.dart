@@ -4,7 +4,7 @@ class FreshHeader extends Header {
   /// 加载中的 loading 展示
   Widget _loadingView() => <Widget>[]
       .append(10.0.cupertinoActivityIndicator())
-      .append("数据加载中".text(style: 13.size()).padding(padding: 8.edgeLeft()))
+      .append("数据加载中".text(style: 13.size()).paddings(padding: 8.edgeLeft()))
       .row(mainAxisAlignment: MainAxisAlignment.center)
       .center();
 

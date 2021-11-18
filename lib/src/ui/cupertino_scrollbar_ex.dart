@@ -6,6 +6,7 @@ const Radius defaultRadius = Radius.circular(1.5);
 const Radius defaultRadiusWhileDragging = Radius.circular(4.0);
 
 extension CupertinoScrollbarEx on Widget {
+  /// CupertinoScrollbar
   CupertinoScrollbar cupertinoScrollbar({
     Key? key,
     ScrollController? controller,

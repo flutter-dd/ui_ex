@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverAppBarEx on Widget? {
+  /// SliverAppBar
   SliverAppBar leadingSliverAppBar({
     Key? key,
     bool automaticallyImplyLeading = true,

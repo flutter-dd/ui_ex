@@ -4,6 +4,7 @@ Widget defaultOnErrorFallback(FlutterMathException error) =>
     SelectableText(error.messageWithType);
 
 extension MathEx on String? {
+  /// Math
   Math math({
     Key? key,
     MathStyle mathStyle = MathStyle.display,
@@ -24,6 +25,7 @@ extension MathEx on String? {
         options: options,
       );
 
+  /// SelectableMath
   SelectableMath selectableMath({
     Key? key,
     TexParserSettings settings = const TexParserSettings(),

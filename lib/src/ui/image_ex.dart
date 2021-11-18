@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ImageEx on ImageProvider<Object> {
+  /// Image
   Image image({
     Key? key,
     Widget Function(BuildContext, Widget, int?, bool)? frameBuilder,

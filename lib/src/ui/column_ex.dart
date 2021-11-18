@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ColumnEx on List<Widget>? {
+  /// Column
   Column column({
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     MainAxisSize mainAxisSize = MainAxisSize.max,

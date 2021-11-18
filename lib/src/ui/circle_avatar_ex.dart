@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CircleAvatarEx on Widget? {
+  /// CircleAvatar
   CircleAvatar circleAvatar({
     Key? key,
     Color? backgroundColor,

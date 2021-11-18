@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CheckboxEx on bool? {
+  /// Checkbox
   Checkbox checkbox({
     Key? key,
     required bool? value,

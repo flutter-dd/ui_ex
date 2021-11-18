@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedAlignEx on Widget? {
+  /// AnimatedAlign
   AnimatedAlign animatedAlign({
     Key? key,
     required AlignmentGeometry alignment,

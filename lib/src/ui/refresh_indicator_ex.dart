@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RefreshIndicatorEx on Widget {
+  /// RefreshIndicator
   RefreshIndicator refreshIndicator({
     Key? key,
     double displacement = 40.0,

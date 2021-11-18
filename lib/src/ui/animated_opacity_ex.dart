@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedOpacityEx on Widget? {
+  /// AnimatedOpacity
   AnimatedOpacity animatedOpacity({
     Key? key,
     required double opacity,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TransformEx on Widget? {
+  /// Transform
   Transform transform({
     Key? key,
     required Matrix4 transform,

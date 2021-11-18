@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ButtonBarEx on List<Widget>? {
+  /// ButtonBar
   ButtonBar bottomBar({
     Key? key,
     MainAxisAlignment? alignment,

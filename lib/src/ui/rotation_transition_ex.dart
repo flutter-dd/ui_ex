@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RotationTransitionEx on Widget {
+  /// RotationTransition
   RotationTransition rotationTransition({
     Key? key,
     required Animation<double> turns,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AlertDialogEx on Widget? {
+  /// alertTitleDialog
   AlertDialog alertTitleDialog({
     Key? key,
     Widget? content,
@@ -45,6 +46,7 @@ extension AlertDialogEx on Widget? {
         scrollable: scrollable,
       );
 
+  /// alertContentDialog
   AlertDialog alertContentDialog({
     Key? key,
     Widget? title,
@@ -91,6 +93,7 @@ extension AlertDialogEx on Widget? {
 }
 
 extension AlertDialogListEx on List<Widget>? {
+  /// alertContentDialog
   AlertDialog alertContentDialog({
     Key? key,
     Widget? title,
@@ -137,6 +140,7 @@ extension AlertDialogListEx on List<Widget>? {
 }
 
 extension DialogShowEx on AlertDialog {
+  /// show AlertDialog
   Future<T?> show<T>(BuildContext context) =>
       showDialog(context: context, builder: (ctx) => this);
 }

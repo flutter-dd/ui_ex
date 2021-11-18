@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SizedBoxEx on Widget? {
+  /// SizedBox
   SizedBox sizedBox({
     Key? key,
     double? width,

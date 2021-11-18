@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ScrollbarEx on Widget {
+  /// Scrollbar
   Scrollbar scrollbar({
     Key? key,
     ScrollController? controller,

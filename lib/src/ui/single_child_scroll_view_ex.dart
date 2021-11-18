@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SingleChildScrollViewEx on Widget? {
+  /// SingleChildScrollView
   SingleChildScrollView singleChildScrollView({
     Key? key,
     Axis scrollDirection = Axis.vertical,

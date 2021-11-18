@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension OpacityEx on Widget? {
+  /// Opacity
   Opacity opacity({
     Key? key,
     required double opacity,

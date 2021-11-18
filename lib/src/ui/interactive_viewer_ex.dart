@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension InteractiveViewerEx on Widget {
+  /// InteractiveViewer
   InteractiveViewer interactiveViewer({
     Key? key,
     Clip clipBehavior = Clip.hardEdge,

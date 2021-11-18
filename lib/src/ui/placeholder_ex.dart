@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension PlaceholderEx on Size? {
+  /// Placeholder
   Placeholder placeholder({
     Key? key,
     Color color = const Color(0xff455a64),

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoFullscreenDialogTransitionEx on Widget {
+  /// CupertinoFullscreenDialogTransition
   CupertinoFullscreenDialogTransition cupertinoFullscreenDialogTransition({
     Key? key,
     required Animation<double> primaryRouteAnimation,

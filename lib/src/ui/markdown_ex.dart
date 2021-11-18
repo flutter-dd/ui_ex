@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension MarkdownEx on String {
+  /// markdown
   Widget markdown({
     Key? key,
     bool selectable = false,

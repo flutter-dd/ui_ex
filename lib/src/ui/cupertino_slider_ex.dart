@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoSliderEx on double {
+  /// CupertinoSlider
   CupertinoSlider cupertinoSlider({
     Key? key,
     required void Function(double)? onChanged,

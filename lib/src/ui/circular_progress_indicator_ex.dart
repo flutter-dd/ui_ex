@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CircularProgressIndicatorEx on double? {
+  /// CircularProgressIndicator
   CircularProgressIndicator circularProgressIndicator({
     Key? key,
     double? value,

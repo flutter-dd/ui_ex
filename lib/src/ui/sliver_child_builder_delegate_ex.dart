@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverChildBuilderDelegateEx on Widget? Function(BuildContext, int) {
+  /// SliverChildBuilderDelegate
   SliverChildBuilderDelegate sliverChildBuilderDelegate({
     int? Function(Key)? findChildIndexCallback,
     int? childCount,

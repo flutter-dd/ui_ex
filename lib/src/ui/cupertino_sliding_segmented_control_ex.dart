@@ -9,6 +9,7 @@ const EdgeInsetsGeometry _kHorizontalItemPadding =
     EdgeInsets.symmetric(vertical: 2, horizontal: 3);
 
 extension CupertinoSlidingSegmentedControlEx on Map<dynamic, Widget> {
+  /// CupertinoSlidingSegmentedControl
   CupertinoSlidingSegmentedControl cupertinoSlidingSegmentedControl({
     Key? key,
     required void Function(dynamic) onValueChanged,

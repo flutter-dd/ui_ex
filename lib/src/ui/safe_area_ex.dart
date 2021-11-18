@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SafeAreaEx on Widget {
+  /// SafeArea
   SafeArea safeArea({
     Key? key,
     bool left = true,

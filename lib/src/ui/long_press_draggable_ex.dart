@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension LongPressDraggableEx on Widget {
+  /// LongPressDraggable
   LongPressDraggable longPressDraggable({
     Key? key,
     required Widget child,

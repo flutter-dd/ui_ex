@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoPageTransitionEx on Widget {
+  /// CupertinoPageTransition
   CupertinoPageTransition cupertinoPageTransition({
     Key? key,
     required Animation<double> primaryRouteAnimation,

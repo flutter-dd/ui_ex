@@ -2,6 +2,7 @@ part of ui_ex;
 
 extension DraggableScrollableSheetEx on Widget Function(
     BuildContext, ScrollController) {
+  /// DraggableScrollableSheet
   DraggableScrollableSheet draggableScrollableSheet({
     Key? key,
     double initialChildSize = 0.5,

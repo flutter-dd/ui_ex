@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DismissibleEx on Widget {
+  /// Dismissible
   Dismissible dismissible({
     required Key key,
     Widget? background,

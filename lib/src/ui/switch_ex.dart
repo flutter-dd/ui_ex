@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SwitchEx on bool {
+  /// switchView
   Switch switchView({
     Key? key,
     required void Function(bool)? onChanged,

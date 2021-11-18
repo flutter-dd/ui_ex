@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ToggleButtonsEx<T extends Widget> on List<T> {
+  /// ToggleButtons
   ToggleButtons toggleButtons(
     List<bool> isSelected, {
     Key? key,

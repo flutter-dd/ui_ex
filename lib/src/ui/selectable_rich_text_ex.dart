@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SelectableRichTextEx on TextSpan {
+  /// SelectableText
   SelectableText selectableRichText({
     Key? key,
     FocusNode? focusNode,

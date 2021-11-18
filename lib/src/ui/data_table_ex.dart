@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DataTableColumEx on List<DataColumn> {
+  /// DataTable
   DataTable dataTable({
     Key? key,
     required List<DataColumn> columns,
@@ -46,6 +47,7 @@ extension DataTableColumEx on List<DataColumn> {
 }
 
 extension DataTableRowEx on List<DataRow> {
+  /// DataTable
   DataTable dataTable({
     Key? key,
     required List<DataColumn> columns,

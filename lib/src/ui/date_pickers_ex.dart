@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DatePickerDialogEx on Tuple3<DateTime, DateTime, DateTime> {
+  /// DatePickerDialog
   DatePickerDialog datePickerDialog({
     Key? key,
     DateTime? currentDate,

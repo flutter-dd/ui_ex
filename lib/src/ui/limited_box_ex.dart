@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension LimitedBoxEx on Widget? {
+  /// LimitedBox
   LimitedBox limitedBox({
     Key? key,
     double maxWidth = double.infinity,

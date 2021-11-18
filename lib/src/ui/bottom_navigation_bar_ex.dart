@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension BottomNavigationBarEx on List<BottomNavigationBarItem> {
+  /// BottomNavigationBar
   BottomNavigationBar bottomNavigationBar({
     Key? key,
     void Function(int)? onTap,

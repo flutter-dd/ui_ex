@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoTabScaffoldEx on CupertinoTabBar {
+  /// CupertinoTabScaffold
   CupertinoTabScaffold cupertinoTabScaffold({
     Key? key,
     required Widget Function(BuildContext, int) tabBuilder,

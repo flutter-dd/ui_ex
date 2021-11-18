@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension FloatingActionButtonEx on Widget? {
+  /// floatingActionButton
   FloatingActionButton floatingActionButton({
     Key? key,
     String? tooltip,

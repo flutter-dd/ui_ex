@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension NotificationListenerEx on Widget {
+  /// NotificationListener
   NotificationListener notificationListener({
     Key? key,
     bool Function(Notification)? onNotification,

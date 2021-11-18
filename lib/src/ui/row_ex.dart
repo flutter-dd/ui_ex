@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RowEx on List<Widget>? {
+  /// row
   Row row({
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     MainAxisSize mainAxisSize = MainAxisSize.max,

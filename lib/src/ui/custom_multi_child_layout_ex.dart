@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CustomMultiChildLayoutEx on List<Widget> {
+  /// CustomMultiChildLayout
   CustomMultiChildLayout customMultiChildLayout({
     Key? key,
     required MultiChildLayoutDelegate delegate,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoDatePickerEx on DateTime? {
+  /// CupertinoDatePicker
   CupertinoDatePicker cupertinoDatePicker({
     Key? key,
     CupertinoDatePickerMode mode = CupertinoDatePickerMode.dateAndTime,

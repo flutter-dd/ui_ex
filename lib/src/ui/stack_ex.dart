@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension StackEx on List<Widget> {
+  /// Stack
   Stack stack({
     Key? key,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,

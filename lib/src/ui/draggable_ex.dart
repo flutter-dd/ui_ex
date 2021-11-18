@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DraggableEx on Widget {
+  /// Draggable
   Draggable draggable({
     Key? key,
     required Widget feedback,

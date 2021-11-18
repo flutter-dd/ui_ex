@@ -1,6 +1,6 @@
 name: ui_ex
 description: ui_ex is a solution that provides chain programming, which can easily solve the addition and removal of controls.
-version: 0.0.9
+version: 0.1.0
 homepage: https://github.com/flutter-dd/ui_ex.git
 
 environment:

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoSwitchEx on bool {
+  /// CupertinoSwitch
   CupertinoSwitch cupertinoSwitch({
     Key? key,
     required void Function(bool)? onChanged,

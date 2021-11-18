@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension LinearProgressIndicatorEx on double? {
+  /// LinearProgressIndicator
   LinearProgressIndicator linearProgressIndicator({
     Key? key,
     double? value,

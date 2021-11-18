@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoContextMenuEx on Widget {
+  /// CupertinoContextMenu
   CupertinoContextMenu cupertinoContextMenu({
     Key? key,
     required List<Widget> actions,
@@ -14,6 +15,7 @@ extension CupertinoContextMenuEx on Widget {
 }
 
 extension CupertinoContextMenuListEx on List<Widget> {
+  /// CupertinoContextMenu
   CupertinoContextMenu cupertinoContextMenu({
     Key? key,
     required Widget child,

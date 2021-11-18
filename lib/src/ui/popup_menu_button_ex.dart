@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension PopupMenuButtonEx on Widget? {
+  /// PopupMenuButton
   PopupMenuButton popupMenuButton({
     Key? key,
     required List<PopupMenuEntry<dynamic>> Function(BuildContext) itemBuilder,

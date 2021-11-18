@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ClipPathEx on Widget? {
+  /// ClipPath
   ClipPath clipPath({
     Key? key,
     CustomClipper<Path>? clipper,

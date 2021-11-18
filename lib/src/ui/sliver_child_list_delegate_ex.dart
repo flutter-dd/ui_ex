@@ -3,6 +3,7 @@ part of ui_ex;
 int _kDefaultSemanticIndexCallback(Widget _, int localIndex) => localIndex;
 
 extension SliverChildListDelegateEx on List<Widget> {
+  /// SliverChildListDelegate
   SliverChildListDelegate sliverChildListDelegate(
     List<Widget> children, {
     bool addAutomaticKeepAlives = true,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension GridViewEx<T extends Widget> on List<T> {
+  /// GridView
   GridView gridViewCount({
     int crossAxisCount = 4,
     Key? key,

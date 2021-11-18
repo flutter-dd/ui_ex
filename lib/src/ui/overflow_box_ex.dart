@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension OverflowBoxEx on Widget? {
+  /// OverflowBox
   OverflowBox overflowBox({
     Key? key,
     AlignmentGeometry alignment = Alignment.center,

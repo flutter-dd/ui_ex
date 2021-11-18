@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoDialogActionEx on Widget {
+  /// CupertinoDialogAction
   CupertinoDialogAction cupertinoDialogAction({
     Key? key,
     void Function()? onPressed,

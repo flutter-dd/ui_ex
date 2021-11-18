@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedDefaultTextStyleEx on Widget {
+  /// AnimatedDefaultTextStyle
   AnimatedDefaultTextStyle animatedDefaultTextStyle({
     Key? key,
     required TextStyle style,

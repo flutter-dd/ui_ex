@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RawImageEx on ui.Image? {
+  /// RawImage
   RawImage rawImage({
     Key? key,
     String? debugImageLabel,

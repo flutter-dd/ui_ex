@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ChipEx on Widget {
+  /// Chip
   Chip chip({
     Key? key,
     Widget? avatar,

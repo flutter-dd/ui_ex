@@ -1,6 +1,7 @@
 part of ui_ex;
 
-extension Flex_ex on List<Widget>? {
+extension FlexEx on List<Widget>? {
+  /// flex
   Flex flex({
     Key? key,
     required Axis direction,

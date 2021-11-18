@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SemanticsEx on Widget? {
+  /// Semantics
   Semantics semantics({
     Key? key,
     bool container = false,

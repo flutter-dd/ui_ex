@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ElevatedButtonEx on Widget {
+  /// elevatedButton
   ElevatedButton elevatedButton({
     Key? key,
     required void Function()? onPressed,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoAlertDialogEx on Widget? {
+  /// CupertinoAlertDialog
   CupertinoAlertDialog cupertinoAlertDialog({
     Key? key,
     Widget? title,
@@ -23,6 +24,7 @@ extension CupertinoAlertDialogEx on Widget? {
 }
 
 extension CupertinoAlertDialogListEx<T extends Widget> on List<T> {
+  /// CupertinoAlertDialog
   CupertinoAlertDialog cupertinoAlertDialog({
     Key? key,
     Widget? title,

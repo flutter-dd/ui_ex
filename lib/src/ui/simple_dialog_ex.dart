@@ -4,6 +4,7 @@ const EdgeInsets _defaultInsetPadding =
     EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0);
 
 extension SimpleDialogEx on Widget? {
+  /// SimpleDialog
   SimpleDialog simpleDialog({
     Key? key,
     Widget? title,
@@ -37,6 +38,7 @@ extension SimpleDialogEx on Widget? {
 }
 
 extension SimpleDialogListEx on List<Widget>? {
+  /// SimpleDialog
   SimpleDialog simpleDialog({
     Key? key,
     Widget? title,

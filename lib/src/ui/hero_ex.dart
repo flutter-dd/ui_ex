@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension HeroEx on Widget {
+  /// Hero
   Hero hero({
     Key? key,
     required Object tag,

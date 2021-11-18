@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CustomScrollViewEx<T extends Widget> on List<T> {
+  /// CustomScrollView
   CustomScrollView customScrollView({
     Key? key,
     Axis scrollDirection = Axis.vertical,

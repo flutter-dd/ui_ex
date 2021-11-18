@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CardEx on Widget? {
+  /// Card
   Card card({
     Key? key,
     Color? color,

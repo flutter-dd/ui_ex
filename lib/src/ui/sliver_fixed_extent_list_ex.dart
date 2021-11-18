@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverFixedExtentListEx on SliverChildDelegate {
+  /// SliverFixedExtentList
   SliverFixedExtentList sliverFixedExtentList({
     Key? key,
     required double itemExtent,

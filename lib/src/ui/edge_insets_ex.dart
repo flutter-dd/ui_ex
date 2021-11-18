@@ -1,16 +1,14 @@
 part of ui_ex;
 
 extension EdgeInsetsEx on double {
+  /// edgeAll
   EdgeInsets edgeAll() => EdgeInsets.all(this);
 
-  EdgeInsets edgeVer({
-    double horizontal = 0.0,
-  }) =>
-      EdgeInsets.symmetric(
-        vertical: this,
-        horizontal: horizontal,
-      );
+  /// edgeVer
+  EdgeInsets edgeVer({double horizontal = 0.0}) =>
+      EdgeInsets.symmetric(vertical: this, horizontal: horizontal);
 
+  /// edgeHor
   EdgeInsets edgeHor({
     double vertical = 0.0,
   }) =>
@@ -19,6 +17,7 @@ extension EdgeInsetsEx on double {
         horizontal: this,
       );
 
+  /// edgeLeft
   EdgeInsets edgeLeft({
     double top = 0.0,
     double right = 0.0,
@@ -31,6 +30,7 @@ extension EdgeInsetsEx on double {
         bottom: bottom,
       );
 
+  /// edgeRight
   EdgeInsets edgeRight({
     double left = 0.0,
     double top = 0.0,
@@ -43,6 +43,7 @@ extension EdgeInsetsEx on double {
         bottom: bottom,
       );
 
+  /// edgeTop
   EdgeInsets edgeTop({
     double left = 0.0,
     double right = 0.0,
@@ -55,6 +56,7 @@ extension EdgeInsetsEx on double {
         bottom: bottom,
       );
 
+  /// edgeBottom
   EdgeInsets edgeBottom({
     double left = 0.0,
     double top = 0.0,
@@ -69,8 +71,10 @@ extension EdgeInsetsEx on double {
 }
 
 extension EdgeInsetsIntEx on int {
+  /// edgeAll
   EdgeInsets edgeAll() => EdgeInsets.all(toDouble());
 
+  /// edgeVer
   EdgeInsets edgeVer({
     double horizontal = 0.0,
   }) =>
@@ -79,6 +83,7 @@ extension EdgeInsetsIntEx on int {
         horizontal: horizontal,
       );
 
+  /// edgeHor
   EdgeInsets edgeHor({
     double vertical = 0.0,
   }) =>
@@ -87,6 +92,7 @@ extension EdgeInsetsIntEx on int {
         horizontal: toDouble(),
       );
 
+  /// edgeLeft
   EdgeInsets edgeLeft({
     double top = 0.0,
     double right = 0.0,
@@ -99,6 +105,7 @@ extension EdgeInsetsIntEx on int {
         bottom: bottom,
       );
 
+  /// edgeRight
   EdgeInsets edgeRight({
     double left = 0.0,
     double top = 0.0,
@@ -111,6 +118,7 @@ extension EdgeInsetsIntEx on int {
         bottom: bottom,
       );
 
+  /// edgeTop
   EdgeInsets edgeTop({
     double left = 0.0,
     double right = 0.0,
@@ -123,6 +131,7 @@ extension EdgeInsetsIntEx on int {
         bottom: bottom,
       );
 
+  /// edgeBottom
   EdgeInsets edgeBottom({
     double left = 0.0,
     double top = 0.0,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension WidgetsAppEx on Widget? {
+  /// widgetsApp
   WidgetsApp widgetsApp({
     Key? key,
     GlobalKey<NavigatorState>? navigatorKey,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SelectableTextEx on String {
+  /// SelectableText
   SelectableText selectableText({
     Key? key,
     FocusNode? focusNode,

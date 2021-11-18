@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension FittedBoxEx on Widget? {
+  /// fittedBox
   FittedBox fittedBox({
     Key? key,
     BoxFit fit = BoxFit.contain,

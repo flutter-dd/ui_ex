@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension PositionedEx on Widget {
+  /// Positioned
   Positioned positioned({
     Key? key,
     double? left,
@@ -21,6 +22,7 @@ extension PositionedEx on Widget {
         height: height,
       );
 
+  /// positionedFill
   Positioned positionedFill({
     Key? key,
     double? left = 0.0,

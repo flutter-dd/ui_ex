@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension BottomSheetEx on Widget Function(BuildContext) {
+  /// BottomSheet
   BottomSheet bottomSheet({
     Key? key,
     AnimationController? animationController,

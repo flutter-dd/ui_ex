@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TabBarViewEx on List<Widget> {
+  /// TabBarView
   TabBarView tabBarView({
     Key? key,
     TabController? controller,

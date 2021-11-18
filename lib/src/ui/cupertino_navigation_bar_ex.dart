@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoNavigationBarEx on Tuple3<Widget?, Widget?, Widget?> {
+  /// CupertinoNavigationBar
   CupertinoNavigationBar cupertinoAppBar({
     BuildContext? context,
     Key? key,
@@ -41,6 +42,7 @@ extension CupertinoNavigationBarEx on Tuple3<Widget?, Widget?, Widget?> {
 }
 
 extension CupertinoAppBarEx on Widget? {
+  /// CupertinoNavigationBar
   CupertinoNavigationBar cupertinoLeadingAppBar({
     BuildContext? context,
     Key? key,
@@ -76,6 +78,7 @@ extension CupertinoAppBarEx on Widget? {
     );
   }
 
+  /// CupertinoNavigationBar
   CupertinoNavigationBar cupertinoMiddleAppBar({
     BuildContext? context,
     Key? key,
@@ -113,6 +116,7 @@ extension CupertinoAppBarEx on Widget? {
     );
   }
 
+  /// CupertinoNavigationBar
   CupertinoNavigationBar cupertinoTrailingAppBar({
     BuildContext? context,
     Key? key,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ContainerEx on Widget? {
+  /// Container
   Container container({
     Key? key,
     AlignmentGeometry? alignment,
@@ -34,7 +35,8 @@ extension ContainerEx on Widget? {
       );
 }
 
-extension ContainerSizeEx on Widget? {
+extension ContainerSizeEx on Size {
+  // Container
   Container sizeContainer({
     Key? key,
     AlignmentGeometry? alignment,
@@ -42,7 +44,7 @@ extension ContainerSizeEx on Widget? {
     Color? color,
     Decoration? decoration,
     Decoration? foregroundDecoration,
-    Size? size,
+    Widget? child,
     BoxConstraints? constraints,
     EdgeInsetsGeometry? margin,
     Matrix4? transform,
@@ -50,15 +52,15 @@ extension ContainerSizeEx on Widget? {
     Clip clipBehavior = Clip.none,
   }) =>
       Container(
-        child: this,
+        child: child,
         key: key,
         alignment: alignment,
         padding: padding,
         color: color,
         decoration: decoration,
         foregroundDecoration: foregroundDecoration,
-        width: size?.width,
-        height: size?.height,
+        width: width,
+        height: height,
         constraints: constraints,
         margin: margin,
         transform: transform,
@@ -68,6 +70,7 @@ extension ContainerSizeEx on Widget? {
 }
 
 extension ContainerColorEx on Color {
+  /// Container
   Container container({
     Key? key,
     AlignmentGeometry? alignment,

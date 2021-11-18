@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoPageScaffoldEx on Widget {
+  /// CupertinoPageScaffold
   CupertinoPageScaffold cupertinoPageScaffold({
     Key? key,
     ObstructingPreferredSizeWidget? navigationBar,

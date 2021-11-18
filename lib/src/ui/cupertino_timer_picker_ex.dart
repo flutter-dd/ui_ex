@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoTimerPickerEx on Color? {
+  /// CupertinoTimerPicker
   CupertinoTimerPicker cupertinoTimerPicker({
     Key? key,
     CupertinoTimerPickerMode mode = CupertinoTimerPickerMode.hms,

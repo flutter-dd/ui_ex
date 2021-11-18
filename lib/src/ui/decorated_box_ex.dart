@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DecoratedBoxEx on Widget {
+  /// DecoratedBox
   DecoratedBox decoratedBox({
     Key? key,
     required Decoration decoration,

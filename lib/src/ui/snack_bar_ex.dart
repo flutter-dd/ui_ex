@@ -3,6 +3,7 @@ part of ui_ex;
 const Duration _snackBarDisplayDuration = Duration(milliseconds: 4000);
 
 extension SnackBarEx on Widget {
+  /// SnackBar
   SnackBar snackBar({
     Key? key,
     Color? backgroundColor,

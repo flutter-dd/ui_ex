@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoTabViewEx on String? {
+  /// CupertinoTabView
   CupertinoTabView cupertinoTabView({
     Key? key,
     Widget Function(BuildContext)? builder,

@@ -1,5 +1,6 @@
 part of ui_ex;
 
+/// 根据不同平台配置的配置类
 class Config {
   bool isProduct = const bool.fromEnvironment("dart.vm.product");
   final String base;
@@ -17,6 +18,7 @@ class Config {
   final String? fuchsia;
   final String? fuchsiaDev;
 
+  /// 根据不同平台配置的配置类
   Config({
     this.base = "",
     this.dev,
@@ -34,6 +36,7 @@ class Config {
     this.fuchsiaDev,
   });
 
+  // 取值
   String get value {
     if (Platform.isIOS) {
       return isProduct ? ios ?? base : iosDev ?? dev ?? ios ?? base;

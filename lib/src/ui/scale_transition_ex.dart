@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ScaleTransitionEx on Widget? {
+  /// ScaleTransition
   ScaleTransition scaleTransition({
     Key? key,
     required Animation<double> scale,

@@ -3,6 +3,7 @@ part of ui_ex;
 const Duration kAnimatedDuration = Duration(milliseconds: 300);
 
 extension AnimatedContainerEx on Widget? {
+  /// AnimatedContainer
   AnimatedContainer animatedContainer({
     Duration? duration,
     Key? key,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IndexedStackEx on List<Widget>? {
+  /// IndexedStack
   IndexedStack indexedStack({
     Key? key,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,

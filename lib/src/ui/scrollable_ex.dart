@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ScrollableEx on Widget Function(BuildContext, ViewportOffset) {
+  /// Scrollable
   Scrollable scrollable({
     Key? key,
     AxisDirection axisDirection = AxisDirection.down,

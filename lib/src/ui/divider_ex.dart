@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DividerEx on double? {
+  /// Divider
   Divider divider({
     Key? key,
     double? thickness,

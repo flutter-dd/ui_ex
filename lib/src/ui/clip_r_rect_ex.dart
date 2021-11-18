@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ClipRRectEx on Widget? {
+  /// ClipRRect
   ClipRRect clipRRect({
     Key? key,
     BorderRadius? borderRadius = BorderRadius.zero,

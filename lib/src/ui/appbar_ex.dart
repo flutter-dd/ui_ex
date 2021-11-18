@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AppbarEx on Tuple3<Widget?, Widget?, List<Widget>?> {
+  /// AppBar
   AppBar appBar({
     Key? key,
     bool automaticallyImplyLeading = true,
@@ -64,6 +65,7 @@ extension AppbarEx on Tuple3<Widget?, Widget?, List<Widget>?> {
 }
 
 extension AppBarEx on Widget? {
+  /// leadingAppBar
   AppBar leadingAppBar({
     Key? key,
     Widget? title,
@@ -127,6 +129,7 @@ extension AppBarEx on Widget? {
         systemOverlayStyle: systemOverlayStyle,
       );
 
+  /// titleAppBar
   AppBar titleAppBar({
     Key? key,
     Widget? leading,
@@ -192,6 +195,7 @@ extension AppBarEx on Widget? {
 }
 
 extension AppBarListEx on List<Widget>? {
+  /// leadingAppBar
   AppBar leadingAppBar({
     Key? key,
     Widget? leading,

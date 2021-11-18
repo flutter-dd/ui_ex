@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension WidgetSpanEx on Widget {
+  /// widgetSpan
   WidgetSpan widgetSpan({
     PlaceholderAlignment alignment = ui.PlaceholderAlignment.bottom,
     TextBaseline? baseline,

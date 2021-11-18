@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension BackdropFilterEx on Widget? {
+  /// BackdropFilter
   BackdropFilter backdropFilter({
     ui.ImageFilter? filter,
     Key? key,

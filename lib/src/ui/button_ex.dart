@@ -2,6 +2,7 @@ part of ui_ex;
 
 /// Button
 extension WidgetButton on Widget {
+  /// button
   Widget button({
     Key? key,
     EdgeInsetsGeometry? padding = EdgeInsets.zero,

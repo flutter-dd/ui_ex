@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension NestedScrollViewEx on Widget {
+  /// NestedScrollView
   NestedScrollView nestedScrollView({
     Key? key,
     ScrollController? controller,

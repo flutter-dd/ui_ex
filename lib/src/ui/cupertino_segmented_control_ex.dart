@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoSegmentedControlEx on Map<Object, Widget> {
+  /// CupertinoSegmentedControl
   CupertinoSegmentedControl cupertinoSegmentedControl({
     Key? key,
     required void Function(Object) onValueChanged,

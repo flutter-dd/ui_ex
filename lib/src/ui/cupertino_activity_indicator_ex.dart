@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoActivityIndicatorEx on double? {
+  /// CupertinoActivityIndicator
   CupertinoActivityIndicator cupertinoActivityIndicator({
     Key? key,
     bool animating = true,

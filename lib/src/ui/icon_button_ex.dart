@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IconButtonEx on Widget {
+  /// IconButton
   IconButton iconButton({
     Key? key,
     double iconSize = 24.0,

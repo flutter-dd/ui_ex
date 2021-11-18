@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TableEx on List<TableRow> {
+  /// Table
   Table table({
     Key? key,
     List<TableRow> children = const <TableRow>[],

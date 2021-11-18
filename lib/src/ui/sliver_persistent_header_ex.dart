@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverPersistentHeaderEx on SliverPersistentHeaderDelegate {
+  /// SliverPersistentHeader
   SliverPersistentHeader sliverPersistentHeader({
     Key? key,
     bool pinned = false,

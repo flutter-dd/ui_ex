@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension OutlinedButtonEx on Widget {
+  /// OutlinedButton
   OutlinedButton outlineedButton({
     Key? key,
     required void Function()? onPressed,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TooltipEx on Widget? {
+  /// Tooltip
   Tooltip tooltip({
     String? message,
     Key? key,

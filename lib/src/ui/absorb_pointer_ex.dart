@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AbsorbPointerEx on Widget? {
+  /// AbsorbPointer
   AbsorbPointer absorbPointer({
     Key? key,
     bool absorbing = true,

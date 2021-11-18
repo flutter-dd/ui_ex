@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliderEx on double {
+  /// Slider
   Slider slider({
     Key? key,
     required double value,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoPopupSurfaceEx on Widget? {
+  /// CupertinoPopupSurface
   CupertinoPopupSurface cupertinoPopupSurface({
     Key? key,
     bool isSurfacePainted = true,

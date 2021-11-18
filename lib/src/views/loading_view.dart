@@ -6,7 +6,7 @@ class LoadingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => <Widget>[]
       .append(const CircularProgressIndicator())
-      .append("加载中...".text().padding(padding: const EdgeInsets.all(16)))
+      .append("加载中...".text().paddings(padding: const EdgeInsets.all(16)))
       .column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,

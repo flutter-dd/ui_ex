@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AspectRatioEx on Widget? {
+  /// AspectRatio
   AspectRatio aspectRatio({
     double? aspectRatio,
     Key? key,

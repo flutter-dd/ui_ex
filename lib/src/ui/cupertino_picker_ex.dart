@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoPickerEx on List<Widget> {
+  /// CupertinoPicker
   CupertinoPicker cupertinoPicker({
     Key? key,
     double diameterRatio = 1.07,

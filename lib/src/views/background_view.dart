@@ -40,5 +40,5 @@ class BackgroundView extends StatelessWidget {
 
   Widget get _msgView => (msg ?? "")
       .text(style: 14.0.size().textColor(Colors.grey))
-      .padding(padding: const EdgeInsets.only(top: 20));
+      .paddings(padding: const EdgeInsets.only(top: 20));
 }

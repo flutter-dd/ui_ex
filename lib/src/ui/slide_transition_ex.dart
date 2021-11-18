@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SlideTransitionEx on Widget? {
+  /// SlideTransition
   SlideTransition slideTransition({
     Key? key,
     required Animation<Offset> position,

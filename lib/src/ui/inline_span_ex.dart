@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ListText<T extends InlineSpan> on List<T> {
+  /// InlineSpan
   InlineSpan textSpan({
     TextStyle? style,
     GestureRecognizer? recognizer,

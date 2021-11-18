@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension DefaultTextStyleEx on Tuple2<TextStyle, Widget> {
+  /// DefaultTextStyle
   DefaultTextStyle defaultTextStyle({
     Key? key,
     TextAlign? textAlign,

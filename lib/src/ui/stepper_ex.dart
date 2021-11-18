@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension StepperEx on List<Step> {
+  /// Stepper
   Stepper stepper({
     Key? key,
     required List<Step> steps,
@@ -28,6 +29,7 @@ extension StepperEx on List<Step> {
 }
 
 extension StepEx on Tuple3<Widget, Widget, Widget?> {
+  /// Step
   Step step({
     required Widget title,
     Widget? subtitle,

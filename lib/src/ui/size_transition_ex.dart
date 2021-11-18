@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SizeTransitionEx on Widget? {
+  /// SizeTransition
   SizeTransition sizeTransition({
     Key? key,
     Axis axis = Axis.vertical,

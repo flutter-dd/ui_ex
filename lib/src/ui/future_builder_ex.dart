@@ -2,6 +2,7 @@ part of ui_ex;
 
 extension FutureBuilderEx on Widget Function(
     BuildContext, AsyncSnapshot<dynamic>) {
+  /// FutureBuilder
   FutureBuilder futureBuilder({
     Key? key,
     Future<dynamic>? future,

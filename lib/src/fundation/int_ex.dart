@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IntEx on int {
+  /// 一百以内的int转汉字
   String toChinese() {
     String str;
     if (this > 99) {
@@ -23,5 +24,6 @@ extension IntEx on int {
     return str;
   }
 
+  /// 根据int值获取颜色
   Color get color => Color(this);
 }

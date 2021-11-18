@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension TextEx on String? {
+  /// text
   Text text({
     TextStyle? style,
     StrutStyle? strutStyle,

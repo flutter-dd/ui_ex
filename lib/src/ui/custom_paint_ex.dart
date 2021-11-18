@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CustomPaintEx on Widget? {
+  /// CustomPaint
   CustomPaint customPaint({
     Key? key,
     CustomPainter? painter,

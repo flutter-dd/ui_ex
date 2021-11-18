@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedSizeEx on Widget? {
+  /// AnimatedSize
   AnimatedSize animatedSize({
     Key? key,
     AlignmentGeometry alignment = Alignment.center,

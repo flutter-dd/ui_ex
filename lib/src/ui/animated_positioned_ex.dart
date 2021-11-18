@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedPositionedEx on Widget {
+  /// AnimatedPositioned
   AnimatedPositioned animatedPositioned({
     Key? key,
     double? left,

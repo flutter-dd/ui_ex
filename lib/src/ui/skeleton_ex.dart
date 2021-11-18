@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SkeletonEx on Widget {
+  /// skeleton
   Widget skeleton({
     bool isShow = true,
     Color color = Colors.blue,

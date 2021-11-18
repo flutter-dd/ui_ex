@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SliverListEx<T extends Widget> on List<T> {
+  /// SliverList
   SliverList sliverList({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,

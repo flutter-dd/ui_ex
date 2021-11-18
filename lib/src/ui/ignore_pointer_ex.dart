@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IgnorePointerEx on Widget? {
+  /// IgnorePointer
   IgnorePointer ignorePointer({
     Key? key,
     bool ignoring = true,

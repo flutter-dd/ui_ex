@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IconEx on IconData? {
+  /// Icon
   Icon icon({
     double? size,
     Color? color,

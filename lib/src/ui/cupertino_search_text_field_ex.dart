@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoSearchTextFieldEx on String? {
+  /// CupertinoSearchTextField
   CupertinoSearchTextField cupertinoSearchTextField({
     Key? key,
     TextEditingController? controller,

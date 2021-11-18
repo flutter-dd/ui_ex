@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension ClipOvalEx on Widget? {
+  /// ClipOval
   ClipOval clipOval({
     Key? key,
     CustomClipper<Rect>? clipper,

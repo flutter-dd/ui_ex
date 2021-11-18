@@ -2,7 +2,7 @@ part of ui_ex;
 
 extension PaddingEx on Widget? {
   /// Padding
-  Padding padding({
+  Padding paddings({
     EdgeInsets? padding,
     Key? key,
   }) =>

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedBuilderEx on Widget? {
+  /// AnimatedBuilder
   AnimatedBuilder animatedBuilder({
     Key? key,
     required Listenable animation,

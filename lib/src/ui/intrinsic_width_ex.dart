@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension IntrinsicWidthEx on Widget? {
+  /// IntrinsicWidth
   IntrinsicWidth intrinsicWidth({
     Key? key,
     double? stepWidth,

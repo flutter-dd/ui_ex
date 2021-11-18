@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension CupertinoButtonEx on Widget {
+  /// CupertinoButton
   CupertinoButton cupertinoButton({
     Key? key,
     void Function()? onPressed,

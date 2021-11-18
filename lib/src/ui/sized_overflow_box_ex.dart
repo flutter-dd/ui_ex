@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension SizedOverflowBoxEx on Widget? {
+  /// SizedOverflowBox
   SizedOverflowBox sizedOverflowBox({
     Key? key,
     required Size size,

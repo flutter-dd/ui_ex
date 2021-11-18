@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedCrossFadeEx on Tuple2<Widget, Widget> {
+  /// AnimatedCrossFade
   AnimatedCrossFade animatedCrossFade({
     Key? key,
     CrossFadeState crossFadeState = CrossFadeState.showFirst,

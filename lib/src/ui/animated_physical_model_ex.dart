@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AnimatedPhysicalModelEx on Widget {
+  /// AnimatedPhysicalModel
   AnimatedPhysicalModel animatedPhysicalModel({
     Key? key,
     required BoxShape shape,

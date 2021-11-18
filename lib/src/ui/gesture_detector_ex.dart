@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension GestureDetectorEx on Widget? {
+  /// GestureDetector
   GestureDetector gestureDetector({
     Key? key,
     void Function(TapDownDetails)? onTapDown,

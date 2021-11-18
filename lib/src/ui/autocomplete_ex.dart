@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension AutocompleteEx on Iterable<Object> Function(TextEditingValue) {
+  /// Autocomplete
   Autocomplete autocomplete({
     Key? key,
     String Function(Object) displayStringForOption =

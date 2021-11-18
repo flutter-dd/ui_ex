@@ -2,6 +2,7 @@ part of ui_ex;
 
 extension StreamBuilderEx<T extends dynamic> on Widget Function(
     BuildContext, AsyncSnapshot<T>) {
+  /// StreamBuilder
   StreamBuilder streamBuilder({
     Key? key,
     T? initialData,

@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension RichTextEx on InlineSpan {
+  /// RichText
   RichText richText({
     Key? key,
     TextAlign textAlign = TextAlign.start,

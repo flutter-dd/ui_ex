@@ -1,6 +1,7 @@
 part of ui_ex;
 
 extension FlutterLogoEx on double? {
+  /// flutterLogo
   FlutterLogo flutterLogo({
     Key? key,
     Color textColor = const Color(0xff757575),
