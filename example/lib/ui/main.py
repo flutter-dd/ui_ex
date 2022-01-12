@@ -541,19 +541,40 @@ import 'dart:ui';
         'WidgetsWillPopScope': '小部件将弹出范围'
     }
 
+    book_others = [
+        '/install/ChromeOS.md',
+        '/install/Github.md',
+        '/install/Homebrew.md',
+        '/install/Linux.md',
+        '/install/macOS.md',
+        '/install/Windows.md',
+        '/publish/Android.md',
+        '/publish/iOS.md',
+        '/publish/Linux.md',
+        '/publish/macOS.md',
+        '/publish/Web.md',
+    ]
+
 
 class Flutter:
 
     def __init__(self):
         self.dir_ui = os.getcwd() + "/ui_ex/src"
         self.file_ui = os.getcwd() + "/ui_ex/ui_ex.dart"
-        self.dir_book = os.getcwd() + "/book/chapters/developer"
+        self.dir_book = os.getcwd() + "/book/chapters"
+        self.dir_book_developer = self.dir_book + "/developer"
+        self.dir_book_install = self.dir_book + "/install"
+        self.dir_book_publish = self.dir_book + "/publish"
         self.root_path = "/usr/local/Caskroom/flutter/2.5.3/flutter/packages/flutter/lib/src"
         self.dir_names = os.listdir(self.root_path)
         if not os.path.exists(self.dir_ui):
             os.makedirs(self.dir_ui)
-        if not os.path.exists(self.dir_book):
-            os.makedirs(self.dir_book)
+        if not os.path.exists(self.dir_book_developer):
+            os.makedirs(self.dir_book_developer)
+        if not os.path.exists(self.dir_book_install):
+            os.makedirs(self.dir_book_install)
+        if not os.path.exists(self.dir_book_publish):
+            os.makedirs(self.dir_book_publish)
         with open(self.file_ui, 'w') as file:
             file.write(_Flutter.per_ui_ex)
             file.close()
@@ -561,7 +582,7 @@ class Flutter:
             dir_ui = self.dir_ui + "/" + name
             if not os.path.exists(dir_ui):
                 os.makedirs(dir_ui)
-            dir_book = self.dir_book + "/" + name
+            dir_book = self.dir_book_developer + "/" + name
             if not os.path.exists(dir_book):
                 os.makedirs(dir_book)
 
@@ -627,6 +648,14 @@ class Flutter:
                 filter(
                     lambda x: x.endswith('.dart') and (not x.startswith('_')),
                     os.listdir(self.root_path + '/' + name)))
+            other_book_paths = list(map(lambda x: self.dir_book + x, _Flutter.book_others))
+            for path in other_book_paths:
+                name_other = path.split('/')[-1].split('.')[0]
+                is_exists: bool = os.path.exists(path)
+                if not is_exists:
+                    with open(path, 'w') as file_book_w:
+                        file_book_w.write('### {}'.format(name_other))
+                        file_book_w.close()
             for file in file_names:
                 md_name = file.title().replace('.Dart', '.md').replace('_', '')
                 ui_name_big = (name + '_' +
@@ -634,9 +663,8 @@ class Flutter:
                 ui_name_big_value = _Flutter.level_2.get(ui_name_big, '')
                 if ui_name_big_value == '':
                     print('新的UI控件 {}'.format(ui_name_big))
-                file_name_path = self.dir_book + '/' + name + '/' + md_name
-
-                # 判断文件是否存在
+                file_name_path = self.dir_book_developer + '/' + name + '/' + md_name
+                print(file_name_path)
                 is_exists: bool = os.path.exists(file_name_path)
                 lines_temp = [
                     "### {}\n".format(ui_name_big_value),
@@ -657,6 +685,6 @@ class Flutter:
 
 if __name__ == '__main__':
     f = Flutter()
-    f.update_ui()
+    # f.update_ui()
     f.update_book()
     
