@@ -8,6 +8,7 @@ library ui_ex;
 import 'dart:convert';
 import 'dart:io';
 import 'dart:core';
+import 'dart:math';
 import 'dart:ui' as ui;
 import 'dart:ui';
 
@@ -571,20 +572,21 @@ class Flutter:
                 file_name_cn = _Flutter.level_1.get(file_name, '')
                 if file_name_cn == '':
                     print('新的UI库 {}'.format(file_name))
-                file.write('\n')
-                file.write('/// ' + file_name_cn + '\n')
-                file.write('/// ' + file_name + '\n')
-                file.write("import 'package:flutter/{}.dart';\n".format(name))
+                lines = [
+                    '\n',
+                    '/// {}\n'.format(file_name_cn),
+                    '/// {}\n'.format(file_name),
+                    "import 'package:flutter/{}.dart';\n".format(name),
+                ]
+                file.writelines(lines)
                 file.close()
 
         for name in self.dir_names:
             with open(self.file_ui, 'a') as file:
                 file.write("\n\n")
                 file.close()
-            file_names = list(
-                filter(
-                    lambda x: x.endswith('.dart') and (not x.startswith('_')),
-                    os.listdir(self.root_path + '/' + name)))
+            file_names = list(filter(lambda x: x.endswith('.dart') and (not x.startswith('_')),
+                                     os.listdir(self.root_path + '/' + name)))
             for file in file_names:
                 file_name = file.replace('.dart', '_ex.dart')
                 file_path = self.dir_ui + '/' + name + "/" + file_name
@@ -599,7 +601,6 @@ class Flutter:
                     file_ex.write("part 'src/{}/{}';\n".format(
                         name, file_name))
                     file_ex.close()
-                # 判断文件是否存在
                 is_exists: bool = os.path.exists(file_path)
                 lines_temp = [
                     'part of ui_ex;\n',
