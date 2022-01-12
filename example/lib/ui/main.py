@@ -617,6 +617,8 @@ class Flutter:
                     with open(file_path, 'w') as file_ui_w:
                         file_ui_w.writelines(lines_temp)
                         file_ui_w.close()
+                else:
+                    pass
         print("--- end update_ui")
 
     def update_book(self):
@@ -648,6 +650,8 @@ class Flutter:
                     with open(file_name_path, 'w') as file_ui_w:
                         file_ui_w.writelines(lines_temp)
                         file_ui_w.close()
+                else:
+                    pass
         print("--- end update_book")
 
 
@@ -655,3 +659,4 @@ if __name__ == '__main__':
     f = Flutter()
     f.update_ui()
     f.update_book()
+    
