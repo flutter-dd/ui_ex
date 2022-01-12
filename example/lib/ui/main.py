@@ -585,8 +585,10 @@ class Flutter:
             with open(self.file_ui, 'a') as file:
                 file.write("\n\n")
                 file.close()
-            file_names = list(filter(lambda x: x.endswith('.dart') and (not x.startswith('_')),
-                                     os.listdir(self.root_path + '/' + name)))
+            file_names = list(
+                filter(
+                    lambda x: x.endswith('.dart') and (not x.startswith('_')),
+                    os.listdir(self.root_path + '/' + name)))
             for file in file_names:
                 file_name = file.replace('.dart', '_ex.dart')
                 file_path = self.dir_ui + '/' + name + "/" + file_name
