@@ -664,7 +664,6 @@ class Flutter:
                 if ui_name_big_value == '':
                     print('新的UI控件 {}'.format(ui_name_big))
                 file_name_path = self.dir_book_developer + '/' + name + '/' + md_name
-                print(file_name_path)
                 is_exists: bool = os.path.exists(file_name_path)
                 lines_temp = [
                     "### {}\n".format(ui_name_big_value),
@@ -685,6 +684,6 @@ class Flutter:
 
 if __name__ == '__main__':
     f = Flutter()
-    # f.update_ui()
+    f.update_ui()
     f.update_book()
     
