@@ -11,9 +11,9 @@ extension StepperEx on List<Step> {
     void Function(int)? onStepTapped,
     void Function()? onStepContinue,
     void Function()? onStepCancel,
-    Widget Function(BuildContext,
-            {void Function()? onStepCancel, void Function()? onStepContinue})?
-        controlsBuilder,
+    Widget Function(BuildContext, ControlsDetails)? controlsBuilder,
+    double? elevation,
+    EdgeInsetsGeometry? margin,
   }) =>
       Stepper(
         steps: steps,
@@ -25,6 +25,8 @@ extension StepperEx on List<Step> {
         onStepContinue: onStepContinue,
         onStepCancel: onStepCancel,
         controlsBuilder: controlsBuilder,
+        elevation: elevation,
+        margin: margin,
       );
 }
 
