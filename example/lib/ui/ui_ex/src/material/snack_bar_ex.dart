@@ -1,7 +1,5 @@
 part of ui_ex;
 
-const Duration _snackBarDisplayDuration = Duration(milliseconds: 4000);
-
 /// 材料小吃吧
 /// SnackBar
 extension MaterialSnackBarEx<T extends Widget?> on T {
@@ -43,3 +41,5 @@ extension MaterialSnackEx on SnackBar {
     context.messenger.showSnackBar(this);
   }
 }
+
+const Duration _snackBarDisplayDuration = Duration(milliseconds: 4000);
