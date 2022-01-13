@@ -634,12 +634,17 @@ class Flutter:
                     'Ex<T extends Widget?> on T {\n\n',
                     '}\n',
                 ]
-                if not is_exists:
-                    with open(file_path, 'w') as file_ui_w:
-                        file_ui_w.writelines(lines_temp)
-                        file_ui_w.close()
-                else:
-                    pass
+
+                if is_exists:
+                    lines = []
+                    with open(file_path, 'r+') as file_ui_r:
+                        lines = file_ui_r.readlines()
+                        file_ui_r.close()
+                    if len(lines) >= len(lines_temp):
+                        lines_temp = lines_temp[:4] + lines[4:]
+                with open(file_path, 'w') as file_ui_w:
+                    file_ui_w.writelines(lines_temp)
+                    file_ui_w.close()
         print("--- end update_ui")
 
     def update_book(self):
@@ -673,12 +678,16 @@ class Flutter:
                     "\n```dart\n\n",
                     "```",
                 ]
-                if not is_exists:
-                    with open(file_name_path, 'w') as file_ui_w:
-                        file_ui_w.writelines(lines_temp)
-                        file_ui_w.close()
-                else:
-                    pass
+                if is_exists:
+                    lines = []
+                    with open(file_name_path, 'r+') as file_ui_r:
+                        lines = file_ui_r.readlines()
+                        file_ui_r.close()
+                    if len(lines) >= len(lines_temp):
+                        lines_temp = lines_temp[:1] + lines[1:]
+                with open(file_name_path, 'w') as file_ui_w:
+                    file_ui_w.writelines(lines_temp)
+                    file_ui_w.close()
         print("--- end update_book")
 
 
