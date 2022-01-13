@@ -636,7 +636,6 @@ class Flutter:
                 ]
 
                 if is_exists:
-                    lines = []
                     with open(file_path, 'r+') as file_ui_r:
                         lines = file_ui_r.readlines()
                         file_ui_r.close()
@@ -679,7 +678,6 @@ class Flutter:
                     "```",
                 ]
                 if is_exists:
-                    lines = []
                     with open(file_name_path, 'r+') as file_ui_r:
                         lines = file_ui_r.readlines()
                         file_ui_r.close()
