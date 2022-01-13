@@ -12,6 +12,8 @@ import 'dart:math';
 import 'dart:ui' as ui;
 import 'dart:ui';
 
+import 'package:tuple/tuple.dart';
+
 """
 
     level_1 = {
@@ -652,7 +654,8 @@ class Flutter:
                 filter(
                     lambda x: x.endswith('.dart') and (not x.startswith('_')),
                     os.listdir(self.root_path + '/' + name)))
-            other_book_paths = list(map(lambda x: self.dir_book + x, _Flutter.book_others))
+            other_book_paths = list(
+                map(lambda x: self.dir_book + x, _Flutter.book_others))
             for path in other_book_paths:
                 name_other = path.split('/')[-1].split('.')[0]
                 is_exists: bool = os.path.exists(path)
@@ -693,4 +696,3 @@ if __name__ == '__main__':
     f = Flutter()
     f.update_ui()
     f.update_book()
-    

@@ -8,6 +8,7 @@ import 'dart:math';
 import 'dart:ui' as ui;
 import 'dart:ui';
 
+import 'package:tuple/tuple.dart';
 
 /// 调度器
 /// Scheduler
