@@ -14,7 +14,6 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart' as ios;
 import 'package:tuple/tuple.dart';
-
 """
 
     level_1 = {
@@ -634,7 +633,7 @@ class Flutter:
                     '/// {}\n'.format(ui_name_big_value),
                     '/// {}\n'.format(ui_name_small),
                     'extension ' + ui_name_big +
-                    'Ex<T extends Widget?> on T {\n\n',
+                    'Ex<T extends Widget?> on T {',
                     '}\n',
                 ]
 
