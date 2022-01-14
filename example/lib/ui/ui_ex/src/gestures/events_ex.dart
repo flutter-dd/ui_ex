@@ -2,6 +2,432 @@ part of ui_ex;
 
 /// 手势事件
 /// Events
-extension GesturesEventsEx<T extends Widget?> on T {
+extension GesturesEventsEx<T extends Widget?> on T {}
 
+extension GesturesPointerAddedEventEx<T extends Duration?> on T {
+  /// PointerAddedEvent
+  PointerAddedEvent pointerAddedEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    int embedderId = 0,
+  }) =>
+      PointerAddedEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerRemovedEventEx<T extends Duration?> on T {
+  /// PointerRemovedEvent
+  PointerRemovedEvent pointerRemovedEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distanceMax = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    PointerRemovedEvent? original,
+    int embedderId = 0,
+  }) =>
+      PointerRemovedEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distanceMax: distanceMax,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        original: original,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerHoverEventEx<T extends Duration?> on T {
+  /// PointerHoverEvent
+  PointerHoverEvent pointerHoverEvent({
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int pointer = 0,
+    int device = 0,
+    Offset position = Offset.zero,
+    Offset delta = Offset.zero,
+    int buttons = 0,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    bool synthesized = false,
+    int embedderId = 0,
+  }) =>
+      PointerHoverEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        delta: delta,
+        buttons: buttons,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        synthesized: synthesized,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerEnterEventEx<T extends Duration?> on T {
+  /// PointerEnterEvent
+  PointerEnterEvent pointerEnterEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    Offset delta = Offset.zero,
+    int buttons = 0,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    bool down = false,
+    bool synthesized = false,
+    int embedderId = 0,
+  }) =>
+      PointerEnterEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        delta: delta,
+        buttons: buttons,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        down: down,
+        synthesized: synthesized,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerExitEventEx<T extends Duration?> on T {
+  /// PointerExitEvent
+  PointerExitEvent pointerExitEvent({
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int pointer = 0,
+    int device = 0,
+    Offset position = Offset.zero,
+    Offset delta = Offset.zero,
+    int buttons = 0,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    bool down = false,
+    bool synthesized = false,
+    int embedderId = 0,
+  }) =>
+      PointerExitEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        delta: delta,
+        buttons: buttons,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        down: down,
+        synthesized: synthesized,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerDownEventEx<T extends Duration?> on T {
+  /// PointerDownEvent
+  PointerDownEvent pointerDownEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    int buttons = kPrimaryButton,
+    bool obscured = false,
+    double pressure = 1.0,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    int embedderId = 0,
+  }) =>
+      PointerDownEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        buttons: buttons,
+        obscured: obscured,
+        pressure: pressure,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerMoveEventEx<T extends Duration?> on T {
+  /// PointerMoveEvent
+  PointerMoveEvent pointerMoveEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    Offset delta = Offset.zero,
+    int buttons = kPrimaryButton,
+    bool obscured = false,
+    double pressure = 1.0,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    int platformData = 0,
+    bool synthesized = false,
+    int embedderId = 0,
+  }) =>
+      PointerMoveEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        delta: delta,
+        buttons: buttons,
+        obscured: obscured,
+        pressure: pressure,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        platformData: platformData,
+        synthesized: synthesized,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerUpEventEx<T extends Duration?> on T {
+  /// PointerUpEvent
+  PointerUpEvent pointerUpEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    int buttons = 0,
+    bool obscured = false,
+    double pressure = 0.0,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    int embedderId = 0,
+  }) =>
+      PointerUpEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        buttons: buttons,
+        obscured: obscured,
+        pressure: pressure,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerScrollEventEx<T extends Duration?> on T {
+  /// PointerScrollEvent
+  PointerScrollEvent pointerScrollEvent({
+    PointerDeviceKind kind = PointerDeviceKind.mouse,
+    int device = 0,
+    Offset position = Offset.zero,
+    Offset scrollDelta = Offset.zero,
+    int embedderId = 0,
+  }) =>
+      PointerScrollEvent(
+        timeStamp: this ?? Duration.zero,
+        kind: kind,
+        device: device,
+        position: position,
+        scrollDelta: scrollDelta,
+        embedderId: embedderId,
+      );
+}
+
+extension GesturesPointerCancelEventEx<T extends Duration?> on T {
+  /// PointerCancelEvent
+  PointerCancelEvent pointerCancelEvent({
+    int pointer = 0,
+    PointerDeviceKind kind = PointerDeviceKind.touch,
+    int device = 0,
+    Offset position = Offset.zero,
+    int buttons = 0,
+    bool obscured = false,
+    double pressureMin = 1.0,
+    double pressureMax = 1.0,
+    double distance = 0.0,
+    double distanceMax = 0.0,
+    double size = 0.0,
+    double radiusMajor = 0.0,
+    double radiusMinor = 0.0,
+    double radiusMin = 0.0,
+    double radiusMax = 0.0,
+    double orientation = 0.0,
+    double tilt = 0.0,
+    int embedderId = 0,
+  }) =>
+      PointerCancelEvent(
+        timeStamp: this ?? Duration.zero,
+        pointer: pointer,
+        kind: kind,
+        device: device,
+        position: position,
+        buttons: buttons,
+        obscured: obscured,
+        pressureMin: pressureMin,
+        pressureMax: pressureMax,
+        distance: distance,
+        distanceMax: distanceMax,
+        size: size,
+        radiusMajor: radiusMajor,
+        radiusMinor: radiusMinor,
+        radiusMin: radiusMin,
+        radiusMax: radiusMax,
+        orientation: orientation,
+        tilt: tilt,
+        embedderId: embedderId,
+      );
 }
