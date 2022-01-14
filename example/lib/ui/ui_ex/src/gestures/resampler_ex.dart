@@ -2,6 +2,7 @@ part of ui_ex;
 
 /// 手势重采样器
 /// Resampler
-extension GesturesResamplerEx<T extends Widget?> on T {
-
+extension GesturesPointerEventResamplerEx<T extends Widget?> on T {
+  /// PointerEventResampler
+  PointerEventResampler pointerEventResampler() => PointerEventResampler();
 }
