@@ -2,6 +2,24 @@ part of ui_ex;
 
 /// 材质底片主题
 /// BottomSheetTheme
-extension MaterialBottomSheetThemeEx<T extends Widget?> on T {
-
+extension MaterialBottomSheetThemeDataEx<T extends Color?> on T {
+  /// BottomSheetThemeData
+  BottomSheetThemeData bottomSheetThemeData({
+    Color? backgroundColor,
+    double? elevation,
+    Color? modalBackgroundColor,
+    double? modalElevation,
+    ShapeBorder? shape,
+    Clip? clipBehavior,
+    BoxConstraints? constraints,
+  }) =>
+      BottomSheetThemeData(
+        backgroundColor: this,
+        elevation: elevation,
+        modalBackgroundColor: modalBackgroundColor,
+        modalElevation: modalElevation,
+        shape: shape,
+        clipBehavior: clipBehavior,
+        constraints: constraints,
+      );
 }
