@@ -77,3 +77,17 @@ extension MaterialSliderThemeDataEx<T extends Color?> on T {
         thumbSelector: thumbSelector,
       );
 }
+
+extension MaterialRectangularSliderTrackShapeEx<T extends double?> on T {
+  /// RectangularSliderTrackShape
+  RectangularSliderTrackShape rectangularSliderTrackShape() =>
+      RectangularSliderTrackShape(disabledThumbGapWidth: this ?? 2.0);
+}
+
+extension MaterialRoundedRectSliderTrackShapeEx<T> on T {
+  /// RoundedRectSliderTrackShape
+  RoundedRectSliderTrackShape roundedRectSliderTrackShape() =>
+      RoundedRectSliderTrackShape();
+}
+
+

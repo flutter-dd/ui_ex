@@ -17,6 +17,7 @@ extension MaterialSnackBarEx<T extends Widget?> on T {
     Duration duration = _snackBarDisplayDuration,
     Animation<double>? animation,
     void Function()? onVisible,
+    DismissDirection dismissDirection = DismissDirection.down,
   }) =>
       SnackBar(
         key: key,
@@ -32,6 +33,7 @@ extension MaterialSnackBarEx<T extends Widget?> on T {
         duration: duration,
         animation: animation,
         onVisible: onVisible,
+        dismissDirection: dismissDirection,
       );
 }
 
@@ -43,3 +45,20 @@ extension MaterialSnackEx on SnackBar {
 }
 
 const Duration _snackBarDisplayDuration = Duration(milliseconds: 4000);
+
+extension MaterialSnackBarAction<T extends String?> on T {
+  /// SnackBarAction
+  SnackBarAction snackBarAction({
+    Key? key,
+    Color? textColor,
+    Color? disabledTextColor,
+    required void Function() onPressed,
+  }) =>
+      SnackBarAction(
+        key: key,
+        textColor: textColor,
+        disabledTextColor: disabledTextColor,
+        label: this ?? "",
+        onPressed: onPressed,
+      );
+}

@@ -49,7 +49,7 @@ extension TextStyleEx on TextStyle {
   TextStyle height(double? value) => copyWith(height: value);
 
   /// leadingDis
-  TextStyle leadingDis(TextLeadingDistribution? value) =>
+  TextStyle leadingDis(ui.TextLeadingDistribution? value) =>
       copyWith(leadingDistribution: value);
 
   /// locale
