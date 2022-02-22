@@ -35,3 +35,22 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: title.text().cupertinoMiddleAppBar(context: context),
       showLoading: showLoading);
 }
+
+
+
+
+
+class Cell {
+  List<List<bool>> a = [[false]];
+  Cell u = Cell();
+  Cell d = Cell();
+  Cell l = Cell();
+  Cell r = Cell();
+  Cell ul = Cell();
+  Cell ur = Cell();
+  Cell dl = Cell();
+  Cell dr = Cell();
+  bool isAlive = false;
+  int x = 0;
+  int y = 0;
+}
