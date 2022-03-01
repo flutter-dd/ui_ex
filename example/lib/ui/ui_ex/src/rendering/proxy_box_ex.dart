@@ -512,11 +512,9 @@ extension RenderingRenderSemanticsAnnotationsEx<T extends RenderBox?> on T {
 
 extension RenderingRenderBlockSemanticsEx<T extends RenderBox?> on T {
   /// RenderBlockSemantics
-  RenderBlockSemantics renderBlockSemantics({
-    bool blocking = true
-  }) =>
+  RenderBlockSemantics renderBlockSemantics({bool blocking = true}) =>
       RenderBlockSemantics(
-            child: this,
-    blocking: blocking = true,
+        child: this,
+        blocking: blocking = true,
       );
 }
