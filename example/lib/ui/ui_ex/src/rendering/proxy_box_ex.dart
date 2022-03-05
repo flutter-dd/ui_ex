@@ -515,3 +515,69 @@ extension RenderingRenderBlockSemanticsEx<T extends RenderBox?> on T {
   RenderBlockSemantics renderBlockSemantics({bool blocking = true}) =>
       RenderBlockSemantics(child: this, blocking: blocking = true);
 }
+
+extension RenderingRenderMergeSemanticsEx<T extends RenderBox?> on T {
+  /// RenderMergeSemantics
+  RenderMergeSemantics renderMergeSemantics() =>
+      RenderMergeSemantics(child: this);
+}
+
+extension RenderingRenderExcludeSemanticsEx<T extends RenderBox?> on T {
+  /// RenderExcludeSemantics
+  RenderExcludeSemantics renderExcludeSemantics({bool excluding = true}) =>
+      RenderExcludeSemantics(
+        child: this,
+        excluding: excluding,
+      );
+}
+
+extension RenderingRenderIndexedSemanticsEx<T extends RenderBox?> on T {
+  /// RenderIndexedSemantics
+  RenderIndexedSemantics renderIndexedSemantics({required int index}) =>
+      RenderIndexedSemantics(
+        child: this,
+        index: index,
+      );
+}
+
+extension RenderingRenderLeaderLayerEx<T extends RenderBox?> on T {
+  /// RenderLeaderLayer
+  RenderLeaderLayer renderLeaderLayer({required LayerLink link}) =>
+      RenderLeaderLayer(
+        link: link,
+        child: this,
+      );
+}
+
+extension RenderingRenderFollowerLayerEx<T extends RenderBox?> on T {
+  /// RenderFollowerLayer
+  RenderFollowerLayer renderFollowerLayer({
+    required LayerLink link,
+    bool showWhenUnlinked = true,
+    Offset offset = Offset.zero,
+    Alignment leaderAnchor = Alignment.topLeft,
+    Alignment followerAnchor = Alignment.topLeft,
+    RenderBox? child,
+  }) =>
+      RenderFollowerLayer(
+        link: link,
+        showWhenUnlinked: showWhenUnlinked,
+        offset: offset,
+        leaderAnchor: leaderAnchor,
+        followerAnchor: followerAnchor,
+        child: this,
+      );
+}
+
+extension RenderingRenderAnnotatedRegionEx<T extends RenderBox?> on T {
+  /// RenderAnnotatedRegion
+  RenderAnnotatedRegion renderAnnotatedRegion({
+    required Object value,
+    required bool sized,
+  }) =>
+      RenderAnnotatedRegion(
+        value: value,
+        sized: sized,
+        child: this,
+      );
+}
