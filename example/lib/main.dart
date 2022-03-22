@@ -31,17 +31,14 @@ class _MyHomePageState extends State<MyHomePage> {
   set showLoading(bool value) => fresh(() => _showLoading = value);
 
   @override
-  Widget build(BuildContext context) => mathStr.markdown().scaffold(
-      appBar: title.text().cupertinoMiddleAppBar(context: context),
-      showLoading: showLoading);
+  Widget build(BuildContext context) =>
+      mathStr.text().scaffold(appBar: title.text().appBar());
 }
 
-
-
-
-
 class Cell {
-  List<List<bool>> a = [[false]];
+  List<List<bool>> a = [
+    [false]
+  ];
   Cell u = Cell();
   Cell d = Cell();
   Cell l = Cell();
