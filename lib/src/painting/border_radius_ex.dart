@@ -25,13 +25,13 @@ extension PaintingVerticalBorderRadiusDirectionalEx<T extends Radius?>
         top: item1 ?? Radius.zero,
         bottom: item2 ?? Radius.zero,
       );
+
   /// BorderRadiusDirectional horizontal
   BorderRadiusDirectional horizontalBorderRadiusDirectional() =>
       BorderRadiusDirectional.horizontal(
         start: item1 ?? Radius.zero,
         end: item2 ?? Radius.zero,
       );
-
 }
 
 extension PaintingOnlyBorderRadiusEx<T extends Radius?> on Tuple4<T, T, T, T> {

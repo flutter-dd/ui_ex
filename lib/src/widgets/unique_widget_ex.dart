@@ -12,6 +12,4 @@ extension WidgetsUniqueWidgetEx<T extends Widget?> on T {
   /// RouteSettings
   RouteSettings? settings([Object? arguments]) =>
       RouteSettings(name: name, arguments: arguments);
-
 }
-

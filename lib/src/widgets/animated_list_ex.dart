@@ -38,5 +38,8 @@ extension WidgetsSliverAnimatedListEx<T extends AnimatedListItemBuilder> on T {
     int initialItemCount = 0,
   }) =>
       SliverAnimatedList(
-          key: key, initialItemCount: initialItemCount, itemBuilder: this,);
+        key: key,
+        initialItemCount: initialItemCount,
+        itemBuilder: this,
+      );
 }

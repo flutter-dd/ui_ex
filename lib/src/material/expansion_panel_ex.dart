@@ -39,7 +39,6 @@ extension MaterialExpansionPanelListEx<T extends ExpansionPanel> on List<T>? {
         elevation: elevation,
       );
 
-
   /// expansionPanelListRadio
   ExpansionPanelList expansionPanelListRadio({
     Key? key,

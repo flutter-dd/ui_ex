@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 part of ui_ex;
 
 /// 小部件底部导航栏项
@@ -15,7 +13,6 @@ extension WidgetsBottomNavigationBarItemEx<T extends Widget?> on T {
   }) =>
       BottomNavigationBarItem(
         icon: this ?? Container(),
-        title: title,
         label: label,
         activeIcon: activeIcon,
         backgroundColor: backgroundColor,

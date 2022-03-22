@@ -28,7 +28,6 @@ extension PhysicsSpringSimulationEx<T extends double?> on Tuple3<T, T, T> {
         item3 ?? 0.0,
         tolerance: tolerance,
       );
-
 }
 
 extension PhysicsSpringDescriptionEx<T extends double?> on Tuple3<T, T, T> {

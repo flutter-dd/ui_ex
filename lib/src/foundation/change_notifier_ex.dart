@@ -11,4 +11,3 @@ extension FoundationValueNotifierEx<T> on T {
   /// ValueNotifier
   ValueNotifier valueNotifier() => ValueNotifier(this);
 }
-

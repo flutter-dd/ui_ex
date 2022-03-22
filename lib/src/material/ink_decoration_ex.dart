@@ -7,7 +7,7 @@ extension MaterialInkDecorationEx<T extends RenderBox> on T {
   InkDecoration inkDecoration({
     required Decoration? decoration,
     required ImageConfiguration configuration,
-      required MaterialInkController controller,
+    required MaterialInkController controller,
     void Function()? onRemoved,
   }) =>
       InkDecoration(

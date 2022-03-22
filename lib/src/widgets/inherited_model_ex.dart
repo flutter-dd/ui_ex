@@ -5,5 +5,4 @@ part of ui_ex;
 extension WidgetsInheritedModelEx<T> on InheritedModel<T> {
   /// InheritedModelElement
   InheritedModelElement inheritedModelElement() => InheritedModelElement(this);
-
 }

@@ -2,10 +2,7 @@ part of ui_ex;
 
 /// 基础对象
 /// Object
-extension FoundationObjectEx<T extends Widget?> on T {
-
-}
-
+extension FoundationObjectEx<T extends Widget?> on T {}
 
 /// 根据不同平台配置的配置类
 class Config {
@@ -63,7 +60,6 @@ class Config {
   }
 }
 
-
 extension IntEx on int {
   /// 一百以内的int转汉字
   String toChinese() {
@@ -91,7 +87,6 @@ extension IntEx on int {
   /// 根据int值获取颜色
   Color get color => Color(this);
 }
-
 
 /// 集合拓展
 extension IterableNullEx<E> on Iterable<E>? {

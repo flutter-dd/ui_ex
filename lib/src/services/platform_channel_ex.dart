@@ -26,7 +26,6 @@ extension ServicesMethodChannelEx<T extends String?> on T {
       MethodChannel(this ?? "", codec, binaryMessenger);
 }
 
-
 extension ServicesOptionalMethodChannelEx<T extends String?> on T {
   /// OptionalMethodChannel
   OptionalMethodChannel optionalMethodChannel([

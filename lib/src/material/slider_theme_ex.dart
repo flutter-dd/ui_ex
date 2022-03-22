@@ -84,5 +84,3 @@ extension MaterialRectangularSliderTrackShapeEx<T extends double?> on T {
   RectangularSliderTrackShape rectangularSliderTrackShape() =>
       RectangularSliderTrackShape(disabledThumbGapWidth: this ?? 2.0);
 }
-
-

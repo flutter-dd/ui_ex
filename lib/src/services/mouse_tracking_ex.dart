@@ -5,13 +5,14 @@ part of ui_ex;
 extension ServicesMouseTrackerAnnotationEx<T extends MouseCursor?> on T {
   /// MouseTrackerAnnotation
   MouseTrackerAnnotation mouseTrackerAnnotation({
-  void Function(PointerEnterEvent)? onEnter,
-  void Function(PointerExitEvent)? onExit,
-  bool validForMouseTracker = true,
-}) => MouseTrackerAnnotation(
-  onEnter: onEnter,
-  onExit: onExit,
-  cursor: this ?? MouseCursor.defer,
-  validForMouseTracker: validForMouseTracker,
-);
+    void Function(PointerEnterEvent)? onEnter,
+    void Function(PointerExitEvent)? onExit,
+    bool validForMouseTracker = true,
+  }) =>
+      MouseTrackerAnnotation(
+        onEnter: onEnter,
+        onExit: onExit,
+        cursor: this ?? MouseCursor.defer,
+        validForMouseTracker: validForMouseTracker,
+      );
 }

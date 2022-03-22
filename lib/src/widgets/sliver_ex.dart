@@ -139,7 +139,7 @@ extension WidgetsKeepAliveEx<T extends Widget?> on T {
   /// KeepAlive
   KeepAlive keepAlive({
     Key? key,
-  required bool keepAlive,
+    required bool keepAlive,
     Widget? sliver,
   }) =>
       KeepAlive(

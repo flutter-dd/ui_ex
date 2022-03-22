@@ -5,13 +5,14 @@ part of ui_ex;
 extension WidgetsPageStorageEx<T extends Widget?> on T {
   /// PageStorage
   PageStorage pageStorage({
-  Key? key,
-  required PageStorageBucket bucket,
-}) => PageStorage(
-  key: key,
-  bucket: bucket,
-  child: this ?? Container(),
-);
+    Key? key,
+    required PageStorageBucket bucket,
+  }) =>
+      PageStorage(
+        key: key,
+        bucket: bucket,
+        child: this ?? Container(),
+      );
 }
 
 extension WidgetsPageStorageKeyEx<T> on T {

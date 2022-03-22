@@ -13,5 +13,3 @@ extension MaterialAccentColorEx<T extends int> on T {
   MaterialAccentColor materialAccentColor(Map<int, Color> swatch) =>
       MaterialAccentColor(this, swatch);
 }
-
-

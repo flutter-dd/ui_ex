@@ -47,7 +47,8 @@ extension RenderingRenderStackEx<T extends RenderBox> on List<RenderBox>? {
       );
 }
 
-extension RenderingRenderIndexedStackEx<T extends RenderBox> on List<RenderBox>? {
+extension RenderingRenderIndexedStackEx<T extends RenderBox>
+    on List<RenderBox>? {
   /// RenderIndexedStack
   RenderIndexedStack renderIndexedStack({
     AlignmentGeometry alignment = AlignmentDirectional.topStart,

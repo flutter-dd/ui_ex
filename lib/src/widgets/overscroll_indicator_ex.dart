@@ -44,7 +44,5 @@ extension WidgetsStretchingOverscrollIndicatorEx<T extends Widget?> on T {
 extension WidgetsOverscrollIndicatorNotificationEx<T extends bool?> on T {
   /// OverscrollIndicatorNotification
   OverscrollIndicatorNotification overscrollIndicatorNotification() =>
-      OverscrollIndicatorNotification(
-        leading: this ?? true
-      );
+      OverscrollIndicatorNotification(leading: this ?? true);
 }

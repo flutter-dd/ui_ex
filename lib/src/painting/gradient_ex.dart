@@ -52,17 +52,16 @@ extension PaintingRadialGradientEx<T extends Color> on List<T>? {
       );
 }
 
-
 extension PaintingSweepGradientEx<T extends Color> on List<T>? {
   /// SweepGradient
   SweepGradient sweepGradient({
-  AlignmentGeometry center = Alignment.center,
-  double startAngle = 0.0,
-  double endAngle = pi * 2,
-  required List<Color> colors,
-  List<double>? stops,
-  TileMode tileMode = TileMode.clamp,
-  GradientTransform? transform,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = pi * 2,
+    required List<Color> colors,
+    List<double>? stops,
+    TileMode tileMode = TileMode.clamp,
+    GradientTransform? transform,
   }) =>
       SweepGradient(
         center: center,

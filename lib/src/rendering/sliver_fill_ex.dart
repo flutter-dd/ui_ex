@@ -2,9 +2,7 @@ part of ui_ex;
 
 /// 渲染长条填充
 /// SliverFill
-extension RenderingSliverFillEx<T extends Widget?> on T {
-
-}
+extension RenderingSliverFillEx<T extends Widget?> on T {}
 
 extension RenderingRenderSliverFillViewportEx<
     T extends RenderSliverBoxChildManager> on T {

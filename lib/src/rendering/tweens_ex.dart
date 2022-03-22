@@ -11,13 +11,10 @@ extension RenderingFractionalOffsetTweenEx<T extends FractionalOffset?>
       FractionalOffsetTween(begin: item1, end: item2);
 }
 
-extension RenderingAlignmentTweenEx<T extends Alignment?>
-    on Tuple2<T, T> {
+extension RenderingAlignmentTweenEx<T extends Alignment?> on Tuple2<T, T> {
   /// AlignmentTween
-  AlignmentTween alignmentTween() =>
-      AlignmentTween(begin: item1, end: item2);
+  AlignmentTween alignmentTween() => AlignmentTween(begin: item1, end: item2);
 }
-
 
 extension RenderingAlignmentGeometryTweenEx<T extends AlignmentGeometry?>
     on Tuple2<T, T> {

@@ -5,31 +5,32 @@ part of ui_ex;
 extension RenderingTableEx<T extends RenderBox> on List<List<T>>? {
   /// RenderTable
   RenderTable renderTable({
-  int? columns,
-  int? rows,
-  Map<int, TableColumnWidth>? columnWidths,
-  TableColumnWidth defaultColumnWidth = const FlexColumnWidth(),
-  required TextDirection textDirection,
-  TableBorder? border,
-  List<Decoration?>? rowDecorations,
-  ImageConfiguration configuration = ImageConfiguration.empty,
-  TableCellVerticalAlignment defaultVerticalAlignment = TableCellVerticalAlignment.top,
-  TextBaseline? textBaseline,
-  List<List<RenderBox>>? children,
-}) => RenderTable(
-  columns: columns,
-  rows: rows,
-  columnWidths: columnWidths,
-  defaultColumnWidth: defaultColumnWidth,
-  textDirection: textDirection,
-  border: border,
-  rowDecorations: rowDecorations,
-  configuration: configuration,
-  defaultVerticalAlignment: defaultVerticalAlignment,
-  textBaseline: textBaseline,
-  children: this,
-);
-
+    int? columns,
+    int? rows,
+    Map<int, TableColumnWidth>? columnWidths,
+    TableColumnWidth defaultColumnWidth = const FlexColumnWidth(),
+    required TextDirection textDirection,
+    TableBorder? border,
+    List<Decoration?>? rowDecorations,
+    ImageConfiguration configuration = ImageConfiguration.empty,
+    TableCellVerticalAlignment defaultVerticalAlignment =
+        TableCellVerticalAlignment.top,
+    TextBaseline? textBaseline,
+    List<List<RenderBox>>? children,
+  }) =>
+      RenderTable(
+        columns: columns,
+        rows: rows,
+        columnWidths: columnWidths,
+        defaultColumnWidth: defaultColumnWidth,
+        textDirection: textDirection,
+        border: border,
+        rowDecorations: rowDecorations,
+        configuration: configuration,
+        defaultVerticalAlignment: defaultVerticalAlignment,
+        textBaseline: textBaseline,
+        children: this,
+      );
 }
 
 extension RenderingIntrinsicColumnWidthEx<T extends double?> on T {
@@ -64,4 +65,3 @@ extension RenderingMinColumnWidthEx<T extends TableColumnWidth>
   /// MinColumnWidth
   MinColumnWidth minColumnWidth() => MinColumnWidth(item1, item2);
 }
-

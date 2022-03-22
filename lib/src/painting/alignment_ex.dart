@@ -9,7 +9,8 @@ extension PaintingAlignmentEx<T extends double> on Tuple2<T, T> {
 
 extension PaintingAlignmentDirectionalEx<T extends double> on Tuple2<T, T> {
   /// AlignmentDirectional
-  AlignmentDirectional alignmentDirectional() => AlignmentDirectional(item1, item2);
+  AlignmentDirectional alignmentDirectional() =>
+      AlignmentDirectional(item1, item2);
 }
 
 extension PaintingTextAlignVerticalEx<T extends double?> on T {

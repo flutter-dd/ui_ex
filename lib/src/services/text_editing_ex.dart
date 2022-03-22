@@ -5,13 +5,14 @@ part of ui_ex;
 extension ServicesTextEditingEx<T extends int?> on T {
   /// TextSelection
   TextSelection textSelection({
-  required int extentOffset,
-  TextAffinity affinity = TextAffinity.downstream,
-  bool isDirectional = false,
-}) => TextSelection(
-  baseOffset: this ?? 0,
-  extentOffset: extentOffset,
-  affinity: affinity,
-  isDirectional: isDirectional,
-);
+    required int extentOffset,
+    TextAffinity affinity = TextAffinity.downstream,
+    bool isDirectional = false,
+  }) =>
+      TextSelection(
+        baseOffset: this ?? 0,
+        extentOffset: extentOffset,
+        affinity: affinity,
+        isDirectional: isDirectional,
+      );
 }
