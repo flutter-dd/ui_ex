@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 part of ui_ex;
 
 /// 小部件拖动目标
@@ -38,7 +36,7 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
     Axis? axis,
     Widget? childWhenDragging,
     Offset feedbackOffset = Offset.zero,
-    DragAnchor dragAnchor = DragAnchor.child,
+    // DragAnchor dragAnchor = DragAnchor.child,
     Offset Function(Draggable<Object>, BuildContext, Offset)?
         dragAnchorStrategy,
     Axis? affinity,
@@ -60,7 +58,7 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
         axis: axis,
         childWhenDragging: childWhenDragging,
         feedbackOffset: feedbackOffset,
-        dragAnchor: dragAnchor,
+        // dragAnchor: dragAnchor,
         dragAnchorStrategy: dragAnchorStrategy,
         affinity: affinity,
         maxSimultaneousDrags: maxSimultaneousDrags,
@@ -85,7 +83,7 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
     Axis? axis,
     Widget? childWhenDragging,
     Offset feedbackOffset = Offset.zero,
-    DragAnchor dragAnchor = DragAnchor.child,
+    // DragAnchor dragAnchor = DragAnchor.child,
     Offset Function(Draggable<Object>, BuildContext, Offset)?
         dragAnchorStrategy,
     int? maxSimultaneousDrags,
@@ -106,7 +104,7 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
         axis: axis,
         childWhenDragging: childWhenDragging,
         feedbackOffset: feedbackOffset,
-        dragAnchor: dragAnchor,
+        // dragAnchor: dragAnchor,
         dragAnchorStrategy: dragAnchorStrategy,
         maxSimultaneousDrags: maxSimultaneousDrags,
         onDragStarted: onDragStarted,

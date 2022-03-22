@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 part of ui_ex;
 
 /// 渲染移位框
@@ -76,19 +74,19 @@ extension RenderingRenderConstraintsTransformBoxEx<T extends RenderBox?> on T {
 
 extension RenderingRenderUnconstrainedBoxEx<T extends RenderBox?> on T {
   /// RenderUnconstrainedBox
-  RenderUnconstrainedBox renderUnconstrainedBox({
-    required AlignmentGeometry alignment,
-    required TextDirection? textDirection,
-    Axis? constrainedAxis,
-    Clip clipBehavior = Clip.none,
-  }) =>
-      RenderUnconstrainedBox(
-        alignment: alignment,
-        textDirection: textDirection,
-        constrainedAxis: constrainedAxis,
-        child: this,
-        clipBehavior: clipBehavior,
-      );
+  // RenderUnconstrainedBox renderUnconstrainedBox({
+  //   required AlignmentGeometry alignment,
+  //   required TextDirection? textDirection,
+  //   Axis? constrainedAxis,
+  //   Clip clipBehavior = Clip.none,
+  // }) =>
+  //     RenderUnconstrainedBox(
+  //       alignment: alignment,
+  //       textDirection: textDirection,
+  //       constrainedAxis: constrainedAxis,
+  //       child: this,
+  //       clipBehavior: clipBehavior,
+  //     );
 }
 
 extension RenderingRenderSizedOverflowBoxEx<T extends RenderBox?> on T {

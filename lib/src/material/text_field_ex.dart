@@ -1,5 +1,4 @@
 part of ui_ex;
-// ignore_for_file: deprecated_member_use
 
 /// 材料文本字段
 /// TextField
@@ -31,7 +30,7 @@ extension MaterialTextFieldEx<T extends TextEditingController> on T {
     int? minLines,
     bool expands = false,
     int? maxLength,
-    bool maxLengthEnforced = true,
+    // bool maxLengthEnforced = true,
     MaxLengthEnforcement? maxLengthEnforcement,
     void Function(String)? onChanged,
     void Function()? onEditingComplete,
@@ -91,7 +90,7 @@ extension MaterialTextFieldEx<T extends TextEditingController> on T {
         minLines: minLines,
         expands: expands,
         maxLength: maxLength,
-        maxLengthEnforced: maxLengthEnforced,
+        // maxLengthEnforced: maxLengthEnforced,
         maxLengthEnforcement: maxLengthEnforcement,
         onChanged: onChanged,
         onEditingComplete: onEditingComplete,

@@ -1,5 +1,4 @@
 part of ui_ex;
-// ignore_for_file: deprecated_member_use
 
 /// 材质滑块主题
 /// SliderTheme
@@ -81,6 +80,6 @@ extension MaterialSliderThemeDataEx<T extends Color?> on T {
 
 extension MaterialRectangularSliderTrackShapeEx<T extends double?> on T {
   /// RectangularSliderTrackShape
-  RectangularSliderTrackShape rectangularSliderTrackShape() =>
-      RectangularSliderTrackShape(disabledThumbGapWidth: this ?? 2.0);
+  // RectangularSliderTrackShape rectangularSliderTrackShape() =>
+  //     RectangularSliderTrackShape(disabledThumbGapWidth: this ?? 2.0);
 }

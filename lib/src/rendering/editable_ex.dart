@@ -1,5 +1,4 @@
 part of ui_ex;
-// ignore_for_file: deprecated_member_use
 
 /// 渲染动画大小
 /// Editable
@@ -29,8 +28,8 @@ extension RenderingRenderEditableEx<T extends RenderBox> on List<T>? {
     double textScaleFactor = 1.0,
     TextSelection? selection,
     required ViewportOffset offset,
-    void Function(TextSelection, RenderEditable, SelectionChangedCause)?
-        onSelectionChanged,
+    // void Function(TextSelection, RenderEditable, SelectionChangedCause)?
+    //     onSelectionChanged,
     void Function(Rect)? onCaretChanged,
     bool ignorePointer = false,
     bool readOnly = false,
@@ -76,7 +75,7 @@ extension RenderingRenderEditableEx<T extends RenderBox> on List<T>? {
         textScaleFactor: textScaleFactor,
         selection: selection,
         offset: offset,
-        onSelectionChanged: onSelectionChanged,
+        // onSelectionChanged: onSelectionChanged,
         onCaretChanged: onCaretChanged,
         ignorePointer: ignorePointer,
         readOnly: readOnly,

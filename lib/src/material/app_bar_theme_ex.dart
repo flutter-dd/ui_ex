@@ -1,12 +1,11 @@
 part of ui_ex;
-// ignore_for_file: deprecated_member_use
 
 /// Material 应用栏主题
 /// AppBarTheme
 extension MaterialAppBarThemeEx<T extends Color?> on T {
   /// AppBarTheme
   AppBarTheme appBarTheme({
-    Brightness? brightness,
+    // Brightness? brightness,
     Color? backgroundColor,
     Color? foregroundColor,
     double? elevation,
@@ -14,18 +13,18 @@ extension MaterialAppBarThemeEx<T extends Color?> on T {
     ShapeBorder? shape,
     IconThemeData? iconTheme,
     IconThemeData? actionsIconTheme,
-    TextTheme? textTheme,
+    // TextTheme? textTheme,
     bool? centerTitle,
     double? titleSpacing,
     double? toolbarHeight,
     TextStyle? toolbarTextStyle,
     TextStyle? titleTextStyle,
     SystemUiOverlayStyle? systemOverlayStyle,
-    bool? backwardsCompatibility,
+    // bool? backwardsCompatibility,
   }) =>
       AppBarTheme(
         color: this,
-        brightness: brightness,
+        // brightness: brightness,
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
         elevation: elevation,
@@ -33,13 +32,13 @@ extension MaterialAppBarThemeEx<T extends Color?> on T {
         shape: shape,
         iconTheme: iconTheme,
         actionsIconTheme: actionsIconTheme,
-        textTheme: textTheme,
+        // textTheme: textTheme,
         centerTitle: centerTitle,
         titleSpacing: titleSpacing,
         toolbarHeight: toolbarHeight,
         toolbarTextStyle: toolbarTextStyle,
         titleTextStyle: titleTextStyle,
         systemOverlayStyle: systemOverlayStyle,
-        backwardsCompatibility: backwardsCompatibility,
+        // backwardsCompatibility: backwardsCompatibility,
       );
 }

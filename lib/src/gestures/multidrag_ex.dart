@@ -8,13 +8,12 @@ extension GesturesImmediateMultiDragGestureRecognizerEx<T extends Object?>
     on T {
   /// ImmediateMultiDragGestureRecognizer
   ImmediateMultiDragGestureRecognizer immediateMultiDragGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       ImmediateMultiDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }
@@ -23,13 +22,12 @@ extension GesturesHorizontalMultiDragGestureRecognizerEx<T extends Object?>
     on T {
   /// HorizontalMultiDragGestureRecognizer
   HorizontalMultiDragGestureRecognizer horizontalMultiDragGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       HorizontalMultiDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }
@@ -37,13 +35,12 @@ extension GesturesHorizontalMultiDragGestureRecognizerEx<T extends Object?>
 extension GesturesVerticalMultiDragGestureRecognizerEx<T extends Object?> on T {
   /// VerticalMultiDragGestureRecognizer
   VerticalMultiDragGestureRecognizer verticalMultiDragGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       VerticalMultiDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }
@@ -53,13 +50,12 @@ extension GesturesDelayedMultiDragGestureRecognizerEx<T extends Object?> on T {
   DelayedMultiDragGestureRecognizer delayedMultiDragGestureRecognizer({
     Duration delay = kLongPressTimeout,
     Object? debugOwner,
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       DelayedMultiDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         delay: delay,
         supportedDevices: supportedDevices,
       );

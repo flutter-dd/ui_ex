@@ -11,15 +11,14 @@ extension GesturesForcePressGestureRecognizerEx<
     double startPressure = 0.4,
     double peakPressure = 0.85,
     Object? debugOwner,
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       ForcePressGestureRecognizer(
         startPressure: startPressure,
         peakPressure: peakPressure,
         debugOwner: debugOwner,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
         interpolation: this,
       );

@@ -1,5 +1,4 @@
 part of ui_ex;
-// ignore_for_file: deprecated_member_use
 
 /// 材料文本表单域
 /// TextFormField
@@ -29,7 +28,7 @@ extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
     SmartDashesType? smartDashesType,
     SmartQuotesType? smartQuotesType,
     bool enableSuggestions = true,
-    bool maxLengthEnforced = true,
+    // bool maxLengthEnforced = true,
     MaxLengthEnforcement? maxLengthEnforcement,
     int? maxLines = 1,
     int? minLines,
@@ -87,7 +86,7 @@ extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
         smartDashesType: smartDashesType,
         smartQuotesType: smartQuotesType,
         enableSuggestions: enableSuggestions,
-        maxLengthEnforced: maxLengthEnforced,
+        // maxLengthEnforced: maxLengthEnforced,
         maxLengthEnforcement: maxLengthEnforcement,
         maxLines: maxLines,
         minLines: minLines,

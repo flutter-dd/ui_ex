@@ -7,13 +7,12 @@ extension GesturesMultitapEx<T extends Widget?> on T {}
 extension GesturesDoubleTapGestureRecognizerEx<T extends Object?> on T {
   /// DoubleTapGestureRecognizer
   DoubleTapGestureRecognizer doubleTapGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       DoubleTapGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }
@@ -21,13 +20,12 @@ extension GesturesDoubleTapGestureRecognizerEx<T extends Object?> on T {
 extension GesturesMultiTapGestureRecognizerEx<T extends Object?> on T {
   /// MultiTapGestureRecognizer
   MultiTapGestureRecognizer multiTapGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       MultiTapGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }

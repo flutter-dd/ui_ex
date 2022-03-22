@@ -52,14 +52,13 @@ extension GesturesScaleGestureRecognizerEx<T extends Object?> on T {
   /// ScaleGestureRecognizer
   ScaleGestureRecognizer scaleGestureRecognizer({
     Object? debugOwner,
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
     DragStartBehavior dragStartBehavior = DragStartBehavior.down,
   }) =>
       ScaleGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
         dragStartBehavior: dragStartBehavior,
       );

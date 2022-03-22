@@ -39,7 +39,7 @@ extension CupertinoTextFieldEx<T extends String?> on T {
     int? minLines,
     bool expands = false,
     int? maxLength,
-    bool maxLengthEnforced = true,
+    // bool maxLengthEnforced = true,
     MaxLengthEnforcement? maxLengthEnforcement,
     void Function(String)? onChanged,
     void Function()? onEditingComplete,
@@ -100,8 +100,7 @@ extension CupertinoTextFieldEx<T extends String?> on T {
         minLines: minLines,
         expands: expands,
         maxLength: maxLength,
-        // ignore: deprecated_member_use
-        maxLengthEnforced: maxLengthEnforced,
+        // maxLengthEnforced: maxLengthEnforced,
         maxLengthEnforcement: maxLengthEnforcement,
         onChanged: onChanged,
         onEditingComplete: onEditingComplete,

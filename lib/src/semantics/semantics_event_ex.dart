@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 part of ui_ex;
 
 /// 语义语义事件
@@ -27,6 +25,6 @@ extension SemanticsLongPressSemanticsEventEx<T extends String?> on T {
   TapSemanticEvent tapSemanticEvent() => const TapSemanticEvent();
 
   /// UpdateLiveRegionEvent
-  UpdateLiveRegionEvent updateLiveRegionEvent() =>
-      const UpdateLiveRegionEvent();
+  // UpdateLiveRegionEvent updateLiveRegionEvent() =>
+  //     const UpdateLiveRegionEvent();
 }

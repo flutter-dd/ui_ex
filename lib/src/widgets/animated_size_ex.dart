@@ -10,7 +10,7 @@ extension WidgetsAnimatedSizeEx<T extends Widget?> on T {
     Curve curve = Curves.linear,
     required Duration duration,
     Duration? reverseDuration,
-    TickerProvider? vsync,
+    // TickerProvider? vsync,
     Clip clipBehavior = Clip.hardEdge,
   }) =>
       AnimatedSize(
@@ -20,8 +20,7 @@ extension WidgetsAnimatedSizeEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         reverseDuration: reverseDuration,
-        // ignore: deprecated_member_use
-        vsync: vsync,
+        // vsync: vsync,
         clipBehavior: clipBehavior,
       );
 }

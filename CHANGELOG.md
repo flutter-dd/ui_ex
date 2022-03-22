@@ -1,13 +1,15 @@
-## 0.0.1
-## 0.0.2
-## 0.0.3
-## 0.0.4
-## 0.0.5
-## 0.0.6
-## 0.0.7
-## 0.0.8
-## 0.0.9
-## 0.1.0
-## 0.1.1
-## 0.1.2
-## 0.1.3
+## [0.0.1] - First update.
+## [0.0.2] - fix_bug.
+## [0.0.3] - fix_bug.
+## [0.0.4] - add example.
+## [0.0.5] - add flutter_easyrefresh
+## [0.0.6] - add feresh header footer
+## [0.0.7] - add card_swiper
+## [0.0.8] - fix math str over bug
+## [0.0.9] - update dependents and code formate
+## [0.1.0] - update doc and code formate
+## [0.1.1] - update code、 doc and code formate
+## [0.1.2] - update code、 doc and code formate
+## [0.1.3] - update and code formate
+## [0.1.4] - update and fix warnning
+

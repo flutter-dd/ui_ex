@@ -7,13 +7,12 @@ extension GesturesMonodragEx<T extends Widget?> on T {}
 extension GesturesVerticalDragGestureRecognizerEx<T extends Object?> on T {
   /// VerticalDragGestureRecognizer
   VerticalDragGestureRecognizer verticalDragGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       VerticalDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }
@@ -21,13 +20,12 @@ extension GesturesVerticalDragGestureRecognizerEx<T extends Object?> on T {
 extension GesturesHorizontalDragGestureRecognizerEx<T extends Object?> on T {
   /// HorizontalDragGestureRecognizer
   HorizontalDragGestureRecognizer horizontalDragGestureRecognizer({
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>
       HorizontalDragGestureRecognizer(
         debugOwner: this,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
       );
 }

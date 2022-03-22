@@ -59,15 +59,14 @@ extension GesturesLongPressGestureRecognizerEx<T extends Duration?> on T {
   LongPressGestureRecognizer longPressGestureRecognizer({
     Duration? duration,
     double? postAcceptSlopTolerance,
-    PointerDeviceKind? kind,
+    // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
     Object? debugOwner,
   }) =>
       LongPressGestureRecognizer(
         duration: this ?? kLongPressTimeout,
         postAcceptSlopTolerance: postAcceptSlopTolerance,
-        // ignore: deprecated_member_use
-        kind: kind,
+        // kind: kind,
         supportedDevices: supportedDevices,
         debugOwner: debugOwner,
       );

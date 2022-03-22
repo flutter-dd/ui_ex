@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 part of ui_ex;
 
 /// 小部件基本
@@ -881,7 +879,7 @@ extension WidgetsBasicsEx<T extends Widget> on List<T>? {
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
     TextDirection? textDirection,
     StackFit fit = StackFit.loose,
-    Overflow overflow = Overflow.clip,
+    // Overflow overflow = Overflow.clip,
     Clip clipBehavior = Clip.hardEdge,
   }) =>
       Stack(
@@ -889,7 +887,7 @@ extension WidgetsBasicsEx<T extends Widget> on List<T>? {
         alignment: alignment,
         textDirection: textDirection,
         fit: fit,
-        overflow: overflow,
+        // overflow: overflow,
         clipBehavior: clipBehavior,
         children: this ?? const <Widget>[],
       );
