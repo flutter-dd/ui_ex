@@ -63,7 +63,6 @@ extension MaterialInkResponseEx<T extends Widget?> on T {
   /// InkResponse
   InkResponse inkResponse({
     Key? key,
-    Widget? child,
     void Function()? onTap,
     void Function(TapDownDetails)? onTapDown,
     void Function()? onTapCancel,

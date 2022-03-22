@@ -14,7 +14,6 @@ extension MaterialElevatedButtonEx<T extends Widget?> on T {
     FocusNode? focusNode,
     bool autofocus = false,
     Clip clipBehavior = Clip.none,
-    required Widget? child,
   }) =>
       ElevatedButton(
         key: key,

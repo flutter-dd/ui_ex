@@ -2,10 +2,10 @@ part of ui_ex;
 
 /// 材质墨水高光
 /// InkHighlight
-extension MaterialInkHighlightEx<T extends MaterialInkController> on T {
+extension MaterialInkHighlightEx<T extends RenderBox> on T {
   /// InkHighlight
   InkHighlight inkHighlight({
-    required RenderBox referenceBox,
+    required MaterialInkController controller,
     required Color color,
     required TextDirection textDirection,
     BoxShape shape = BoxShape.rectangle,
@@ -17,8 +17,8 @@ extension MaterialInkHighlightEx<T extends MaterialInkController> on T {
     Duration fadeDuration = const Duration(milliseconds: 200),
   }) =>
       InkHighlight(
-        controller: this,
-        referenceBox: referenceBox,
+        controller: controller,
+        referenceBox: this,
         color: color,
         textDirection: textDirection,
         shape: shape,

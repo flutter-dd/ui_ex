@@ -2,16 +2,16 @@ part of ui_ex;
 
 /// 材质不飞溅
 /// NoSplash
-extension MaterialNoSplashEx<T extends MaterialInkController> on T {
+extension MaterialNoSplashEx<T extends RenderBox> on T {
   /// NoSplash
   NoSplash noSplash({
-    required RenderBox referenceBox,
+    required MaterialInkController controller,
     required Color color,
     void Function()? onRemoved,
   }) =>
       NoSplash(
-        controller: this,
-        referenceBox: referenceBox,
+        controller: controller,
+        referenceBox: this,
         color: color,
         onRemoved: onRemoved,
       );

@@ -11,7 +11,6 @@ extension MaterialBottomAppBarEx<T extends Widget?> on T {
     NotchedShape? shape,
     Clip clipBehavior = Clip.none,
     double notchMargin = 4.0,
-    Widget? child,
   }) =>
       BottomAppBar(
         key: key,

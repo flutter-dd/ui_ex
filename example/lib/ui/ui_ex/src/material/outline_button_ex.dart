@@ -28,7 +28,6 @@ extension MaterialOutlineButtonEx<T extends Widget?> on T {
     FocusNode? focusNode,
     bool autofocus = false,
     MaterialTapTargetSize? materialTapTargetSize,
-    Widget? child,
   }) =>
       OutlineButton(
         key: key,

@@ -32,7 +32,6 @@ extension CupertinoPopupSurfaceEx<T extends Widget?> on T {
   CupertinoPopupSurface cupertinoPopupSurface({
     Key? key,
     bool isSurfacePainted = true,
-    Widget? child,
   }) =>
       CupertinoPopupSurface(
         key: key,

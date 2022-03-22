@@ -2,10 +2,10 @@ part of ui_ex;
 
 /// 材质墨纹
 /// InkRipple
-extension MaterialInkRippleEx<T extends MaterialInkController> on T {
+extension MaterialInkRippleEx<T extends RenderBox> on T {
   /// InkRipple
   InkRipple inkRipple({
-    required RenderBox referenceBox,
+    required MaterialInkController controller,
     required Offset position,
     required Color color,
     required TextDirection textDirection,
@@ -17,8 +17,8 @@ extension MaterialInkRippleEx<T extends MaterialInkController> on T {
     void Function()? onRemoved,
   }) =>
       InkRipple(
-        controller: this,
-        referenceBox: referenceBox,
+        controller: controller,
+        referenceBox: this,
         position: position,
         color: color,
         textDirection: textDirection,

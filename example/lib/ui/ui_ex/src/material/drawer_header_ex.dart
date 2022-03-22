@@ -12,7 +12,6 @@ extension MaterialDrawerHeaderEx<T extends Widget?> on T {
         const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
     Duration duration = const Duration(milliseconds: 250),
     Curve curve = Curves.fastOutSlowIn,
-    required Widget? child,
   }) =>
       DrawerHeader(
         key: key,

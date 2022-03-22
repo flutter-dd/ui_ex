@@ -31,7 +31,6 @@ extension MaterialButtonEx<T extends Widget?> on T {
     FocusNode? focusNode,
     bool autofocus = false,
     MaterialTapTargetSize? materialTapTargetSize,
-    Widget? child,
     bool enableFeedback = true,
   }) =>
       RawMaterialButton(

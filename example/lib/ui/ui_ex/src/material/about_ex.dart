@@ -9,7 +9,6 @@ extension MaterialAboutListTileEx<T extends Widget?> on T {
   AboutListTile aboutListTile({
     Key? key,
     Widget? icon,
-    Widget? child,
     String? applicationName,
     String? applicationVersion,
     Widget? applicationIcon,

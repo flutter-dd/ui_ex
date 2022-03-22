@@ -6,7 +6,6 @@ extension CenterEx on Widget? {
     Key? key,
     double? widthFactor,
     double? heightFactor,
-    Widget? child,
   }) =>
       Center(
         child: this,

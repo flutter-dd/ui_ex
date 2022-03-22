@@ -18,7 +18,6 @@ extension AnimatedContainerEx on Widget? {
     EdgeInsetsGeometry? margin,
     Matrix4? transform,
     AlignmentGeometry? transformAlignment,
-    Widget? child,
     Clip clipBehavior = Clip.none,
     Curve curve = Curves.linear,
     void Function()? onEnd,

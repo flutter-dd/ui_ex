@@ -12,10 +12,9 @@ extension WidgetsFrameworkStateEx<T extends State> on T {
       if (action != null) action();
     });
   }
-
 }
 
-extension  WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
+extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   double get screenW => MediaQuery.of(this).size.width;
   double get screenH => MediaQuery.of(this).size.height;
   double get width => min(screenW, screenH);
@@ -178,4 +177,85 @@ extension  WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
           .cupertinoActionSheet(title: title, message: msg),
     );
   }
+}
+
+extension WidgetsFrameworkObjectKeyEx<T extends Object?> on T {
+  /// ObjectKey
+  ObjectKey objectKey() => ObjectKey(this);
+}
+
+extension WidgetsFrameworkLabeledGlobalKeyEx<T extends String?> on T {
+  /// LabeledGlobalKey
+  LabeledGlobalKey labeledGlobalKey() => LabeledGlobalKey(this);
+}
+
+extension WidgetsFrameworkGlobalObjectKeyEx<T extends Object> on T {
+  /// GlobalObjectKey
+  GlobalObjectKey globalObjectKey() => GlobalObjectKey(this);
+}
+
+extension WidgetsFrameworkBuildOwnerEx<T extends FocusManager?> on T {
+  /// BuildOwner
+  BuildOwner buildOwner({void Function()? onBuildScheduled}) => BuildOwner(
+        onBuildScheduled: onBuildScheduled,
+        focusManager: this,
+      );
+}
+
+extension WidgetsFrameworkErrorWidgetEx<T extends Object> on T {
+  /// ErrorWidget
+  ErrorWidget errorWidget() => ErrorWidget(this);
+}
+
+extension WidgetsFrameworkStatelessElementEx<T extends StatelessWidget> on T {
+  /// StatelessElement
+  StatelessElement statelessElement() => StatelessElement(this);
+}
+
+extension WidgetsFrameworkStatefulElementEx<T extends StatefulWidget> on T {
+  /// StatefulElement
+  StatefulElement statefulElement() => StatefulElement(this);
+}
+
+extension WidgetsFrameworkParentDataElementEx<T extends ParentData>
+    on ParentDataWidget<T> {
+  /// ParentDataElement
+  ParentDataElement parentDataElement() => ParentDataElement(this);
+}
+
+extension WidgetsFrameworkInheritedElementEx<T extends InheritedWidget> on T {
+  /// InheritedElement
+  InheritedElement inheritedElement() => InheritedElement(this);
+}
+
+extension WidgetsFrameworkLeafRenderObjectElementEx<
+    T extends LeafRenderObjectWidget> on T {
+  /// LeafRenderObjectElement
+  LeafRenderObjectElement leafRenderObjectElement() =>
+      LeafRenderObjectElement(this);
+}
+
+extension WidgetsFrameworkSingleChildRenderObjectElementEx<
+    T extends SingleChildRenderObjectWidget> on T {
+  /// SingleChildRenderObjectElement
+  SingleChildRenderObjectElement singleChildRenderObjectElement() =>
+      SingleChildRenderObjectElement(this);
+}
+
+extension WidgetsFrameworkMultiChildRenderObjectElementEx<
+    T extends MultiChildRenderObjectWidget> on T {
+  /// MultiChildRenderObjectElement
+  MultiChildRenderObjectElement multiChildRenderObjectElement() =>
+      MultiChildRenderObjectElement(this);
+}
+
+extension WidgetsFrameworkDebugCreatorEx<T extends Element> on T {
+  /// DebugCreator
+  DebugCreator debugCreator() => DebugCreator(this);
+}
+
+extension WidgetsFrameworkIndexedSlotEx<T extends Element?> on T {
+  /// IndexedSlot
+  IndexedSlot indexedSlot(int index, Element? value) =>
+      IndexedSlot(index, this);
 }

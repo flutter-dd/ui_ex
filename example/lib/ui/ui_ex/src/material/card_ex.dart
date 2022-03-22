@@ -13,7 +13,6 @@ extension MaterialCardEx<T extends Widget?> on T {
     bool borderOnForeground = true,
     EdgeInsetsGeometry? margin,
     Clip? clipBehavior,
-    Widget? child,
     bool semanticContainer = true,
   }) =>
       Card(

@@ -34,3 +34,39 @@ extension WidgetsTextEx<T extends String?> on T {
         textHeightBehavior: textHeightBehavior,
       );
 }
+
+extension WidgetsDefaultTextStyleEx<T extends Widget?> on T {
+  /// DefaultTextStyle
+  DefaultTextStyle defaultTextStyle({
+    Key? key,
+    required TextStyle style,
+    TextAlign? textAlign,
+    bool softWrap = true,
+    TextOverflow overflow = TextOverflow.clip,
+    int? maxLines,
+    TextWidthBasis textWidthBasis = TextWidthBasis.parent,
+    TextHeightBehavior? textHeightBehavior,
+  }) =>
+      DefaultTextStyle(
+        key: key,
+        style: style,
+        textAlign: textAlign,
+        softWrap: softWrap,
+        overflow: overflow,
+        maxLines: maxLines,
+        textWidthBasis: textWidthBasis,
+        textHeightBehavior: textHeightBehavior,
+        child: this ?? Container(),
+      );
+
+//// DefaultTextHeightBehavior
+  DefaultTextHeightBehavior defaultTextHeightBehavior({
+    Key? key,
+    required TextHeightBehavior textHeightBehavior,
+  }) =>
+      DefaultTextHeightBehavior(
+        key: key,
+        textHeightBehavior: textHeightBehavior,
+        child: this ?? Container(),
+      );
+}

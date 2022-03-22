@@ -5,7 +5,6 @@ extension ConstrainedBoxEx on Widget {
   ConstrainedBox constrainedBox({
     Key? key,
     required BoxConstraints constraints,
-    Widget? child,
   }) =>
       ConstrainedBox(
         constraints: constraints,

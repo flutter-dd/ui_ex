@@ -16,7 +16,6 @@ extension MaterialMaterialEx<T extends Widget?> on T {
     bool borderOnForeground = true,
     Clip clipBehavior = Clip.none,
     Duration animationDuration = kThemeChangeDuration,
-    Widget? child,
   }) =>
       Material(
         key: key,

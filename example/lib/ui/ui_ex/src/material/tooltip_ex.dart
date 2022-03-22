@@ -18,7 +18,6 @@ extension MaterialTooltipEx<T extends Widget?> on T {
   TextStyle? textStyle,
   Duration? waitDuration,
   Duration? showDuration,
-  Widget? child,
   TooltipTriggerMode? triggerMode,
   bool? enableFeedback,
 }) => Tooltip(

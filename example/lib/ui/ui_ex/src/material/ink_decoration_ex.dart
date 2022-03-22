@@ -2,19 +2,19 @@ part of ui_ex;
 
 /// 材质水墨装饰
 /// InkDecoration
-extension MaterialInkDecorationEx<T extends MaterialInkController> on T {
+extension MaterialInkDecorationEx<T extends RenderBox> on T {
   /// InkDecoration
   InkDecoration inkDecoration({
     required Decoration? decoration,
     required ImageConfiguration configuration,
-    required RenderBox referenceBox,
+      required MaterialInkController controller,
     void Function()? onRemoved,
   }) =>
       InkDecoration(
         decoration: decoration,
         configuration: configuration,
-        controller: this,
-        referenceBox: referenceBox,
+        controller: controller,
+        referenceBox: this,
         onRemoved: onRemoved,
       );
 }
