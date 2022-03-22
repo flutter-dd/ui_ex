@@ -12,6 +12,7 @@ extension GesturesVerticalDragGestureRecognizerEx<T extends Object?> on T {
   }) =>
       VerticalDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );
@@ -25,6 +26,7 @@ extension GesturesHorizontalDragGestureRecognizerEx<T extends Object?> on T {
   }) =>
       HorizontalDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );

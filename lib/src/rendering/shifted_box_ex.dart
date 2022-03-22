@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 part of ui_ex;
 
 /// 渲染移位框

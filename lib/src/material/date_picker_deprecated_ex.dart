@@ -1,4 +1,5 @@
 part of ui_ex;
+// ignore_for_file: deprecated_member_use
 
 /// 材料日期选择器已弃用
 /// DatePickerDeprecated

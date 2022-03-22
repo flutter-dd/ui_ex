@@ -1,4 +1,5 @@
 part of ui_ex;
+// ignore_for_file: deprecated_member_use
 
 /// Material 应用栏主题
 /// AppBarTheme

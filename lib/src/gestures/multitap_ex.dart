@@ -12,6 +12,7 @@ extension GesturesDoubleTapGestureRecognizerEx<T extends Object?> on T {
   }) =>
       DoubleTapGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );
@@ -25,6 +26,7 @@ extension GesturesMultiTapGestureRecognizerEx<T extends Object?> on T {
   }) =>
       MultiTapGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );

@@ -1,4 +1,5 @@
 part of ui_ex;
+// ignore_for_file: deprecated_member_use
 
 /// 材质滑块主题
 /// SliderTheme
@@ -82,12 +83,6 @@ extension MaterialRectangularSliderTrackShapeEx<T extends double?> on T {
   /// RectangularSliderTrackShape
   RectangularSliderTrackShape rectangularSliderTrackShape() =>
       RectangularSliderTrackShape(disabledThumbGapWidth: this ?? 2.0);
-}
-
-extension MaterialRoundedRectSliderTrackShapeEx<T> on T {
-  /// RoundedRectSliderTrackShape
-  RoundedRectSliderTrackShape roundedRectSliderTrackShape() =>
-      RoundedRectSliderTrackShape();
 }
 
 

@@ -1,4 +1,5 @@
 part of ui_ex;
+// ignore_for_file: deprecated_member_use
 
 /// 渲染动画大小
 /// Editable

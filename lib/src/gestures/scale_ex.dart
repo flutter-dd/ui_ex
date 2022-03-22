@@ -58,6 +58,7 @@ extension GesturesScaleGestureRecognizerEx<T extends Object?> on T {
   }) =>
       ScaleGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
         dragStartBehavior: dragStartBehavior,

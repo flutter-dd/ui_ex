@@ -13,6 +13,7 @@ extension GesturesImmediateMultiDragGestureRecognizerEx<T extends Object?>
   }) =>
       ImmediateMultiDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );
@@ -27,6 +28,7 @@ extension GesturesHorizontalMultiDragGestureRecognizerEx<T extends Object?>
   }) =>
       HorizontalMultiDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );
@@ -40,6 +42,7 @@ extension GesturesVerticalMultiDragGestureRecognizerEx<T extends Object?> on T {
   }) =>
       VerticalMultiDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
       );
@@ -55,6 +58,7 @@ extension GesturesDelayedMultiDragGestureRecognizerEx<T extends Object?> on T {
   }) =>
       DelayedMultiDragGestureRecognizer(
         debugOwner: this,
+        // ignore: deprecated_member_use
         kind: kind,
         delay: delay,
         supportedDevices: supportedDevices,

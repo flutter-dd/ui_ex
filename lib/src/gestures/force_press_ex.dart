@@ -18,6 +18,7 @@ extension GesturesForcePressGestureRecognizerEx<
         startPressure: startPressure,
         peakPressure: peakPressure,
         debugOwner: debugOwner,
+        // ignore: deprecated_member_use
         kind: kind,
         supportedDevices: supportedDevices,
         interpolation: this,

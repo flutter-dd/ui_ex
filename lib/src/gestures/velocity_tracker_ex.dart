@@ -5,6 +5,7 @@ part of ui_ex;
 extension GesturesVelocityTrackerEx<T extends PointerDeviceKind?> on T {
   /// VelocityTracker
   VelocityTracker velocityTracker() =>
+      // ignore: deprecated_member_use
       VelocityTracker(this ?? PointerDeviceKind.touch);
 }
 

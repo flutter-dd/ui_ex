@@ -20,6 +20,7 @@ extension WidgetsAnimatedSizeEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         reverseDuration: reverseDuration,
+        // ignore: deprecated_member_use
         vsync: vsync,
         clipBehavior: clipBehavior,
       );
