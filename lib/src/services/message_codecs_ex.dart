@@ -7,5 +7,6 @@ extension ServicesMessageCodecsEx<T extends Widget?> on T {}
 
 extension ServicesStandardMethodCodecEx<T extends StandardMessageCodec?> on T {
   /// StandardMethodCodec
-  StandardMethodCodec standardMethodCodec() => StandardMethodCodec(this ?? StandardMessageCodec());
+  StandardMethodCodec standardMethodCodec() =>
+      StandardMethodCodec(this ?? const StandardMessageCodec());
 }
