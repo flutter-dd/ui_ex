@@ -4,7 +4,7 @@ part of ui_ex;
 /// Switch
 extension MaterialSwitchEx<T extends bool?> on T {
   /// Switch
-  Switch switch_ui({
+  Switch switchUI({
     Key? key,
     required void Function(bool)? onChanged,
     Color? activeColor,

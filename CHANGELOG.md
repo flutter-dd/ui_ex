@@ -13,4 +13,5 @@
 ## [0.1.3] - update and code formate
 ## [0.1.4] - update and fix warnning
 ## [0.1.5] - update and fix code
+## [0.1.6] - fix code warnning
 
