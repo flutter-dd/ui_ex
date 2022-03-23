@@ -6,7 +6,6 @@ extension MaterialScrollbarEx<T extends Widget?> on T {
   /// Scrollbar
   Scrollbar scrollbar({
     Key? key,
-    required Widget child,
     ScrollController? controller,
     bool? isAlwaysShown,
     bool? showTrackOnHover,

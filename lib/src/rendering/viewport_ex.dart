@@ -43,7 +43,6 @@ extension RenderingRenderShrinkWrappingViewportEx<T extends RenderSliver>
     required AxisDirection crossAxisDirection,
     required ViewportOffset offset,
     Clip clipBehavior = Clip.hardEdge,
-    List<RenderSliver>? children,
   }) =>
       RenderShrinkWrappingViewport(
         axisDirection: axisDirection,

@@ -18,7 +18,6 @@ extension ServicesSystemUiOverlayStyleEx<T extends Color?> on T {
     Color? systemNavigationBarDividerColor,
     Brightness? systemNavigationBarIconBrightness,
     bool? systemNavigationBarContrastEnforced,
-    Color? statusBarColor,
     Brightness? statusBarBrightness,
     Brightness? statusBarIconBrightness,
     bool? systemStatusBarContrastEnforced,

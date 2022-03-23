@@ -6,7 +6,6 @@ extension WidgetsImageEx<T extends Object> on ImageProvider<T> {
   /// Image
   Image image({
     Key? key,
-    required ImageProvider<Object> image,
     Widget Function(BuildContext, Widget, int?, bool)? frameBuilder,
     Widget Function(BuildContext, Widget, ImageChunkEvent?)? loadingBuilder,
     Widget Function(BuildContext, Object, StackTrace?)? errorBuilder,

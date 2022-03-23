@@ -9,7 +9,6 @@ extension WidgetsRestorationScopeEx<T extends Widget?> on T {
   RestorationScope restorationScope({
     Key? key,
     required String? restorationId,
-    required Widget child,
   }) =>
       RestorationScope(
         key: key,
@@ -23,7 +22,6 @@ extension WidgetsUnmanagedRestorationScopeEx<T extends Widget?> on T {
   UnmanagedRestorationScope unmanagedRestorationScope({
     Key? key,
     RestorationBucket? bucket,
-    required Widget child,
   }) =>
       UnmanagedRestorationScope(
         key: key,
@@ -37,7 +35,6 @@ extension WidgetsRootRestorationScopeEx<T extends Widget?> on T {
   RootRestorationScope rootRestorationScope({
     Key? key,
     required String? restorationId,
-    required Widget child,
   }) =>
       RootRestorationScope(
         key: key,

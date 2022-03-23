@@ -6,7 +6,6 @@ extension WidgetsTableEx<T extends TableRow> on List<T>? {
   /// Table
   Table table({
     Key? key,
-    List<TableRow> children = const <TableRow>[],
     Map<int, TableColumnWidth>? columnWidths,
     TableColumnWidth defaultColumnWidth = const FlexColumnWidth(),
     TextDirection? textDirection,

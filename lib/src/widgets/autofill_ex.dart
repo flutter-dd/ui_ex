@@ -6,7 +6,6 @@ extension WidgetsAutofillEx<T extends Widget?> on T {
   /// AutofillGroup
   AutofillGroup autofillGroup({
     Key? key,
-    required Widget child,
     AutofillContextAction onDisposeAction = AutofillContextAction.commit,
   }) =>
       AutofillGroup(

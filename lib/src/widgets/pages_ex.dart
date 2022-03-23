@@ -6,8 +6,6 @@ extension WidgetsPagesEx<T extends RoutePageBuilder> on T {
   /// PageRouteBuilder
   PageRouteBuilder pageRouteBuilder({
     RouteSettings? settings,
-    required Widget Function(BuildContext, Animation<double>, Animation<double>)
-        pageBuilder,
     Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)
         transitionsBuilder = _defaultTransitionsBuilder,
     Duration transitionDuration = const Duration(milliseconds: 300),

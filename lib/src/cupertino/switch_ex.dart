@@ -6,7 +6,6 @@ extension CupertinoSwitchEx<T extends bool?> on T {
   /// CupertinoSwitch
   CupertinoSwitch cupertinoSwitch({
     Key? key,
-    required bool value,
     required void Function(bool)? onChanged,
     Color? activeColor,
     Color? trackColor,

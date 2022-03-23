@@ -103,7 +103,6 @@ extension SemanticsSemanticsHintOverridesEx<T extends String?> on T {
 extension SemanticsSemanticsPropertiesEx<T extends bool?> on T {
   /// SemanticsProperties
   SemanticsProperties semanticsProperties({
-    bool? enabled,
     bool? checked,
     bool? selected,
     bool? toggled,

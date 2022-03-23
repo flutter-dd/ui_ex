@@ -5,5 +5,5 @@ part of ui_ex;
 extension WidgetsDefaultTextEditingShortcutsEx<T extends Widget?> on T {
   /// DefaultTextEditingShortcuts
   DefaultTextEditingShortcuts defaultTextEditingShortcuts({Key? key}) =>
-      DefaultTextEditingShortcuts(child: this ?? Container());
+      DefaultTextEditingShortcuts(key: key, child: this ?? Container());
 }

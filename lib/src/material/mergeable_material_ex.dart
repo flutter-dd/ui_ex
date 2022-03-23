@@ -10,7 +10,6 @@ extension MaterialMergeableMaterialEx<T extends MergeableMaterialItem>
     Axis mainAxis = Axis.vertical,
     double elevation = 2,
     bool hasDividers = false,
-    List<MergeableMaterialItem> children = const <MergeableMaterialItem>[],
     Color? dividerColor,
   }) =>
       MergeableMaterial(

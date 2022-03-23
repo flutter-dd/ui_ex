@@ -14,7 +14,6 @@ extension PaintingLinearGradientEx<T extends Color> on List<T>? {
   LinearGradient linearGradient({
     AlignmentGeometry begin = Alignment.centerLeft,
     AlignmentGeometry end = Alignment.centerRight,
-    required List<Color> colors,
     List<double>? stops,
     TileMode tileMode = TileMode.clamp,
     GradientTransform? transform,
@@ -58,7 +57,6 @@ extension PaintingSweepGradientEx<T extends Color> on List<T>? {
     AlignmentGeometry center = Alignment.center,
     double startAngle = 0.0,
     double endAngle = pi * 2,
-    required List<Color> colors,
     List<double>? stops,
     TileMode tileMode = TileMode.clamp,
     GradientTransform? transform,

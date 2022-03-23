@@ -5,7 +5,7 @@ part of ui_ex;
 extension WidgetsBottomNavigationBarItemEx<T extends Widget?> on T {
   /// BottomNavigationBarItem
   BottomNavigationBarItem bottomNavigationBarItem({
-    Widget? title,
+    // Widget? title,
     String? label,
     Widget? activeIcon,
     Color? backgroundColor,
@@ -13,6 +13,7 @@ extension WidgetsBottomNavigationBarItemEx<T extends Widget?> on T {
   }) =>
       BottomNavigationBarItem(
         icon: this ?? Container(),
+        // title: title,
         label: label,
         activeIcon: activeIcon,
         backgroundColor: backgroundColor,

@@ -16,7 +16,6 @@ extension MaterialButtonBarEx<T extends Widget> on List<T>? {
     ButtonBarLayoutBehavior? layoutBehavior,
     VerticalDirection? overflowDirection,
     double? overflowButtonSpacing,
-    List<Widget> children = const <Widget>[],
   }) =>
       ButtonBar(
         key: key,

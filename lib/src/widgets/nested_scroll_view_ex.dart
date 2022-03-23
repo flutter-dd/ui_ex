@@ -109,7 +109,6 @@ extension WidgetsRenderNestedScrollViewViewportEx<
     double anchor = 0.0,
     List<RenderSliver>? children,
     RenderSliver? center,
-    required SliverOverlapAbsorberHandle handle,
     Clip clipBehavior = Clip.hardEdge,
   }) =>
       RenderNestedScrollViewViewport(

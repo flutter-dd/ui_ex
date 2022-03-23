@@ -6,7 +6,6 @@ extension WidgetsScrollbarEx<T extends Widget?> on T {
   /// RawScrollbar
   RawScrollbar rawScrollbar({
     Key? key,
-    required Widget child,
     ScrollController? controller,
     bool? isAlwaysShown,
     OutlinedBorder? shape,

@@ -95,7 +95,6 @@ extension WidgetsSliverOpacityEx<T extends Widget?> on T {
     Key? key,
     required double opacity,
     bool alwaysIncludeSemantics = false,
-    Widget? sliver,
   }) =>
       SliverOpacity(
         key: key,
@@ -111,7 +110,6 @@ extension WidgetsSliverIgnorePointerEx<T extends Widget?> on T {
     Key? key,
     bool ignoring = true,
     bool? ignoringSemantics,
-    Widget? sliver,
   }) =>
       SliverIgnorePointer(
         key: key,
@@ -126,7 +124,6 @@ extension WidgetsSliverOffstageEx<T extends Widget?> on T {
   SliverOffstage sliverOffstage({
     Key? key,
     bool offstage = true,
-    Widget? sliver,
   }) =>
       SliverOffstage(
         key: key,
@@ -140,7 +137,6 @@ extension WidgetsKeepAliveEx<T extends Widget?> on T {
   KeepAlive keepAlive({
     Key? key,
     required bool keepAlive,
-    Widget? sliver,
   }) =>
       KeepAlive(
         key: key,

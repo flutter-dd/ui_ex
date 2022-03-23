@@ -7,7 +7,6 @@ extension WidgetsIconThemeEx<T extends Widget?> on T {
   IconTheme iconTheme({
     Key? key,
     required IconThemeData data,
-    required Widget child,
   }) =>
       IconTheme(
         key: key,

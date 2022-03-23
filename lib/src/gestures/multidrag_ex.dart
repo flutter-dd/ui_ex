@@ -49,7 +49,6 @@ extension GesturesDelayedMultiDragGestureRecognizerEx<T extends Object?> on T {
   /// DelayedMultiDragGestureRecognizer
   DelayedMultiDragGestureRecognizer delayedMultiDragGestureRecognizer({
     Duration delay = kLongPressTimeout,
-    Object? debugOwner,
     // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
   }) =>

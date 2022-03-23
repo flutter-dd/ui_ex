@@ -6,7 +6,6 @@ extension MaterialSliderEx<T extends double?> on T {
   /// Slider
   Slider slider({
     Key? key,
-    required double value,
     required void Function(double)? onChanged,
     void Function(double)? onChangeStart,
     void Function(double)? onChangeEnd,

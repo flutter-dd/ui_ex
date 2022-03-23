@@ -8,7 +8,6 @@ extension MaterialDatePickerDialogEx<T extends DateTime?> on T {
   /// DatePickerDialog
   DatePickerDialog datePickerDialog({
     Key? key,
-    required DateTime initialDate,
     required DateTime firstDate,
     required DateTime lastDate,
     DateTime? currentDate,

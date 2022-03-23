@@ -6,7 +6,6 @@ extension CupertinoSliderEx<T extends double?> on T {
   /// CupertinoSlider
   CupertinoSlider cupertinoSlider({
     Key? key,
-    required double value,
     required void Function(double)? onChanged,
     void Function(double)? onChangeStart,
     void Function(double)? onChangeEnd,

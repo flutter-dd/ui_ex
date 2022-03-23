@@ -35,7 +35,6 @@ extension WidgetsViewportEx<T extends Widget> on List<T>? {
     AxisDirection? crossAxisDirection,
     required ViewportOffset offset,
     Clip clipBehavior = Clip.hardEdge,
-    List<Widget> slivers = const <Widget>[],
   }) =>
       ShrinkWrappingViewport(
         key: key,

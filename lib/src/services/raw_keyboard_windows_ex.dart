@@ -8,7 +8,6 @@ extension ServicesRawKeyboardWindowsEx<T extends int?> on T {
     int keyCode = 0,
     int scanCode = 0,
     int characterCodePoint = 0,
-    int modifiers = 0,
   }) =>
       RawKeyEventDataWindows(
         keyCode: keyCode,

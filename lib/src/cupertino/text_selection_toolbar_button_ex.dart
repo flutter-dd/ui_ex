@@ -7,7 +7,6 @@ extension CupertinoTextSelectionToolbarButtonEx<T extends Widget?> on T {
   CupertinoTextSelectionToolbarButton cupertinoTextSelectionToolbarButton({
     Key? key,
     void Function()? onPressed,
-    required Widget child,
   }) =>
       CupertinoTextSelectionToolbarButton(
         key: key,

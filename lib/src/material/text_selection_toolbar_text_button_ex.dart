@@ -6,7 +6,6 @@ extension MaterialTextSelectionToolbarTextButtonEx<T extends Widget?> on T {
   /// TextSelectionToolbarTextButton
   TextSelectionToolbarTextButton textSelectionToolbarTextButton({
     Key? key,
-    required Widget child,
     required EdgeInsets padding,
     void Function()? onPressed,
   }) =>

@@ -13,7 +13,6 @@ extension ServicesMethodCallEx<T extends String?> on T {
 extension ServicesPlatformExceptionEx<T extends String?> on T {
   /// PlatformException
   PlatformException platformException({
-    required String code,
     String? message,
     dynamic details,
     String? stacktrace,

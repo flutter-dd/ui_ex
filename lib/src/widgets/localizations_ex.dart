@@ -8,7 +8,6 @@ extension WidgetsLocalizationsEx<T extends Widget?> on T {
     Key? key,
     required Locale locale,
     required List<LocalizationsDelegate<dynamic>> delegates,
-    Widget? child,
   }) =>
       Localizations(
         key: key,

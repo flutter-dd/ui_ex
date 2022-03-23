@@ -66,7 +66,6 @@ extension MaterialScaffoldMessengerEx<T extends Widget?> on T {
 extension MaterialScaffoldPrelayoutGeometryEx<T extends Size> on T? {
   /// ScaffoldPrelayoutGeometry
   ScaffoldPrelayoutGeometry scaffoldPrelayoutGeometry({
-    required Size bottomSheetSize,
     required double contentBottom,
     required double contentTop,
     required Size floatingActionButtonSize,

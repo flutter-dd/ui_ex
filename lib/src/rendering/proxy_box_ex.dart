@@ -303,7 +303,6 @@ extension RenderingRenderMouseRegionEx<T extends RenderBox?> on T {
     MouseCursor cursor = MouseCursor.defer,
     bool validForMouseTracker = true,
     bool opaque = true,
-    RenderBox? child,
   }) =>
       RenderMouseRegion(
         onEnter: onEnter,
@@ -391,7 +390,6 @@ extension RenderingRenderSemanticsGestureHandlerEx<T extends RenderBox?> on T {
 extension RenderingRenderSemanticsAnnotationsEx<T extends RenderBox?> on T {
   /// RenderSemanticsAnnotations
   RenderSemanticsAnnotations renderSemanticsAnnotations({
-    RenderBox? child,
     bool container = false,
     bool explicitChildNodes = false,
     bool excludeSemantics = false,
@@ -557,7 +555,6 @@ extension RenderingRenderFollowerLayerEx<T extends RenderBox?> on T {
     Offset offset = Offset.zero,
     Alignment leaderAnchor = Alignment.topLeft,
     Alignment followerAnchor = Alignment.topLeft,
-    RenderBox? child,
   }) =>
       RenderFollowerLayer(
         link: link,

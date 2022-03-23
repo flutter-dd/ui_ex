@@ -126,7 +126,6 @@ extension RenderingBackdropFilterLayerEx<T extends ui.ImageFilter?> on T {
 extension RenderingPhysicalModelLayerEx<T extends Path?> on T {
   /// PhysicalModelLayer
   PhysicalModelLayer hysicalModelLayer({
-    Path? clipPath,
     Clip clipBehavior = Clip.none,
     double? elevation,
     Color? color,

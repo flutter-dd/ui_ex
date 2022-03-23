@@ -12,7 +12,6 @@ extension MaterialUserAccountsDrawerHeaderEx<T extends Widget?> on T {
     List<Widget>? otherAccountsPictures,
     Size currentAccountPictureSize = const Size.square(72.0),
     Size otherAccountsPicturesSize = const Size.square(40.0),
-    required Widget? accountName,
     required Widget? accountEmail,
     void Function()? onDetailsPressed,
     Color arrowColor = Colors.white,

@@ -5,7 +5,6 @@ part of ui_ex;
 extension ServicesRawKeyboardAndroidEx<T extends int?> on T {
   /// RawKeyEventDataAndroid
   RawKeyEventDataAndroid rawKeyEventDataAndroid({
-    int flags = 0,
     int codePoint = 0,
     int plainCodePoint = 0,
     int keyCode = 0,

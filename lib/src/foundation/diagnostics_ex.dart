@@ -7,7 +7,6 @@ extension FoundationDiagnosticsEx<T extends Widget?> on T {}
 extension FoundationTextTreeConfigurationEx<T extends String?> on T {
   /// TextTreeConfiguration
   TextTreeConfiguration textTreeConfiguration({
-    required String prefixLineOne,
     required String prefixOtherLines,
     required String prefixLastChildLineOne,
     required String prefixOtherLinesRootNode,

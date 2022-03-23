@@ -12,7 +12,6 @@ extension WidgetsOverscrollIndicatorEx<T extends Widget?> on T {
     required Color color,
     bool Function(ScrollNotification) notificationPredicate =
         defaultScrollNotificationPredicate,
-    Widget? child,
   }) =>
       GlowingOverscrollIndicator(
         key: key,

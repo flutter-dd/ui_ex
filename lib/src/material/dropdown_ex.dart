@@ -12,7 +12,6 @@ extension MaterialDropdownMenuItemEx<T extends Widget?> on T {
     dynamic value,
     bool enabled = true,
     AlignmentGeometry alignment = AlignmentDirectional.centerStart,
-    required Widget child,
   }) =>
       DropdownMenuItem(
         key: key,

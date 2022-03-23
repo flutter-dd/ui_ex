@@ -7,7 +7,6 @@ extension RenderingViewEx<T extends Widget?> on T {}
 extension RenderingViewConfigurationEx<T extends Size?> on T {
   /// ViewConfiguration
   ViewConfiguration viewConfiguration({
-    Size size = Size.zero,
     double devicePixelRatio = 1.0,
   }) =>
       ViewConfiguration(

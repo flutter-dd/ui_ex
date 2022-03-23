@@ -16,7 +16,6 @@ extension RenderingTableEx<T extends RenderBox> on List<List<T>>? {
     TableCellVerticalAlignment defaultVerticalAlignment =
         TableCellVerticalAlignment.top,
     TextBaseline? textBaseline,
-    List<List<RenderBox>>? children,
   }) =>
       RenderTable(
         columns: columns,

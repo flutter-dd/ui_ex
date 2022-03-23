@@ -11,7 +11,6 @@ extension WidgetsDualTransitionBuilderEx<T extends Widget?> on T {
         forwardBuilder,
     required Widget Function(BuildContext, Animation<double>, Widget?)
         reverseBuilder,
-    Widget? child,
   }) =>
       DualTransitionBuilder(
         key: key,

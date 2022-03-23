@@ -34,7 +34,6 @@ extension WidgetsSliverSafeAreaEx<T extends Widget?> on T {
     bool right = true,
     bool bottom = true,
     EdgeInsets minimum = EdgeInsets.zero,
-    required Widget sliver,
   }) =>
       SliverSafeArea(
         key: key,

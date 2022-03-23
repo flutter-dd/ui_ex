@@ -33,7 +33,6 @@ extension MaterialFlexibleSpaceBarSettingsEx<T extends Widget?> on T {
     required double minExtent,
     required double maxExtent,
     required double currentExtent,
-    required Widget child,
     bool? isScrolledUnder,
   }) =>
       FlexibleSpaceBarSettings(

@@ -6,7 +6,6 @@ extension CupertinoFormSectionEx<T extends Widget> on List<T>? {
   /// CupertinoFormSection
   CupertinoFormSection cupertinoFormSection({
     Key? key,
-    required List<Widget> children,
     Widget? header,
     Widget? footer,
     EdgeInsetsGeometry margin = EdgeInsets.zero,

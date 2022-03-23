@@ -9,7 +9,6 @@ extension WidgetsScrollMetricsEx<T extends AxisDirection?> on T {
     required double? maxScrollExtent,
     required double? pixels,
     required double? viewportDimension,
-    required AxisDirection axisDirection,
   }) =>
       FixedScrollMetrics(
         minScrollExtent: minScrollExtent,

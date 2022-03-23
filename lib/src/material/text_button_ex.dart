@@ -14,7 +14,6 @@ extension MaterialTextButtonEx<T extends Widget?> on T {
     FocusNode? focusNode,
     bool autofocus = false,
     Clip clipBehavior = Clip.none,
-    required Widget child,
   }) =>
       TextButton(
         key: key,

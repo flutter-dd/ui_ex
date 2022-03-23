@@ -41,7 +41,6 @@ extension RenderingRenderSliverAnimatedOpacityEx<T extends RenderSliver?> on T {
   RenderSliverAnimatedOpacity renderSliverAnimatedOpacity({
     required Animation<double> opacity,
     bool alwaysIncludeSemantics = false,
-    RenderSliver? sliver,
   }) =>
       RenderSliverAnimatedOpacity(
         opacity: opacity,

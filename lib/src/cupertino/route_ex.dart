@@ -127,10 +127,11 @@ final Animatable<double> _dialogScaleTween = Tween<double>(begin: 1.3, end: 1.0)
     .chain(CurveTween(curve: Curves.linearToEaseOut));
 
 Widget _buildCupertinoDialogTransitions(
-    BuildContext context,
-    Animation<double> animation,
-    Animation<double> secondaryAnimation,
-    Widget child) {
+  BuildContext context,
+  Animation<double> animation,
+  Animation<double> secondaryAnimation,
+  Widget child,
+) {
   final CurvedAnimation fadeAnimation = CurvedAnimation(
     parent: animation,
     curve: Curves.easeInOut,

@@ -7,7 +7,6 @@ extension CupertinoThemeEx<T extends Widget?> on T {
   CupertinoTheme cupertinoTheme({
     Key? key,
     required CupertinoThemeData data,
-    required Widget child,
   }) =>
       CupertinoTheme(
         key: key,

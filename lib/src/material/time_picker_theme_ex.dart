@@ -7,7 +7,6 @@ extension MaterialTimePickerThemeEx<T extends Widget?> on T {
   TimePickerTheme timePickerTheme({
     Key? key,
     required TimePickerThemeData data,
-    required Widget child,
   }) =>
       TimePickerTheme(
         key: key,

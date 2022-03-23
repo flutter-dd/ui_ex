@@ -5,5 +5,5 @@ part of ui_ex;
 extension WidgetsDefaultTextEditingActionsEx<T extends Widget?> on T {
   /// DefaultTextEditingActions
   DefaultTextEditingActions defaultTextEditingActions({Key? key}) =>
-      DefaultTextEditingActions(child: this ?? Container());
+      DefaultTextEditingActions(key: key, child: this ?? Container());
 }

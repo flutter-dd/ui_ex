@@ -261,7 +261,6 @@ extension WidgetsAnimatedOpacityEx<T extends Widget?> on T {
   /// AnimatedOpacity
   AnimatedOpacity animatedOpacity({
     Key? key,
-    Widget? child,
     required double opacity,
     Curve curve = Curves.linear,
     required Duration duration,
@@ -283,7 +282,6 @@ extension WidgetsSliverAnimatedOpacityEx<T extends Widget?> on T {
   /// SliverAnimatedOpacity
   SliverAnimatedOpacity sliverAnimatedOpacity({
     Key? key,
-    Widget? sliver,
     required double opacity,
     Curve curve = Curves.linear,
     required Duration duration,
@@ -305,7 +303,6 @@ extension WidgetsAnimatedDefaultTextStyleEx<T extends Widget?> on T {
   /// AnimatedDefaultTextStyle
   AnimatedDefaultTextStyle animatedDefaultTextStyle({
     Key? key,
-    required Widget child,
     required TextStyle style,
     TextAlign? textAlign,
     bool softWrap = true,
@@ -337,7 +334,6 @@ extension WidgetsAnimatedPhysicalModelEx<T extends Widget?> on T {
   /// AnimatedPhysicalModel
   AnimatedPhysicalModel animatedPhysicalModel({
     Key? key,
-    required Widget child,
     required BoxShape shape,
     Clip clipBehavior = Clip.none,
     BorderRadius borderRadius = BorderRadius.zero,

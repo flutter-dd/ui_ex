@@ -6,7 +6,6 @@ extension MaterialRefreshIndicatorEx<T extends Widget?> on T {
   /// RefreshIndicator
   RefreshIndicator refreshIndicator({
     Key? key,
-    required Widget child,
     double displacement = 40.0,
     double edgeOffset = 0.0,
     required Future<void> Function() onRefresh,

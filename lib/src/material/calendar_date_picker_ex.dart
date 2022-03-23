@@ -6,7 +6,6 @@ extension MaterialCalendarDatePickerEx<T extends DateTime?> on T {
   /// CalendarDatePicker
   CalendarDatePicker calendarDatePicker({
     Key? key,
-    required DateTime initialDate,
     required DateTime firstDate,
     required DateTime lastDate,
     DateTime? currentDate,

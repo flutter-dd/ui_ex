@@ -7,7 +7,6 @@ extension MaterialPopupMenuThemeEx<T extends Widget?> on T {
   PopupMenuTheme popupMenuTheme({
     Key? key,
     required PopupMenuThemeData data,
-    required Widget child,
   }) =>
       PopupMenuTheme(
         key: key,

@@ -49,7 +49,6 @@ extension MaterialControlsDetailsEx<T extends int?> on T {
 extension MaterialStepEx<T extends Widget?> on T {
   /// Step
   Step step({
-    required Widget title,
     Widget? subtitle,
     required Widget content,
     StepState state = StepState.indexed,

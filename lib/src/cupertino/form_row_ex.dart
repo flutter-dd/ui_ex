@@ -6,7 +6,6 @@ extension CupertinoFormRowEx<T extends Widget?> on T {
   /// CupertinoFormRow
   CupertinoFormRow cupertinoFormRow({
     Key? key,
-    required Widget child,
     Widget? prefix,
     EdgeInsetsGeometry? padding,
     Widget? helper,

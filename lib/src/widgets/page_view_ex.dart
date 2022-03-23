@@ -12,7 +12,6 @@ extension WidgetsPageViewEx<T extends Widget> on List<T>? {
     ScrollPhysics? physics,
     bool pageSnapping = true,
     void Function(int)? onPageChanged,
-    List<Widget> children = const <Widget>[],
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
     bool allowImplicitScrolling = false,
     String? restorationId,

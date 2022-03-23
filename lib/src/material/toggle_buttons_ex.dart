@@ -6,7 +6,6 @@ extension MaterialToggleButtonsEx<T extends List<Widget>?> on T {
   /// ToggleButtons
   ToggleButtons toggleButtons({
     Key? key,
-    required List<Widget> children,
     required List<bool> isSelected,
     void Function(int)? onPressed,
     MouseCursor? mouseCursor,

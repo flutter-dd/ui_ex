@@ -6,7 +6,6 @@ extension WidgetsNotificationListenerEx<T extends Widget?> on T {
   /// NotificationListener
   NotificationListener notificationListener({
     Key? key,
-    required Widget child,
     bool Function(Notification)? onNotification,
   }) =>
       NotificationListener(

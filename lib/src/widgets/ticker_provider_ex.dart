@@ -9,7 +9,6 @@ extension WidgetsTickerModeEx<T extends Widget?> on T {
   TickerMode tickerMode({
     Key? key,
     required bool enabled,
-    required Widget child,
   }) =>
       TickerMode(
         key: key,

@@ -7,7 +7,6 @@ extension MaterialToggleButtonsThemeEx<T extends Widget?> on T {
   ToggleButtonsTheme toggleButtonsTheme({
     Key? key,
     required ToggleButtonsThemeData data,
-    required Widget child,
   }) =>
       ToggleButtonsTheme(
         key: key,

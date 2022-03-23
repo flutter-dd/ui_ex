@@ -34,7 +34,6 @@ extension GesturesDragUpdateDetailsEx<T extends Offset?> on T {
   /// DragUpdateDetails
   DragUpdateDetails dragUpdateDetails({
     Duration? sourceTimeStamp,
-    Offset delta = Offset.zero,
     double? primaryDelta,
     required Offset globalPosition,
     Offset? localPosition,
@@ -51,7 +50,6 @@ extension GesturesDragUpdateDetailsEx<T extends Offset?> on T {
 extension GesturesDragEndDetailsEx<T extends Velocity?> on T {
   /// DragEndDetails
   DragEndDetails dragEndDetails({
-    Velocity velocity = Velocity.zero,
     double? primaryVelocity,
   }) =>
       DragEndDetails(

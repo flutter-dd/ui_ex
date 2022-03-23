@@ -6,7 +6,6 @@ extension MaterialSwitchListTileEx<T extends bool?> on T {
   /// SwitchListTile
   SwitchListTile switchListTile({
     Key? key,
-    required bool value,
     required void Function(bool)? onChanged,
     Color? tileColor,
     Color? activeColor,
@@ -62,7 +61,6 @@ extension MaterialSwitchListTileEx<T extends bool?> on T {
   /// SwitchListTileAdaptive
   SwitchListTile switchListTileAdaptive({
     Key? key,
-    required bool value,
     required void Function(bool)? onChanged,
     Color? tileColor,
     Color? activeColor,

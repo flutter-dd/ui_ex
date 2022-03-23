@@ -57,7 +57,6 @@ extension GesturesLongPressEndDetailsEx<T extends Offset?> on T {
 extension GesturesLongPressGestureRecognizerEx<T extends Duration?> on T {
   /// LongPressGestureRecognizer
   LongPressGestureRecognizer longPressGestureRecognizer({
-    Duration? duration,
     double? postAcceptSlopTolerance,
     // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,

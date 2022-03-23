@@ -9,7 +9,6 @@ extension CupertinoPageScaffoldEx<T extends Widget?> on T {
     ObstructingPreferredSizeWidget? navigationBar,
     Color? backgroundColor,
     bool resizeToAvoidBottomInset = true,
-    required Widget child,
   }) =>
       CupertinoPageScaffold(
         key: key,

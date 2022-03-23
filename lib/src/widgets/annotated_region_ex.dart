@@ -6,7 +6,6 @@ extension WidgetsAnnotatedRegionEx<T extends Widget?> on T {
   /// AnnotatedRegion
   AnnotatedRegion annotatedRegion({
     Key? key,
-    required Widget child,
     required Object value,
     bool sized = true,
   }) =>

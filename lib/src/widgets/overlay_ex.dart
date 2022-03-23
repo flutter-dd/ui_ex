@@ -6,7 +6,6 @@ extension WidgetsOverlayEx<T extends OverlayEntry> on List<T>? {
   /// Overlay
   Overlay overlay({
     Key? key,
-    List<OverlayEntry> initialEntries = const <OverlayEntry>[],
     Clip clipBehavior = Clip.hardEdge,
   }) =>
       Overlay(

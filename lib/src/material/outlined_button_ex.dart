@@ -14,7 +14,6 @@ extension MaterialOutlinedButtonEx<T extends Widget?> on T {
     FocusNode? focusNode,
     bool autofocus = false,
     Clip clipBehavior = Clip.none,
-    required Widget child,
   }) =>
       OutlinedButton(
         key: key,

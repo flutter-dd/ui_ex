@@ -11,7 +11,6 @@ extension MaterialNavigationRailEx<T extends NavigationRailDestination>
     bool extended = false,
     Widget? leading,
     Widget? trailing,
-    required List<NavigationRailDestination> destinations,
     required int selectedIndex,
     void Function(int)? onDestinationSelected,
     double? elevation,

@@ -7,7 +7,6 @@ extension WidgetsScrollConfigurationEx<T extends Widget?> on T {
   ScrollConfiguration scrollConfiguration({
     Key? key,
     required ScrollBehavior behavior,
-    required Widget child,
   }) =>
       ScrollConfiguration(
         key: key,

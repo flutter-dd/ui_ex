@@ -51,7 +51,6 @@ extension WidgetsFocusableActionDetectorEx<T extends Widget?> on T {
     void Function(bool)? onShowHoverHighlight,
     void Function(bool)? onFocusChange,
     MouseCursor mouseCursor = MouseCursor.defer,
-    required Widget child,
   }) =>
       FocusableActionDetector(
         key: key,

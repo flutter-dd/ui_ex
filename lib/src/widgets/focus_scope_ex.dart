@@ -33,7 +33,6 @@ extension WidgetsFocusEx<T extends Widget?> on T {
   /// Focus
   Focus focus({
     Key? key,
-    required Widget child,
     FocusNode? focusNode,
     bool autofocus = false,
     void Function(bool)? onFocusChange,

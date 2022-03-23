@@ -13,7 +13,6 @@ extension WidgetsDragTargetEx<T extends HitTestBehavior?> on T {
     void Function(DragTargetDetails<Object>)? onAcceptWithDetails,
     void Function(Object?)? onLeave,
     void Function(DragTargetDetails<Object>)? onMove,
-    HitTestBehavior hitTestBehavior = HitTestBehavior.translucent,
   }) =>
       DragTarget(
         key: key,
@@ -77,7 +76,6 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
   /// LongPressDraggable
   LongPressDraggable longPressDraggable({
     Key? key,
-    required Widget child,
     required Widget feedback,
     Object? data,
     Axis? axis,

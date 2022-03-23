@@ -13,7 +13,6 @@ extension WidgetsDraggableScrollableSheetEx<T extends ScrollableWidgetBuilder>
     bool expand = true,
     bool snap = false,
     List<double>? snapSizes,
-    required Widget Function(BuildContext, ScrollController) builder,
   }) =>
       DraggableScrollableSheet(
         key: key,

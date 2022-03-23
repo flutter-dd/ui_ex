@@ -5,7 +5,6 @@ part of ui_ex;
 extension MaterialPageEx<T extends Widget?> on T {
   ///  MaterialPage
   MaterialPage materialPage({
-    required Widget child,
     bool maintainState = true,
     bool fullscreenDialog = false,
     LocalKey? key,

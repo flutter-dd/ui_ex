@@ -18,7 +18,6 @@ extension WidgetsAutocompleteEx<T extends TextEditingValue?> on T {
     FocusNode? focusNode,
     void Function(Object)? onSelected,
     TextEditingController? textEditingController,
-    TextEditingValue? initialValue,
   }) =>
       RawAutocomplete(
         key: key,
@@ -38,7 +37,6 @@ extension WidgetsAutocompleteHighlightedOptionEx<T extends Widget?> on T {
   AutocompleteHighlightedOption autocompleteHighlightedOption({
     Key? key,
     required ValueNotifier<int> highlightIndexNotifier,
-    required Widget child,
   }) =>
       AutocompleteHighlightedOption(
         key: key,

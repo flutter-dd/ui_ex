@@ -8,7 +8,6 @@ extension MaterialTimePickerDialogEx<T extends TimeOfDay?> on T {
   /// TimePickerDialog
   TimePickerDialog timePickerDialog({
     Key? key,
-    required TimeOfDay initialTime,
     String? cancelText,
     String? confirmText,
     String? helpText,

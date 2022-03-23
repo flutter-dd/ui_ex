@@ -8,7 +8,6 @@ extension MaterialNavigationBarEx<T extends Widget> on List<T>? {
     Key? key,
     Duration? animationDuration,
     int selectedIndex = 0,
-    required List<Widget> destinations,
     void Function(int)? onDestinationSelected,
     Color? backgroundColor,
     double? height,
@@ -30,7 +29,6 @@ extension MaterialNavigationDestinationEx<T extends Widget?> on T {
   /// NavigationDestination
   NavigationDestination navigationDestination({
     Key? key,
-    required Widget icon,
     Widget? selectedIcon,
     required String label,
     String? tooltip,

@@ -11,7 +11,6 @@ extension RenderingTableBorderEx<T extends BorderRadius?> on T {
     BorderSide left = BorderSide.none,
     BorderSide horizontalInside = BorderSide.none,
     BorderSide verticalInside = BorderSide.none,
-    BorderRadius borderRadius = BorderRadius.zero,
   }) =>
       TableBorder(
         top: top,

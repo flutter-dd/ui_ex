@@ -38,7 +38,6 @@ extension ServicesAndroidPointerCoordsEx<T extends double?> on T {
 extension ServicesAndroidMotionEventEx<T extends int?> on T {
   /// AndroidMotionEvent
   AndroidMotionEvent androidMotionEvent({
-    required int downTime,
     required int eventTime,
     required int action,
     required int pointerCount,
