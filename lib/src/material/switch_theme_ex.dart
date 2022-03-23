@@ -20,7 +20,6 @@ extension MaterialSwitchThemeDataEx<T extends double?> on T {
     MaterialTapTargetSize? materialTapTargetSize,
     MaterialStateProperty<MouseCursor?>? mouseCursor,
     MaterialStateProperty<Color?>? overlayColor,
-    double? splashRadius,
   }) =>
       SwitchThemeData(
         thumbColor: thumbColor,

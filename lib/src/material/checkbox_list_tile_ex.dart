@@ -6,7 +6,6 @@ extension MaterialCheckboxListTileEx<T extends bool?> on T {
   /// CheckboxListTile
   CheckboxListTile checkboxListTile({
     Key? key,
-    required bool? value,
     required void Function(bool?)? onChanged,
     Color? activeColor,
     Color? checkColor,

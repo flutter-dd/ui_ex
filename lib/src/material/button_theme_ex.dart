@@ -21,7 +21,6 @@ extension MaterialButtonThemeEx<T extends Widget?> on T {
     Color? splashColor,
     ColorScheme? colorScheme,
     MaterialTapTargetSize? materialTapTargetSize,
-    required Widget child,
   }) =>
       ButtonTheme(
         key: key,
@@ -54,7 +53,6 @@ extension MaterialButtonThemeDataEx<T extends Color?> on T {
     ShapeBorder? shape,
     ButtonBarLayoutBehavior layoutBehavior = ButtonBarLayoutBehavior.padded,
     bool alignedDropdown = false,
-    Color? buttonColor,
     Color? disabledColor,
     Color? focusColor,
     Color? hoverColor,

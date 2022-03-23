@@ -148,7 +148,6 @@ extension MaterialInputDecorationThemeEx<T extends Color?> on T {
     bool isDense = false,
     EdgeInsetsGeometry? contentPadding,
     bool isCollapsed = false,
-    Color? iconColor,
     TextStyle? prefixStyle,
     Color? prefixIconColor,
     TextStyle? suffixStyle,

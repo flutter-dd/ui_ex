@@ -20,7 +20,6 @@ extension MaterialRadioThemeDataEx<T extends Color?>
   /// RadioThemeData
   RadioThemeData radioThemeData({
     MaterialStateProperty<MouseCursor?>? mouseCursor,
-    MaterialStateProperty<Color?>? fillColor,
     MaterialStateProperty<Color?>? overlayColor,
     double? splashRadius,
     MaterialTapTargetSize? materialTapTargetSize,

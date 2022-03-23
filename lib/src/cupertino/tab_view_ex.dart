@@ -8,7 +8,6 @@ extension CupertinoTabViewEx<T extends String?> on T {
     Key? key,
     Widget Function(BuildContext)? builder,
     GlobalKey<NavigatorState>? navigatorKey,
-    String? defaultTitle,
     Map<String, Widget Function(BuildContext)>? routes,
     Route<dynamic>? Function(RouteSettings)? onGenerateRoute,
     Route<dynamic>? Function(RouteSettings)? onUnknownRoute,

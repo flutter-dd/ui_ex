@@ -6,7 +6,6 @@ extension MaterialInputDatePickerFormFieldEx<T extends DateTime?> on T {
   /// InputDatePickerFormField
   InputDatePickerFormField inputDatePickerFormField({
     Key? key,
-    DateTime? initialDate,
     required DateTime firstDate,
     required DateTime lastDate,
     void Function(DateTime)? onDateSubmitted,

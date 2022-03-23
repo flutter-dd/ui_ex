@@ -6,7 +6,6 @@ extension MaterialCheckboxEx<T extends bool?> on T {
   /// Checkbox
   Checkbox checkbox({
     Key? key,
-    required bool? value,
     bool tristate = false,
     required void Function(bool?)? onChanged,
     MouseCursor? mouseCursor,

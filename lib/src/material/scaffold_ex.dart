@@ -7,7 +7,6 @@ extension MaterialScaffoldEx<T extends Widget?> on T {
   Scaffold scaffold({
     Key? key,
     PreferredSizeWidget? appBar,
-    Widget? body,
     Widget? floatingActionButton,
     FloatingActionButtonLocation? floatingActionButtonLocation,
     FloatingActionButtonAnimator? floatingActionButtonAnimator,

@@ -18,7 +18,6 @@ extension MaterialBannerThemeEx<T extends Widget?> on T {
 extension MaterialBannerThemeDataEx<T extends Color?> on T {
   /// MaterialBannerThemeData
   MaterialBannerThemeData materialBannerThemeData({
-    Color? backgroundColor,
     TextStyle? contentTextStyle,
     double? elevation,
     EdgeInsetsGeometry? padding,

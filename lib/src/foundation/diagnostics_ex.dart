@@ -331,7 +331,11 @@ extension FoundationDiagnosticableNodeEx<T extends Diagnosticable> on T {
     String? name,
     required DiagnosticsTreeStyle? style,
   }) =>
-      DiagnosticableNode(name: name, value: this, style: style);
+      DiagnosticableNode(
+        name: name,
+        value: this,
+        style: style,
+      );
 }
 
 extension FoundationDiagnosticableTreeNodeEx<T extends DiagnosticableTree>
@@ -341,7 +345,11 @@ extension FoundationDiagnosticableTreeNodeEx<T extends DiagnosticableTree>
     String? name,
     required DiagnosticsTreeStyle? style,
   }) =>
-      DiagnosticableTreeNode(name: name, value: this, style: style);
+      DiagnosticableTreeNode(
+        name: name,
+        value: this,
+        style: style,
+      );
 }
 
 extension FoundationDiagnosticPropertiesBuilderEx<T extends DiagnosticsNode>
@@ -359,7 +367,6 @@ extension FoundationDiagnosticsBlockEx<T extends Object?> on T {
     bool showName = true,
     bool showSeparator = true,
     String? linePrefix,
-    Object? value,
     String? description,
     DiagnosticLevel level = DiagnosticLevel.info,
     bool allowTruncate = false,

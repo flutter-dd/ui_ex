@@ -5,7 +5,6 @@ part of ui_ex;
 extension MaterialBottomSheetThemeDataEx<T extends Color?> on T {
   /// BottomSheetThemeData
   BottomSheetThemeData bottomSheetThemeData({
-    Color? backgroundColor,
     double? elevation,
     Color? modalBackgroundColor,
     double? modalElevation,

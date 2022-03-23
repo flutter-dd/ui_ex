@@ -51,7 +51,6 @@ extension GesturesScaleEndDetailsEx<T extends Velocity?> on T {
 extension GesturesScaleGestureRecognizerEx<T extends Object?> on T {
   /// ScaleGestureRecognizer
   ScaleGestureRecognizer scaleGestureRecognizer({
-    Object? debugOwner,
     // PointerDeviceKind? kind,
     Set<PointerDeviceKind>? supportedDevices,
     DragStartBehavior dragStartBehavior = DragStartBehavior.down,

@@ -5,7 +5,6 @@ part of ui_ex;
 extension PaintingBoxDecorationEx<T extends Color?> on T {
   /// BoxDecoration
   BoxDecoration boxDecoration({
-    Color? color,
     DecorationImage? image,
     BoxBorder? border,
     BorderRadiusGeometry? borderRadius,

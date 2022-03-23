@@ -10,7 +10,6 @@ extension MaterialExpandIconEx<T extends Color?> on T {
     double size = 24.0,
     required void Function(bool)? onPressed,
     EdgeInsetsGeometry padding = const EdgeInsets.all(8.0),
-    Color? color,
     Color? disabledColor,
     Color? expandedColor,
   }) =>

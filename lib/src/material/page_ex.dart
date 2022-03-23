@@ -27,7 +27,6 @@ extension MaterialPageEx<T extends Widget?> on T {
 extension MaterialPageRouteEx<T extends WidgetBuilder> on T {
   /// MaterialPageRoute
   MaterialPageRoute materialPageRoute({
-    required Widget Function(BuildContext) builder,
     RouteSettings? settings,
     bool maintainState = true,
     bool fullscreenDialog = false,

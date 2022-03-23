@@ -35,7 +35,6 @@ extension MaterialYearPickerEx<T extends DateTime?> on T {
     DateTime? currentDate,
     required DateTime firstDate,
     required DateTime lastDate,
-    DateTime? initialDate,
     required DateTime selectedDate,
     required void Function(DateTime) onChanged,
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,

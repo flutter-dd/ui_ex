@@ -19,7 +19,6 @@ extension MaterialNavigationBarThemeDataEx<T extends Color?> on T {
   /// NavigationBarThemeData
   NavigationBarThemeData navigationBarThemeData({
     double? height,
-    Color? backgroundColor,
     Color? indicatorColor,
     MaterialStateProperty<TextStyle?>? labelTextStyle,
     MaterialStateProperty<IconThemeData?>? iconTheme,

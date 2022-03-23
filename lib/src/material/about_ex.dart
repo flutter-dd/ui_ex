@@ -37,7 +37,6 @@ extension MaterialAboutDialogEx<T extends Widget> on List<T>? {
     String? applicationVersion,
     Widget? applicationIcon,
     String? applicationLegalese,
-    List<Widget>? children,
   }) =>
       AboutDialog(
         key: key,
@@ -53,7 +52,6 @@ extension MaterialLicensePageEx<T extends String?> on T {
   /// LicensePage
   LicensePage licensePage({
     Key? key,
-    String? applicationName,
     String? applicationVersion,
     Widget? applicationIcon,
     String? applicationLegalese,

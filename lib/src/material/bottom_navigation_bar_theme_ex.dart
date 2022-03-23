@@ -18,7 +18,6 @@ extension MaterialBottomNavigationBarThemeEx<T extends Widget?> on T {
 extension MaterialBottomNavigationBarThemeDataEx<T extends Color?> on T {
   /// BottomNavigationBarThemeData
   BottomNavigationBarThemeData bottomNavigationBarThemeData({
-    Color? backgroundColor,
     double? elevation,
     IconThemeData? selectedIconTheme,
     IconThemeData? unselectedIconTheme,

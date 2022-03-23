@@ -10,7 +10,6 @@ extension CupertinoSearchFieldEx<T extends String?> on T {
     void Function(String)? onChanged,
     void Function(String)? onSubmitted,
     TextStyle? style,
-    String? placeholder,
     TextStyle? placeholderStyle,
     BoxDecoration? decoration,
     Color? backgroundColor,

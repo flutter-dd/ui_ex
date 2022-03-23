@@ -46,7 +46,6 @@ extension CupertinoActionSheetEx<T extends Widget> on List<T>? {
     Key? key,
     Widget? title,
     Widget? message,
-    List<Widget>? actions,
     ScrollController? messageScrollController,
     ScrollController? actionScrollController,
     Widget? cancelButton,

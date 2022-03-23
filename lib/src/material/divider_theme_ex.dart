@@ -18,7 +18,6 @@ extension MaterialDividerThemeEx<T extends Widget?> on T {
 extension MaterialDividerThemeDataEx<T extends Color?> on T {
   /// DividerThemeData
   DividerThemeData dividerThemeData({
-    Color? color,
     double? space,
     double? thickness,
     double? indent,

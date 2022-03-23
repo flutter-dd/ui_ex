@@ -27,7 +27,6 @@ extension MaterialSliderThemeDataEx<T extends Color?> on T {
     Color? inactiveTickMarkColor,
     Color? disabledActiveTickMarkColor,
     Color? disabledInactiveTickMarkColor,
-    Color? thumbColor,
     Color? overlappingShapeStrokeColor,
     Color? disabledThumbColor,
     Color? overlayColor,

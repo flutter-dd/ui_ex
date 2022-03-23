@@ -6,7 +6,6 @@ extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
   /// TextFormField
   TextFormField textFormField({
     Key? key,
-    TextEditingController? controller,
     String? initialValue,
     FocusNode? focusNode,
     InputDecoration? decoration = const InputDecoration(),

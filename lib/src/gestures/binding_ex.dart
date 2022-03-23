@@ -14,7 +14,6 @@ extension GesturesFlutterErrorDetailsForPointerEventDispatcherEx<
   ///  FlutterErrorDetailsForPointerEventDispatcher
   FlutterErrorDetailsForPointerEventDispatcher
       flutterErrorDetailsForPointerEventDispatcher({
-    required Object exception,
     StackTrace? stack,
     String? library,
     DiagnosticsNode? context,

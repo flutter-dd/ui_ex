@@ -26,7 +26,6 @@ extension MaterialDataTableThemeDataEx<T extends double?> on T {
     double? headingRowHeight,
     TextStyle? headingTextStyle,
     double? horizontalMargin,
-    double? columnSpacing,
     double? dividerThickness,
     double? checkboxHorizontalMargin,
   }) =>

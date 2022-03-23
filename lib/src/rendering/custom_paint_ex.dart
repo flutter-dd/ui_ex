@@ -10,7 +10,6 @@ extension RenderingCustomPaintEx<T extends RenderBox?> on T {
     Size preferredSize = Size.zero,
     bool isComplex = false,
     bool willChange = false,
-    RenderBox? child,
   }) =>
       RenderCustomPaint(
         painter: painter,
@@ -32,7 +31,7 @@ extension RenderingCustomPainterSemanticsEx<T extends Rect?> on T {
   }) =>
       CustomPainterSemantics(
         key: key,
-        rect: Rect.zero,
+        rect: this ?? Rect.zero,
         properties: properties,
         transform: transform,
         tags: tags,

@@ -22,7 +22,6 @@ extension MaterialButtonStyleEx<T extends AlignmentGeometry?> on T {
     MaterialTapTargetSize? tapTargetSize,
     Duration? animationDuration,
     bool? enableFeedback,
-    AlignmentGeometry? alignment,
     InteractiveInkFeatureFactory? splashFactory,
   }) =>
       ButtonStyle(

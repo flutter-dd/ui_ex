@@ -34,7 +34,6 @@ extension MaterialDropdownButtonEx<T> on List<DropdownMenuItem<T>> {
   /// DropdownButton
   DropdownButton dropdownButton({
     Key? key,
-    required List<DropdownMenuItem<dynamic>>? items,
     List<Widget> Function(BuildContext)? selectedItemBuilder,
     dynamic value,
     Widget? hint,
@@ -94,7 +93,6 @@ extension MaterialDropdownButtonFormFieldEx<T> on List<DropdownMenuItem<T>> {
   /// DropdownButtonFormField
   DropdownButtonFormField dropdownButtonFormField({
     Key? key,
-    required List<DropdownMenuItem<dynamic>>? items,
     List<Widget> Function(BuildContext)? selectedItemBuilder,
     dynamic value,
     Widget? hint,

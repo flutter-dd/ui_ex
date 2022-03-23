@@ -52,7 +52,6 @@ extension MaterialRefreshProgressIndicatorEx<T extends double?> on T {
   /// RefreshProgressIndicator
   RefreshProgressIndicator refreshProgressIndicator({
     Key? key,
-    double? value,
     Color? backgroundColor,
     Color? color,
     Animation<Color?>? valueColor,

@@ -5,11 +5,12 @@ part of ui_ex;
 extension CupertinoTextSelectionToolbarEx<T extends CupertinoToolbarBuilder>
     on T {
   /// CupertinoTextSelectionToolbar
-  CupertinoTextSelectionToolbar cupertinoTextSelectionToolbar(
-          {Key? key,
-          required Offset anchorAbove,
-          required Offset anchorBelow,
-          required List<Widget> children}) =>
+  CupertinoTextSelectionToolbar cupertinoTextSelectionToolbar({
+    Key? key,
+    required Offset anchorAbove,
+    required Offset anchorBelow,
+    required List<Widget> children,
+  }) =>
       CupertinoTextSelectionToolbar(
         key: key,
         children: children,

@@ -52,7 +52,6 @@ extension CupertinoTextFormFieldRowEx<T extends String?> on T {
     ScrollPhysics? scrollPhysics,
     Iterable<String>? autofillHints,
     AutovalidateMode autovalidateMode = AutovalidateMode.disabled,
-    String? placeholder,
     TextStyle? placeholderStyle = const TextStyle(
         fontWeight: FontWeight.w400, color: CupertinoColors.placeholderText),
   }) =>
