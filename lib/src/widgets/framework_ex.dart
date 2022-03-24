@@ -114,69 +114,340 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
         overlays: [SystemUiOverlay.bottom]);
   }
 
-  ///提示弹窗
-  Future<int?> popDialog({
-    Widget? msg,
-    Widget? title,
-    List<String> actions = const ['取消', '确定'],
-    int destructiveIndex = 0,
+  /// showCupertinoDialog
+  Future<T?> showIosDialog({
+    required Widget Function(BuildContext) builder,
     String? barrierLabel,
     bool useRootNavigator = true,
     bool barrierDismissible = false,
     RouteSettings? routeSettings,
-  }) {
-    return showCupertinoDialog(
-      context: this,
-      barrierDismissible: barrierDismissible,
-      useRootNavigator: useRootNavigator,
-      routeSettings: routeSettings,
-      barrierLabel: barrierLabel,
-      builder: (context) => actions
-          .asMap()
-          .entries
-          .mapList((e) => e.value.text().cupertinoDialogAction(
-                isDestructiveAction: e.key == destructiveIndex,
-                isDefaultAction: e.key != destructiveIndex,
-                onPressed: () => Navigator.pop(context, e.key),
-              ))
-          .cupertinoAlertDialog(title: title, content: msg),
-    );
-  }
+  }) =>
+      showCupertinoDialog<T>(
+        context: this,
+        builder: builder,
+        barrierLabel: barrierLabel,
+        useRootNavigator: useRootNavigator,
+        barrierDismissible: barrierDismissible,
+        routeSettings: routeSettings,
+      );
 
-  /// 底部弹窗 双栏选项
-  Future<int?> popBottomDialog({
-    Widget? msg,
-    Widget? title,
-    List<String> actions = const ['确定', '取消'],
-    int destructiveIndex = 0,
-    ui.ImageFilter? filter,
+  /// showCupertinoModalPopup
+  Future<T?> showIosModalPopup({
+    required Widget Function(BuildContext) builder,
+    ImageFilter? filter,
     Color barrierColor = kCupertinoModalBarrierColor,
     bool barrierDismissible = true,
     bool useRootNavigator = true,
     bool? semanticsDismissible,
     RouteSettings? routeSettings,
-  }) {
-    return showCupertinoModalPopup(
-      context: this,
-      barrierDismissible: barrierDismissible,
-      filter: filter,
-      barrierColor: barrierColor,
-      useRootNavigator: useRootNavigator,
-      semanticsDismissible: semanticsDismissible,
-      routeSettings: routeSettings,
-      builder: (context) => actions
-          .asMap()
-          .entries
-          .mapList(
-            (e) => e.value.text().cupertinoActionSheetAction(
-                  onPressed: () => Navigator.pop(this, e.key),
-                  isDestructiveAction: e.key == destructiveIndex,
-                  isDefaultAction: e.key != destructiveIndex,
-                ),
-          )
-          .cupertinoActionSheet(title: title, message: msg),
-    );
-  }
+  }) =>
+      showCupertinoModalPopup<T>(
+        context: this,
+        builder: builder,
+        filter: filter,
+        barrierColor: barrierColor,
+        barrierDismissible: barrierDismissible,
+        useRootNavigator: useRootNavigator,
+        semanticsDismissible: semanticsDismissible,
+        routeSettings: routeSettings,
+      );
+
+  /// showAboutDialog
+  void showAbout({
+    String? applicationName,
+    String? applicationVersion,
+    Widget? applicationIcon,
+    String? applicationLegalese,
+    List<Widget>? children,
+    bool useRootNavigator = true,
+    RouteSettings? routeSettings,
+  }) =>
+      showAboutDialog(
+        context: this,
+        applicationName: applicationName,
+        applicationVersion: applicationVersion,
+        applicationIcon: applicationIcon,
+        applicationLegalese: applicationLegalese,
+        children: children,
+        useRootNavigator: useRootNavigator,
+        routeSettings: routeSettings,
+      );
+
+  /// showDialog
+  Future<T?> show({
+    required Widget Function(BuildContext) builder,
+    bool barrierDismissible = true,
+    Color? barrierColor = Colors.black54,
+    String? barrierLabel,
+    bool useSafeArea = true,
+    bool useRootNavigator = true,
+    RouteSettings? routeSettings,
+  }) =>
+      showDialog<T>(
+        context: this,
+        builder: builder,
+        barrierDismissible: barrierDismissible,
+        barrierColor: barrierColor,
+        barrierLabel: barrierLabel,
+        useSafeArea: useSafeArea,
+        useRootNavigator: useRootNavigator,
+        routeSettings: routeSettings,
+      );
+
+  Future<T?> showGeneral({
+    required Widget Function(BuildContext, Animation<double>, Animation<double>)
+        pageBuilder,
+    bool barrierDismissible = false,
+    String? barrierLabel,
+    Color barrierColor = const Color(0x80000000),
+    Duration transitionDuration = const Duration(milliseconds: 200),
+    Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
+        transitionBuilder,
+    bool useRootNavigator = true,
+    RouteSettings? routeSettings,
+  }) =>
+      showGeneralDialog<T>(
+        context: this,
+        pageBuilder: pageBuilder,
+        barrierDismissible: barrierDismissible,
+        barrierLabel: barrierLabel,
+        barrierColor: barrierColor,
+        transitionDuration: transitionDuration,
+        transitionBuilder: transitionBuilder,
+        useRootNavigator: useRootNavigator,
+        routeSettings: routeSettings,
+      );
+
+  PersistentBottomSheetController<T> showMyBottomSheet({
+    required Widget Function(BuildContext) builder,
+    Color? backgroundColor,
+    double? elevation,
+    ShapeBorder? shape,
+    Clip? clipBehavior,
+    BoxConstraints? constraints,
+    AnimationController? transitionAnimationController,
+  }) =>
+      showBottomSheet<T>(
+        context: this,
+        builder: builder,
+        backgroundColor: backgroundColor,
+        elevation: elevation,
+        shape: shape,
+        clipBehavior: clipBehavior,
+        constraints: constraints,
+        transitionAnimationController: transitionAnimationController,
+      );
+
+  /// showDatePicker
+  Future<DateTime?> showMyDatePicker({
+    required DateTime initialDate,
+    required DateTime firstDate,
+    required DateTime lastDate,
+    DateTime? currentDate,
+    DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar,
+    bool Function(DateTime)? selectableDayPredicate,
+    String? helpText,
+    String? cancelText,
+    String? confirmText,
+    Locale? locale,
+    bool useRootNavigator = true,
+    RouteSettings? routeSettings,
+    TextDirection? textDirection,
+    Widget Function(BuildContext, Widget?)? builder,
+    DatePickerMode initialDatePickerMode = DatePickerMode.day,
+    String? errorFormatText,
+    String? errorInvalidText,
+    String? fieldHintText,
+    String? fieldLabelText,
+  }) =>
+      showDatePicker(
+        context: this,
+        initialDate: initialDate,
+        firstDate: firstDate,
+        lastDate: lastDate,
+        currentDate: currentDate,
+        initialEntryMode: initialEntryMode,
+        selectableDayPredicate: selectableDayPredicate,
+        helpText: helpText,
+        cancelText: cancelText,
+        confirmText: confirmText,
+        locale: locale,
+        useRootNavigator: useRootNavigator,
+        routeSettings: routeSettings,
+        textDirection: textDirection,
+        builder: builder,
+        initialDatePickerMode: initialDatePickerMode,
+        errorFormatText: errorFormatText,
+        errorInvalidText: errorInvalidText,
+        fieldHintText: fieldHintText,
+        fieldLabelText: fieldLabelText,
+      );
+
+  /// showDateRangePicker
+  Future<DateTimeRange?> showMyDateRangePicker({
+    DateTimeRange? initialDateRange,
+    required DateTime firstDate,
+    required DateTime lastDate,
+    DateTime? currentDate,
+    DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar,
+    String? helpText,
+    String? cancelText,
+    String? confirmText,
+    String? saveText,
+    String? errorFormatText,
+    String? errorInvalidText,
+    String? errorInvalidRangeText,
+    String? fieldStartHintText,
+    String? fieldEndHintText,
+    String? fieldStartLabelText,
+    String? fieldEndLabelText,
+    Locale? locale,
+    bool useRootNavigator = true,
+    RouteSettings? routeSettings,
+    TextDirection? textDirection,
+    Widget Function(BuildContext, Widget?)? builder,
+  }) =>
+      showDateRangePicker(
+        context: this,
+        initialDateRange: initialDateRange,
+        firstDate: firstDate,
+        lastDate: lastDate,
+        currentDate: currentDate,
+        initialEntryMode: initialEntryMode,
+        helpText: helpText,
+        cancelText: cancelText,
+        confirmText: confirmText,
+        saveText: saveText,
+        errorFormatText: errorFormatText,
+        errorInvalidText: errorInvalidText,
+        errorInvalidRangeText: errorInvalidRangeText,
+        fieldStartHintText: fieldStartHintText,
+        fieldEndHintText: fieldEndHintText,
+        fieldStartLabelText: fieldStartLabelText,
+        fieldEndLabelText: fieldEndLabelText,
+        locale: locale,
+        useRootNavigator: useRootNavigator,
+        routeSettings: routeSettings,
+        textDirection: textDirection,
+        builder: builder,
+      );
+
+  /// showLicensePage
+  void showMyLicensePage({
+    String? applicationName,
+    String? applicationVersion,
+    Widget? applicationIcon,
+    String? applicationLegalese,
+    bool useRootNavigator = false,
+  }) =>
+      showLicensePage(
+        context: this,
+        applicationName: applicationName,
+        applicationVersion: applicationVersion,
+        applicationIcon: applicationIcon,
+        applicationLegalese: applicationLegalese,
+        useRootNavigator: useRootNavigator,
+      );
+
+  /// showMenu
+  Future<T?> showMyMenu({
+    required RelativeRect position,
+    required List<PopupMenuEntry<T>> items,
+    T? initialValue,
+    double? elevation,
+    String? semanticLabel,
+    ShapeBorder? shape,
+    Color? color,
+    bool useRootNavigator = false,
+  }) =>
+      showMenu<T>(
+        context: this,
+        position: position,
+        items: items,
+        initialValue: initialValue,
+        elevation: elevation,
+        semanticLabel: semanticLabel,
+        shape: shape,
+        color: color,
+        useRootNavigator: useRootNavigator,
+      );
+
+  /// showModalBottomSheet
+  Future<T?> showMyModalBottomSheet({
+    required Widget Function(BuildContext) builder,
+    Color? backgroundColor,
+    double? elevation,
+    ShapeBorder? shape,
+    Clip? clipBehavior,
+    BoxConstraints? constraints,
+    Color? barrierColor,
+    bool isScrollControlled = false,
+    bool useRootNavigator = false,
+    bool isDismissible = true,
+    bool enableDrag = true,
+    RouteSettings? routeSettings,
+    AnimationController? transitionAnimationController,
+  }) =>
+      showModalBottomSheet<T>(
+        context: this,
+        builder: builder,
+        backgroundColor: backgroundColor,
+        elevation: elevation,
+        shape: shape,
+        clipBehavior: clipBehavior,
+        constraints: constraints,
+        barrierColor: barrierColor,
+        isScrollControlled: isScrollControlled,
+        useRootNavigator: useRootNavigator,
+        isDismissible: isDismissible,
+        enableDrag: enableDrag,
+        routeSettings: routeSettings,
+        transitionAnimationController: transitionAnimationController,
+      );
+
+  /// showSearch
+  Future<T?> showMySearch({
+    required SearchDelegate<T> delegate,
+    String? query = '',
+    bool useRootNavigator = false,
+  }) =>
+      showSearch<T>(
+        context: this,
+        delegate: delegate,
+        query: query,
+        useRootNavigator: useRootNavigator,
+      );
+
+  /// showTimePicker
+  Future<TimeOfDay?> showMyTimePicker({
+    required TimeOfDay initialTime,
+    Widget Function(BuildContext, Widget?)? builder,
+    bool useRootNavigator = true,
+    TimePickerEntryMode initialEntryMode = TimePickerEntryMode.dial,
+    String? cancelText,
+    String? confirmText,
+    String? helpText,
+    String? errorInvalidText,
+    String? hourLabelText,
+    String? minuteLabelText,
+    RouteSettings? routeSettings,
+    void Function(TimePickerEntryMode)? onEntryModeChanged,
+  }) =>
+      showTimePicker(
+        context: this,
+        initialTime: initialTime,
+        builder: builder,
+        useRootNavigator: useRootNavigator,
+        initialEntryMode: initialEntryMode,
+        cancelText: cancelText,
+        confirmText: confirmText,
+        helpText: helpText,
+        errorInvalidText: errorInvalidText,
+        hourLabelText: hourLabelText,
+        minuteLabelText: minuteLabelText,
+        routeSettings: routeSettings,
+        onEntryModeChanged: onEntryModeChanged,
+      );
 }
 
 extension WidgetsFrameworkObjectKeyEx<T extends Object?> on T {
