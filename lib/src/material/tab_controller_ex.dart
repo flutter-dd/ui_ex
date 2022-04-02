@@ -6,24 +6,26 @@ extension MaterialTabControllerEx<T extends int> on T {
   /// TabController
   TabController tabController({
     int initialIndex = 0,
-    required TickerProvider vsync,
+    TickerProvider? vsync,
   }) =>
       TabController(
         initialIndex: initialIndex,
         length: this,
-        vsync: vsync,
+        vsync: vsync ?? ScrollableState(),
       );
+}
 
+extension MaterialDefaultTabControllerEx<T extends Widget> on T {
   /// DefaultTabController
   DefaultTabController defaultTabController({
     Key? key,
     int initialIndex = 0,
-    required Widget child,
+    required int length,
   }) =>
       DefaultTabController(
         key: key,
         initialIndex: initialIndex,
-        length: this,
-        child: child,
+        length: length,
+        child: this,
       );
 }
