@@ -3,7 +3,7 @@ part of ui_ex;
 /// 小部件框架
 /// Framework
 extension WidgetsFrameworkStateEx<T extends State> on T {
-  String get title => context.title;
+  // String get title => context.title;
 
   void fresh([void Function()? action]) {
     if (!mounted) return;
@@ -21,7 +21,7 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   double get height => max(screenW, screenH);
   bool get canPop => ModalRoute.of(this)?.canPop ?? false;
   Object? get arguments => ModalRoute.of(this)?.settings.arguments;
-  String get title => widget.name;
+  String get title => widget.runtimeType.toString();
   ScaffoldMessengerState get messenger => ScaffoldMessenger.of(this);
   ScaffoldState get scaffold => Scaffold.of(this);
   ThemeData get theme => Theme.of(this);
@@ -38,12 +38,12 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   }
 
   /// 出栈到指定界面
-  Future<void> popToName({Widget? widget, Object? arguments}) async {
+  Future<void> popToName({String? name, Object? arguments}) async {
     return Navigator.of(this).popUntil((route) {
-      if (route.isFirst || widget == null) {
+      if (route.isFirst || name == null) {
         return route.isFirst;
       } else {
-        return route.settings.name == widget.name;
+        return route.settings.name == name;
       }
     });
   }
@@ -56,7 +56,7 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   }) async {
     return Navigator.of(this).push(CupertinoPageRoute<Object>(
       builder: (context) => page,
-      settings: page.settings(arguments),
+      settings: page.runtimeType.settings(arguments),
       fullscreenDialog: isModal,
     ));
   }
