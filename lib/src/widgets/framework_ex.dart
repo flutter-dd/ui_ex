@@ -56,7 +56,7 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   }) async {
     return Navigator.of(this).push(CupertinoPageRoute<Object>(
       builder: (context) => page,
-      settings: page.runtimeType.settings(arguments),
+      settings: page.settings(arguments),
       fullscreenDialog: isModal,
     ));
   }
