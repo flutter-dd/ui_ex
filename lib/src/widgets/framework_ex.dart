@@ -3,7 +3,7 @@ part of ui_ex;
 /// 小部件框架
 /// Framework
 extension WidgetsFrameworkStateEx<T extends State> on T {
-  // String get title => context.title;
+  String get title => context.title;
 
   void fresh([void Function()? action]) {
     if (!mounted) return;
