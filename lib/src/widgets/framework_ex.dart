@@ -26,6 +26,8 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
   ScaffoldState get scaffold => Scaffold.of(this);
   ThemeData get theme => Theme.of(this);
   FocusScopeNode get currentFocus => FocusScope.of(this);
+  NavigatorState get navigator => Navigator.of(this);
+  NavigatorState? get navigatorMaybe => Navigator.maybeOf(this);
 
   /// 收起键盘
   void closeKeyboard() => FocusManager.instance.primaryFocus?.unfocus();
@@ -48,18 +50,18 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
     });
   }
 
-  /// 跳转
-  Future<Object?> push(
-    Widget page, {
-    Object? arguments,
-    bool isModal = false,
-  }) async {
-    return Navigator.of(this).push(CupertinoPageRoute<Object>(
-      builder: (context) => page,
-      settings: page.settings(arguments),
-      fullscreenDialog: isModal,
-    ));
-  }
+  // /// 跳转
+  // Future<Object?> push(
+  //   Widget page, {
+  //   Object? arguments,
+  //   bool isModal = false,
+  // }) async {
+  //   return Navigator.of(this).push(CupertinoPageRoute<Object>(
+  //     builder: (context) => page,
+  //     settings: page.settings(arguments),
+  //     fullscreenDialog: isModal,
+  //   ));
+  // }
 
   /// 打开右抽屉
   void openEndDrawer() {

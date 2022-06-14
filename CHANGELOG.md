@@ -19,4 +19,5 @@
 ## [0.1.9] - update widgets
 ## [0.1.10] - update widgets
 ## [0.1.11] - update widgets
+## [0.1.12] - update widgets
 
