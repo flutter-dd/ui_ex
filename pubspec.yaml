@@ -3,13 +3,13 @@ description: 'ui_ex is a solution that provides chain programming, which can eas
 version: 0.1.12
 homepage: 'https://github.com/flutter-dd/ui_ex.git'
 environment:
-  sdk: '>=2.15.0 <3.0.0'
+  sdk: '>=2.18.0 <3.0.0'
   flutter: '>=1.17.0'
 dependencies:
   flutter:
     sdk: flutter
-  tuple: ^2.0.0
+  tuple: ^2.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
