@@ -10,7 +10,7 @@ extension WidgetsWillPopScopeEx<T extends Widget?> on T {
   }) =>
       WillPopScope(
         key: key,
-        child: this ?? Container(),
         onWillPop: onWillPop,
+        child: this ?? Container(),
       );
 }

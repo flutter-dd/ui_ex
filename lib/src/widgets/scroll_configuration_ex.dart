@@ -18,5 +18,6 @@ extension WidgetsScrollConfigurationEx<T extends Widget?> on T {
 extension WidgetsScrollBehaviorEx<T extends AndroidOverscrollIndicator?> on T {
   /// ScrollBehavior
   ScrollBehavior scrollBehavior() =>
+      // ignore: deprecated_member_use
       ScrollBehavior(androidOverscrollIndicator: this);
 }

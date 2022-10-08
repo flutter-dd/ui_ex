@@ -35,7 +35,6 @@ extension MaterialDrawerControllerEx<T extends Widget?> on T {
   }) =>
       DrawerController(
         key: key,
-        child: this ?? Container(),
         alignment: alignment,
         isDrawerOpen: isDrawerOpen,
         drawerCallback: drawerCallback,
@@ -43,5 +42,6 @@ extension MaterialDrawerControllerEx<T extends Widget?> on T {
         scrimColor: scrimColor,
         edgeDragWidth: edgeDragWidth,
         enableOpenDragGesture: enableOpenDragGesture,
+        child: this ?? Container(),
       );
 }

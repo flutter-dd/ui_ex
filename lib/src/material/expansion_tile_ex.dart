@@ -31,7 +31,6 @@ extension MaterialExpansionTileEx<T extends Widget?> on T {
         title: this ?? Container(),
         subtitle: subtitle,
         onExpansionChanged: onExpansionChanged,
-        children: children,
         trailing: trailing,
         initiallyExpanded: initiallyExpanded,
         maintainState: maintainState,
@@ -46,5 +45,6 @@ extension MaterialExpansionTileEx<T extends Widget?> on T {
         iconColor: iconColor,
         collapsedIconColor: collapsedIconColor,
         controlAffinity: controlAffinity,
+        children: children,
       );
 }

@@ -13,7 +13,7 @@ extension WidgetsTextSelectionEx<T extends BuildContext> on T {
     required RenderEditable renderObject,
     TextSelectionControls? selectionControls,
     bool handlesVisible = false,
-    TextSelectionDelegate? selectionDelegate,
+    required TextSelectionDelegate selectionDelegate,
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
     void Function()? onSelectionHandleTapped,
     ClipboardStatusNotifier? clipboardStatus,

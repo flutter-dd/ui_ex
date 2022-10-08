@@ -42,8 +42,8 @@ extension WidgetsBackButtonListenerEx<T extends Widget?> on T {
   }) =>
       BackButtonListener(
         key: key,
-        child: this ?? Container(),
         onBackButtonPressed: onBackButtonPressed,
+        child: this ?? Container(),
       );
 }
 

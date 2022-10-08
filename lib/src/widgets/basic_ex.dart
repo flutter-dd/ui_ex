@@ -49,8 +49,8 @@ extension WidgetsBasicEx<T extends Widget?> on T {
       BackdropFilter(
         key: key,
         filter: filter,
-        child: this ?? Container(),
         blendMode: blendMode,
+        child: this ?? Container(),
       );
 
   /// CustomPaint
@@ -350,12 +350,12 @@ extension WidgetsBasicEx<T extends Widget?> on T {
   }) =>
       ConstraintsTransformBox(
         key: key,
-        child: this ?? Container(),
         textDirection: textDirection,
         alignment: alignment,
         constraintsTransform: constraintsTransform,
         clipBehavior: clipBehavior,
         debugTransformType: debugTransformType,
+        child: this ?? Container(),
       );
 
   /// UnconstrainedBox
@@ -368,11 +368,11 @@ extension WidgetsBasicEx<T extends Widget?> on T {
   }) =>
       UnconstrainedBox(
         key: key,
-        child: this ?? Container(),
         textDirection: textDirection,
         alignment: alignment,
         constrainedAxis: constrainedAxis,
         clipBehavior: clipBehavior,
+        child: this ?? Container(),
       );
 
   /// FractionallySizedBox
@@ -647,8 +647,8 @@ extension WidgetsBasicEx<T extends Widget?> on T {
       AbsorbPointer(
         key: key,
         absorbing: absorbing = true,
-        child: this ?? Container(),
         ignoringSemantics: ignoringSemantics,
+        child: this ?? Container(),
       );
 
   /// MetaData
@@ -730,7 +730,6 @@ extension WidgetsBasicEx<T extends Widget?> on T {
   }) =>
       Semantics(
         key: key,
-        child: this ?? Container(),
         container: container,
         explicitChildNodes: explicitChildNodes,
         excludeSemantics: excludeSemantics,
@@ -791,6 +790,7 @@ extension WidgetsBasicEx<T extends Widget?> on T {
         onDidGainAccessibilityFocus: onDidGainAccessibilityFocus,
         onDidLoseAccessibilityFocus: onDidLoseAccessibilityFocus,
         customSemanticsActions: customSemanticsActions,
+        child: this ?? Container(),
       );
 
   /// MergeSemantics
@@ -843,8 +843,8 @@ extension WidgetsBasicEx<T extends Widget?> on T {
   }) =>
       ColoredBox(
         color: color,
-        child: this ?? Container(),
         key: key,
+        child: this ?? Container(),
       );
 }
 
@@ -1012,8 +1012,8 @@ extension WidgetsBasicsEx<T extends Widget> on List<T>? {
       Flow(
         key: key,
         delegate: delegate,
-        children: this ?? const <Widget>[],
         clipBehavior: clipBehavior,
+        children: this ?? const <Widget>[],
       );
 }
 

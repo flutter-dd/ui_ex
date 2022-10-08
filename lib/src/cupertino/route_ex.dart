@@ -56,8 +56,8 @@ extension CupertinoPageTransitionEx<T extends Widget?> on T {
         key: key,
         primaryRouteAnimation: primaryRouteAnimation,
         secondaryRouteAnimation: secondaryRouteAnimation,
-        child: this ?? Container(),
         linearTransition: linearTransition,
+        child: this ?? Container(),
       );
 }
 
@@ -73,8 +73,8 @@ extension CupertinoFullscreenDialogTransitionEx<T extends Widget?> on T {
         key: key,
         primaryRouteAnimation: primaryRouteAnimation,
         secondaryRouteAnimation: secondaryRouteAnimation,
-        child: this ?? Container(),
         linearTransition: linearTransition,
+        child: this ?? Container(),
       );
 }
 

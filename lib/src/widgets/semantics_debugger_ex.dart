@@ -11,7 +11,7 @@ extension WidgetsSemanticsDebuggerEx<T extends Widget?> on T {
   }) =>
       SemanticsDebugger(
         key: key,
-        child: this ?? Container(),
         labelStyle: labelStyle,
+        child: this ?? Container(),
       );
 }

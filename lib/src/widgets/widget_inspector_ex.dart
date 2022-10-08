@@ -13,8 +13,8 @@ extension WidgetsWidgetInspectorEx<T extends Widget?> on T {
   }) =>
       WidgetInspector(
         key: key,
-        child: this ?? Container(),
         selectButtonBuilder: selectButtonBuilder,
+        child: this ?? Container(),
       );
 }
 

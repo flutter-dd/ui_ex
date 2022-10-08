@@ -51,7 +51,6 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
   }) =>
       Draggable(
         key: key,
-        child: this ?? Container(),
         feedback: feedback,
         data: data,
         axis: axis,
@@ -69,6 +68,7 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
         ignoringFeedbackSemantics: ignoringFeedbackSemantics,
         rootOverlay: rootOverlay,
         hitTestBehavior: hitTestBehavior,
+        child: this ?? Container(),
       );
 }
 
@@ -96,7 +96,6 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
   }) =>
       LongPressDraggable(
         key: key,
-        child: this ?? Container(),
         feedback: feedback,
         data: data,
         axis: axis,
@@ -113,6 +112,7 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
         hapticFeedbackOnStart: hapticFeedbackOnStart,
         ignoringFeedbackSemantics: ignoringFeedbackSemantics,
         delay: delay,
+        child: this ?? Container(),
       );
 }
 

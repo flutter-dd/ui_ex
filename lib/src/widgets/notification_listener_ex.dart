@@ -10,7 +10,7 @@ extension WidgetsNotificationListenerEx<T extends Widget?> on T {
   }) =>
       NotificationListener(
         key: key,
-        child: this ?? Container(),
         onNotification: onNotification,
+        child: this ?? Container(),
       );
 }

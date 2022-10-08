@@ -83,12 +83,12 @@ extension WidgetsCustomScrollViewEx<T extends Widget> on List<T>? {
         addRepaintBoundaries: addRepaintBoundaries,
         addSemanticIndexes: addSemanticIndexes,
         cacheExtent: cacheExtent,
-        children: this ?? const <Widget>[],
         semanticChildCount: semanticChildCount,
         dragStartBehavior: dragStartBehavior,
         keyboardDismissBehavior: keyboardDismissBehavior,
         restorationId: restorationId,
         clipBehavior: clipBehavior,
+        children: this ?? const <Widget>[],
       );
 
   /// GridView
@@ -127,11 +127,11 @@ extension WidgetsCustomScrollViewEx<T extends Widget> on List<T>? {
         addRepaintBoundaries: addRepaintBoundaries,
         addSemanticIndexes: addSemanticIndexes,
         cacheExtent: cacheExtent,
-        children: this ?? const <Widget>[],
         semanticChildCount: semanticChildCount,
         dragStartBehavior: dragStartBehavior,
         clipBehavior: clipBehavior,
         keyboardDismissBehavior: keyboardDismissBehavior,
         restorationId: restorationId,
+        children: this ?? const <Widget>[],
       );
 }

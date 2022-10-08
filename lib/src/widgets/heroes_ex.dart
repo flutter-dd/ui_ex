@@ -31,8 +31,8 @@ extension WidgetsHeroesEx<T extends Widget?> on T {
   }) =>
       HeroMode(
         key: key,
-        child: this ?? Container(),
         enabled: enabled,
+        child: this ?? Container(),
       );
 }
 

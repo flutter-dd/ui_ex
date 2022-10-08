@@ -16,7 +16,6 @@ extension WidgetsVisibilityEx<T extends Widget?> on T {
   }) =>
       Visibility(
         key: key,
-        child: this ?? Container(),
         replacement: replacement,
         visible: visible,
         maintainState: maintainState,
@@ -24,6 +23,7 @@ extension WidgetsVisibilityEx<T extends Widget?> on T {
         maintainSize: maintainSize,
         maintainSemantics: maintainSemantics,
         maintainInteractivity: maintainInteractivity,
+        child: this ?? Container(),
       );
 
   /// SliverVisibility

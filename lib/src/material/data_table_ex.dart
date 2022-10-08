@@ -118,11 +118,11 @@ extension MaterialTableRowInkWellEx<T extends Widget?> on T {
   }) =>
       TableRowInkWell(
         key: key,
-        child: this ?? Container(),
         onTap: onTap,
         onDoubleTap: onDoubleTap,
         onLongPress: onLongPress,
         onHighlightChanged: onHighlightChanged,
         overlayColor: overlayColor,
+        child: this ?? Container(),
       );
 }

@@ -13,10 +13,10 @@ extension CupertinoFormRowEx<T extends Widget?> on T {
   }) =>
       CupertinoFormRow(
         key: key,
-        child: this ?? Container(),
         prefix: prefix,
         padding: padding,
         helper: helper,
         error: error,
+        child: this ?? Container(),
       );
 }

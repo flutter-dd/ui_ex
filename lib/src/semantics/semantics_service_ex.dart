@@ -66,6 +66,7 @@ extension SemanticsSemanticsDataEx<T extends int?> on T {
     Set<SemanticsTag>? tags,
     Matrix4? transform,
     List<int>? customSemanticsActionIds,
+    required String tooltip,
   }) =>
       SemanticsData(
         flags: flags,
@@ -91,6 +92,7 @@ extension SemanticsSemanticsDataEx<T extends int?> on T {
         tags: tags,
         transform: transform,
         customSemanticsActionIds: customSemanticsActionIds,
+        tooltip: tooltip,
       );
 }
 

@@ -23,7 +23,6 @@ extension WidgetsDismissibleEx<T extends Widget?> on T {
   }) =>
       Dismissible(
         key: key,
-        child: this ?? Container(),
         background: background,
         secondaryBackground: secondaryBackground,
         confirmDismiss: confirmDismiss,
@@ -37,6 +36,7 @@ extension WidgetsDismissibleEx<T extends Widget?> on T {
         crossAxisEndOffset: crossAxisEndOffset,
         dragStartBehavior: dragStartBehavior,
         behavior: behavior,
+        child: this ?? Container(),
       );
 }
 

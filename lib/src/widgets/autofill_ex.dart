@@ -10,7 +10,7 @@ extension WidgetsAutofillEx<T extends Widget?> on T {
   }) =>
       AutofillGroup(
         key: key,
-        child: this ?? Container(),
         onDisposeAction: onDisposeAction,
+        child: this ?? Container(),
       );
 }

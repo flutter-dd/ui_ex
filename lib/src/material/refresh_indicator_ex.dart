@@ -21,7 +21,6 @@ extension MaterialRefreshIndicatorEx<T extends Widget?> on T {
   }) =>
       RefreshIndicator(
         key: key,
-        child: this ?? Container(),
         displacement: displacement,
         edgeOffset: edgeOffset,
         onRefresh: onRefresh,
@@ -32,5 +31,6 @@ extension MaterialRefreshIndicatorEx<T extends Widget?> on T {
         semanticsValue: semanticsValue,
         strokeWidth: strokeWidth,
         triggerMode: triggerMode,
+        child: this ?? Container(),
       );
 }

@@ -4,7 +4,7 @@ part of ui_ex;
 /// Ticker
 extension SchedulerTickerEx<T extends String?> on T {
   /// Ticker
-  Ticker ticker(TickerCallback _onTick) => Ticker(_onTick, debugLabel: this);
+  Ticker ticker(TickerCallback onTick) => Ticker(onTick, debugLabel: this);
 }
 
 extension SchedulerTickerCanceledEx<T extends Ticker?> on T {

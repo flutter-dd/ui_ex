@@ -29,7 +29,6 @@ extension MaterialReorderableListEx<T extends Widget> on List<T>? {
   }) =>
       ReorderableListView(
         key: key,
-        children: this ?? [],
         onReorder: onReorder,
         itemExtent: itemExtent,
         prototypeItem: prototypeItem,
@@ -49,5 +48,6 @@ extension MaterialReorderableListEx<T extends Widget> on List<T>? {
         keyboardDismissBehavior: keyboardDismissBehavior,
         restorationId: restorationId,
         clipBehavior: clipBehavior,
+        children: this ?? [],
       );
 }

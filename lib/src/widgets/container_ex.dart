@@ -32,8 +32,8 @@ extension WidgetsContainerEx<T extends Widget?> on T {
         margin: margin,
         transform: transform,
         transformAlignment: transformAlignment,
-        child: this ?? Container(),
         clipBehavior: clipBehavior,
+        child: this ?? Container(),
       );
 }
 
@@ -67,8 +67,8 @@ extension WidgetsContainerColorEx<T extends Color?> on T {
         margin: margin,
         transform: transform,
         transformAlignment: transformAlignment,
-        child: child,
         clipBehavior: clipBehavior,
+        child: child,
       );
 }
 

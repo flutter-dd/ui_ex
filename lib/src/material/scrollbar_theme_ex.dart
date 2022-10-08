@@ -12,20 +12,27 @@ extension MaterialScrollbarThemeDataEx<T extends Color?>
     on MaterialStateProperty<T>? {
   /// ScrollbarThemeData
   ScrollbarThemeData scrollbarThemeData({
+    MaterialStateProperty<bool?>? thumbVisibility,
     MaterialStateProperty<double?>? thickness,
-    bool? showTrackOnHover,
-    bool? isAlwaysShown,
+    MaterialStateProperty<bool?>? trackVisibility,
     Radius? radius,
+    MaterialStateProperty<Color?>? thumbColor,
     MaterialStateProperty<Color?>? trackColor,
     MaterialStateProperty<Color?>? trackBorderColor,
     double? crossAxisMargin,
     double? mainAxisMargin,
     double? minThumbLength,
     bool? interactive,
+    bool? isAlwaysShown,
+    bool? showTrackOnHover,
   }) =>
       ScrollbarThemeData(
+        thumbVisibility: thumbVisibility,
         thickness: thickness,
+        trackVisibility: trackVisibility,
+        // ignore: deprecated_member_use
         showTrackOnHover: showTrackOnHover,
+        // ignore: deprecated_member_use
         isAlwaysShown: isAlwaysShown,
         radius: radius,
         thumbColor: this,

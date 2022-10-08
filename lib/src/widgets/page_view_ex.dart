@@ -27,13 +27,13 @@ extension WidgetsPageViewEx<T extends Widget> on List<T>? {
         physics: physics,
         pageSnapping: pageSnapping,
         onPageChanged: onPageChanged,
-        children: this ?? const <Widget>[],
         dragStartBehavior: dragStartBehavior,
         allowImplicitScrolling: allowImplicitScrolling,
         restorationId: restorationId,
         clipBehavior: clipBehavior,
         scrollBehavior: scrollBehavior,
         padEnds: padEnds,
+        children: this ?? const <Widget>[],
       );
 }
 

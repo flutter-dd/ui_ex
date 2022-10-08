@@ -80,9 +80,9 @@ extension WidgetsReorderableDragStartListenerEx<T extends Widget?> on T {
   }) =>
       ReorderableDragStartListener(
         key: key,
-        child: this ?? Container(),
         index: index,
         enabled: enabled,
+        child: this ?? Container(),
       );
 }
 
@@ -95,8 +95,8 @@ extension WidgetsReorderableDelayedDragStartListenerEx<T extends Widget?> on T {
   }) =>
       ReorderableDelayedDragStartListener(
         key: key,
-        child: this ?? Container(),
         index: index,
         enabled: enabled,
+        child: this ?? Container(),
       );
 }

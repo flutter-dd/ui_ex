@@ -150,7 +150,6 @@ extension WidgetsAnimatedPositionedEx<T extends Widget?> on T {
   }) =>
       AnimatedPositioned(
         key: key,
-        child: this ?? Container(),
         left: left,
         top: top,
         right: right,
@@ -160,6 +159,7 @@ extension WidgetsAnimatedPositionedEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -179,7 +179,6 @@ extension WidgetsAnimatedPositionedDirectionalEx<T extends Widget?> on T {
   }) =>
       AnimatedPositionedDirectional(
         key: key,
-        child: this ?? Container(),
         start: start,
         top: top,
         end: end,
@@ -189,6 +188,7 @@ extension WidgetsAnimatedPositionedDirectionalEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -205,13 +205,13 @@ extension WidgetsAnimatedScaleEx<T extends Widget?> on T {
   }) =>
       AnimatedScale(
         key: key,
-        child: this ?? Container(),
         scale: scale,
         alignment: alignment,
         filterQuality: filterQuality,
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -228,13 +228,13 @@ extension WidgetsAnimatedRotationEx<T extends Widget?> on T {
   }) =>
       AnimatedRotation(
         key: key,
-        child: this ?? Container(),
         turns: turns,
         alignment: alignment,
         filterQuality: filterQuality,
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -249,11 +249,11 @@ extension WidgetsAnimatedSlideEx<T extends Widget?> on T {
   }) =>
       AnimatedSlide(
         key: key,
-        child: this ?? Container(),
         offset: offset,
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -269,12 +269,12 @@ extension WidgetsAnimatedOpacityEx<T extends Widget?> on T {
   }) =>
       AnimatedOpacity(
         key: key,
-        child: this ?? Container(),
         opacity: opacity,
         curve: curve,
         duration: duration,
         onEnd: onEnd,
         alwaysIncludeSemantics: alwaysIncludeSemantics,
+        child: this ?? Container(),
       );
 }
 
@@ -316,7 +316,6 @@ extension WidgetsAnimatedDefaultTextStyleEx<T extends Widget?> on T {
   }) =>
       AnimatedDefaultTextStyle(
         key: key,
-        child: this ?? Container(),
         style: style,
         textAlign: textAlign,
         softWrap: softWrap,
@@ -327,6 +326,7 @@ extension WidgetsAnimatedDefaultTextStyleEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }
 
@@ -348,7 +348,6 @@ extension WidgetsAnimatedPhysicalModelEx<T extends Widget?> on T {
   }) =>
       AnimatedPhysicalModel(
         key: key,
-        child: this ?? Container(),
         shape: shape,
         clipBehavior: clipBehavior,
         borderRadius: borderRadius,
@@ -360,5 +359,6 @@ extension WidgetsAnimatedPhysicalModelEx<T extends Widget?> on T {
         curve: curve,
         duration: duration,
         onEnd: onEnd,
+        child: this ?? Container(),
       );
 }

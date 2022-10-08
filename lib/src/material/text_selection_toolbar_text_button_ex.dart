@@ -11,8 +11,8 @@ extension MaterialTextSelectionToolbarTextButtonEx<T extends Widget?> on T {
   }) =>
       TextSelectionToolbarTextButton(
         key: key,
-        child: this ?? Container(),
         padding: padding,
         onPressed: onPressed,
+        child: this ?? Container(),
       );
 }

@@ -12,7 +12,7 @@ extension CupertinoContextMenuEx<T extends Widget?> on T {
       CupertinoContextMenu(
         key: key,
         actions: actions,
-        child: this ?? Container(),
         previewBuilder: previewBuilder,
+        child: this ?? Container(),
       );
 }

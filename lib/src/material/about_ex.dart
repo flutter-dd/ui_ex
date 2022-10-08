@@ -19,13 +19,13 @@ extension MaterialAboutListTileEx<T extends Widget?> on T {
       AboutListTile(
         key: key,
         icon: icon,
-        child: this ?? Container(),
         applicationName: applicationName,
         applicationVersion: applicationVersion,
         applicationIcon: applicationIcon,
         applicationLegalese: applicationLegalese,
         aboutBoxChildren: aboutBoxChildren,
         dense: dense,
+        child: this ?? Container(),
       );
 }
 

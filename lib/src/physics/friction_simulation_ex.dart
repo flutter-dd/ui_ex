@@ -18,8 +18,8 @@ extension PhysicsBoundedFrictionSimulationEx<T extends double>
     on Tuple3<T, T, T> {
   /// BoundedFrictionSimulation
   BoundedFrictionSimulation boundedFrictionSimulation(
-    double _minX,
-    double _maxX,
+    double minX,
+    double maxX,
   ) =>
-      BoundedFrictionSimulation(item1, item2, item3, _minX, _maxX);
+      BoundedFrictionSimulation(item1, item2, item3, minX, maxX);
 }

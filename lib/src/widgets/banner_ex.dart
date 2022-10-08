@@ -15,13 +15,13 @@ extension WidgetsBannerEx<T extends String?> on T {
   }) =>
       Banner(
         key: key,
-        child: child,
         message: this ?? "",
         textDirection: textDirection,
         location: location,
         layoutDirection: layoutDirection,
         color: color,
         textStyle: textStyle,
+        child: child,
       );
 }
 

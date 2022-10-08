@@ -8,6 +8,7 @@ extension CupertinoScrollbarEx<T extends Widget?> on T {
     Key? key,
     ScrollController? controller,
     bool isAlwaysShown = false,
+    bool? thumbVisibility,
     double thickness = CupertinoScrollbar.defaultThickness,
     double thicknessWhileDragging =
         CupertinoScrollbar.defaultThicknessWhileDragging,
@@ -18,8 +19,9 @@ extension CupertinoScrollbarEx<T extends Widget?> on T {
   }) =>
       CupertinoScrollbar(
         key: key,
-        child: this ?? Container(),
         controller: controller,
+        thumbVisibility: thumbVisibility,
+        // ignore: deprecated_member_use
         isAlwaysShown: isAlwaysShown,
         thickness: thickness,
         thicknessWhileDragging: thicknessWhileDragging,
@@ -27,5 +29,6 @@ extension CupertinoScrollbarEx<T extends Widget?> on T {
         radiusWhileDragging: radiusWhileDragging,
         notificationPredicate: notificationPredicate,
         scrollbarOrientation: scrollbarOrientation,
+        child: this ?? Container(),
       );
 }

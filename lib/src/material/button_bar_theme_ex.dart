@@ -10,8 +10,8 @@ extension MaterialButtonBarThemeEx<T extends Widget?> on T {
   }) =>
       ButtonBarTheme(
         key: key,
-        child: this ?? Container(),
         data: data,
+        child: this ?? Container(),
       );
 }
 

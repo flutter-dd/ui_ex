@@ -6,16 +6,14 @@ extension WidgetsShortcutsEx<T extends Widget?> on T {
   /// Shortcuts
   Shortcuts shortcuts({
     Key? key,
-    ShortcutManager? manager,
     required Map<ShortcutActivator, Intent> shortcuts,
     String? debugLabel,
   }) =>
       Shortcuts(
         key: key,
-        manager: manager,
         shortcuts: shortcuts,
-        child: this ?? Container(),
         debugLabel: debugLabel,
+        child: this ?? Container(),
       );
 }
 

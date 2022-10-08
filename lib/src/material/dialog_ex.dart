@@ -117,7 +117,6 @@ extension MaterialSimpleDialogEx<T extends Widget?> on T {
         title: this,
         titlePadding: titlePadding,
         titleTextStyle: titleTextStyle,
-        children: children,
         contentPadding: contentPadding,
         backgroundColor: backgroundColor,
         elevation: elevation,
@@ -126,6 +125,7 @@ extension MaterialSimpleDialogEx<T extends Widget?> on T {
         clipBehavior: clipBehavior,
         shape: shape,
         alignment: alignment,
+        children: children,
       );
 }
 

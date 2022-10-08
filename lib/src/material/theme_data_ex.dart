@@ -8,7 +8,7 @@ extension MaterialThemeDataEx<T extends Color?> on T {
     Brightness? brightness,
     VisualDensity? visualDensity,
     MaterialColor? primarySwatch,
-    Brightness? primaryColorBrightness,
+    // Brightness? primaryColorBrightness,
     Color? primaryColorLight,
     Color? primaryColorDark,
     // Color? accentColor,
@@ -88,14 +88,14 @@ extension MaterialThemeDataEx<T extends Color?> on T {
     ListTileThemeData? listTileTheme,
     // bool? fixTextFieldOutlineLabel,
     // bool? useTextSelectionTheme,
-    AndroidOverscrollIndicator? androidOverscrollIndicator,
+    // AndroidOverscrollIndicator? androidOverscrollIndicator,
   }) =>
       ThemeData(
         brightness: brightness,
         visualDensity: visualDensity,
         primarySwatch: primarySwatch,
         primaryColor: this,
-        primaryColorBrightness: primaryColorBrightness,
+        // primaryColorBrightness: primaryColorBrightness,
         primaryColorLight: primaryColorLight,
         primaryColorDark: primaryColorDark,
         // accentColor: accentColor,
@@ -175,7 +175,7 @@ extension MaterialThemeDataEx<T extends Color?> on T {
         listTileTheme: listTileTheme,
         // fixTextFieldOutlineLabel: fixTextFieldOutlineLabel,
         // useTextSelectionTheme: useTextSelectionTheme,
-        androidOverscrollIndicator: androidOverscrollIndicator,
+        // androidOverscrollIndicator: androidOverscrollIndicator,
       );
 }
 

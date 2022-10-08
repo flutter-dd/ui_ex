@@ -84,10 +84,10 @@ extension MaterialTabBarViewEx<T extends List<Widget>?> on T {
   }) =>
       TabBarView(
         key: key,
-        children: this ?? [],
         controller: controller,
         physics: physics,
         dragStartBehavior: dragStartBehavior,
+        children: this ?? [],
       );
 }
 

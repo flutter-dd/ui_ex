@@ -12,10 +12,10 @@ extension WidgetsFormEx<T extends Widget?> on T {
   }) =>
       Form(
         key: key,
-        child: this ?? Container(),
         onWillPop: onWillPop,
         onChanged: onChanged,
         autovalidateMode: autovalidateMode,
+        child: this ?? Container(),
       );
 }
 

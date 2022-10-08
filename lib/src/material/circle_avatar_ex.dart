@@ -18,7 +18,6 @@ extension MaterialCircleAvatarEx<T extends Widget?> on T {
   }) =>
       CircleAvatar(
         key: key,
-        child: this ?? Container(),
         backgroundColor: backgroundColor,
         backgroundImage: backgroundImage,
         foregroundImage: foregroundImage,
@@ -28,5 +27,6 @@ extension MaterialCircleAvatarEx<T extends Widget?> on T {
         radius: radius,
         minRadius: minRadius,
         maxRadius: maxRadius,
+        child: this ?? Container(),
       );
 }

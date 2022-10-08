@@ -31,7 +31,6 @@ extension MaterialToggleButtonsEx<T extends List<Widget>?> on T {
   }) =>
       ToggleButtons(
         key: key,
-        children: this ?? [],
         isSelected: isSelected,
         onPressed: onPressed,
         mouseCursor: mouseCursor,
@@ -54,5 +53,6 @@ extension MaterialToggleButtonsEx<T extends List<Widget>?> on T {
         borderWidth: borderWidth,
         direction: direction,
         verticalDirection: verticalDirection,
+        children: this ?? [],
       );
 }

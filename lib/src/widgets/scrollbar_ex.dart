@@ -7,13 +7,17 @@ extension WidgetsScrollbarEx<T extends Widget?> on T {
   RawScrollbar rawScrollbar({
     Key? key,
     ScrollController? controller,
-    bool? isAlwaysShown,
+    bool? thumbVisibility,
     OutlinedBorder? shape,
     Radius? radius,
     double? thickness,
     Color? thumbColor,
     double minThumbLength = _kMinThumbExtent,
     double? minOverscrollLength,
+    bool? trackVisibility,
+    Radius? trackRadius,
+    Color? trackColor,
+    Color? trackBorderColor,
     Duration fadeDuration = _kScrollbarFadeDuration,
     Duration timeToFade = _kScrollbarTimeToFade,
     Duration pressDuration = Duration.zero,
@@ -23,18 +27,22 @@ extension WidgetsScrollbarEx<T extends Widget?> on T {
     ScrollbarOrientation? scrollbarOrientation,
     double mainAxisMargin = 0.0,
     double crossAxisMargin = 0.0,
+    bool? isAlwaysShown,
   }) =>
       RawScrollbar(
         key: key,
-        child: this ?? Container(),
         controller: controller,
-        isAlwaysShown: isAlwaysShown,
+        thumbVisibility: thumbVisibility,
         shape: shape,
         radius: radius,
         thickness: thickness,
         thumbColor: thumbColor,
         minThumbLength: minThumbLength,
         minOverscrollLength: minOverscrollLength,
+        trackVisibility: trackVisibility,
+        trackColor: trackColor,
+        trackBorderColor: trackBorderColor,
+        trackRadius: trackRadius,
         fadeDuration: fadeDuration,
         timeToFade: timeToFade,
         pressDuration: pressDuration,
@@ -43,6 +51,9 @@ extension WidgetsScrollbarEx<T extends Widget?> on T {
         scrollbarOrientation: scrollbarOrientation,
         mainAxisMargin: mainAxisMargin,
         crossAxisMargin: crossAxisMargin,
+        // ignore: deprecated_member_use
+        isAlwaysShown: isAlwaysShown,
+        child: this ?? Container(),
       );
 }
 

@@ -13,9 +13,9 @@ extension CupertinoTextSelectionToolbarEx<T extends CupertinoToolbarBuilder>
   }) =>
       CupertinoTextSelectionToolbar(
         key: key,
-        children: children,
         anchorAbove: anchorAbove,
         anchorBelow: anchorBelow,
         toolbarBuilder: this,
+        children: children,
       );
 }

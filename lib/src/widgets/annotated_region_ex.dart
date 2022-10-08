@@ -11,8 +11,8 @@ extension WidgetsAnnotatedRegionEx<T extends Widget?> on T {
   }) =>
       AnnotatedRegion(
         key: key,
-        child: this ?? Container(),
         value: value,
         sized: sized,
+        child: this ?? Container(),
       );
 }

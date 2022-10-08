@@ -36,6 +36,7 @@ extension MaterialChipEx<T extends Widget?> on T {
         deleteIcon: deleteIcon,
         onDeleted: onDeleted,
         deleteIconColor: deleteIconColor,
+        // ignore: deprecated_member_use
         useDeleteButtonTooltip: useDeleteButtonTooltip,
         deleteButtonTooltipMessage: deleteButtonTooltipMessage,
         side: side,
@@ -101,6 +102,7 @@ extension MaterialInputChipEx<T extends Widget?> on T {
         deleteIcon: deleteIcon,
         onDeleted: onDeleted,
         deleteIconColor: deleteIconColor,
+        // ignore: deprecated_member_use
         useDeleteButtonTooltip: useDeleteButtonTooltip,
         deleteButtonTooltipMessage: deleteButtonTooltipMessage,
         onPressed: onPressed,
@@ -335,6 +337,7 @@ extension MaterialRawChipEx<T extends Widget?> on T {
         deleteIcon: deleteIcon,
         onDeleted: onDeleted,
         deleteIconColor: deleteIconColor,
+        // ignore: deprecated_member_use
         useDeleteButtonTooltip: useDeleteButtonTooltip,
         deleteButtonTooltipMessage: deleteButtonTooltipMessage,
         onPressed: onPressed,

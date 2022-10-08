@@ -29,9 +29,9 @@ extension CupertinoPickerEx<T extends Widget> on List<T>? {
         squeeze: squeeze,
         itemExtent: itemExtent,
         onSelectedItemChanged: onSelectedItemChanged,
-        children: this ?? [],
         selectionOverlay: selectionOverlay,
         looping: looping,
+        children: this ?? [],
       );
 }
 
@@ -42,13 +42,13 @@ extension CupertinoPickerDefaultSelectionOverlayEx<T extends Color?> on T {
   CupertinoPickerDefaultSelectionOverlay
       cupertinoPickerDefaultSelectionOverlay({
     Key? key,
-    bool capLeftEdge = true,
-    bool capRightEdge = true,
+    bool capStartEdge = true,
+    bool capEndEdge = true,
   }) =>
           CupertinoPickerDefaultSelectionOverlay(
             key: key,
-            capLeftEdge: capLeftEdge,
-            capRightEdge: capRightEdge,
+            capStartEdge: capStartEdge,
+            capEndEdge: capEndEdge,
             background: this ?? CupertinoColors.tertiarySystemFill,
           );
 }

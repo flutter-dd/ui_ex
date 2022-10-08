@@ -41,7 +41,7 @@ extension MaterialFlexibleSpaceBarSettingsEx<T extends Widget?> on T {
         minExtent: minExtent,
         maxExtent: maxExtent,
         currentExtent: currentExtent,
-        child: this ?? Container(),
         isScrolledUnder: isScrolledUnder,
+        child: this ?? Container(),
       );
 }

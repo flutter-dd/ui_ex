@@ -17,7 +17,6 @@ extension CupertinoButtonEx<T extends Widget?> on T {
   }) =>
       CupertinoButton(
         key: key,
-        child: this ?? Container(),
         padding: padding,
         color: color,
         disabledColor: disabledColor,
@@ -26,5 +25,6 @@ extension CupertinoButtonEx<T extends Widget?> on T {
         borderRadius: borderRadius,
         alignment: alignment,
         onPressed: onPressed,
+        child: this ?? Container(),
       );
 }

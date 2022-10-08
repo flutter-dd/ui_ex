@@ -35,8 +35,8 @@ extension MaterialTooltipEx<T extends Widget?> on T {
         textStyle: textStyle,
         waitDuration: waitDuration,
         showDuration: showDuration,
-        child: this ?? Container(),
         triggerMode: triggerMode,
         enableFeedback: enableFeedback,
+        child: this ?? Container(),
       );
 }

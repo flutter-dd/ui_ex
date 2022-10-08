@@ -84,5 +84,6 @@ extension MaterialAppEx<T extends String?> on T {
 extension MaterialScrollBehaviorEx<T extends AndroidOverscrollIndicator?> on T {
   /// MaterialScrollBehavior
   MaterialScrollBehavior materialScrollBehavior() =>
+      // ignore: deprecated_member_use
       MaterialScrollBehavior(androidOverscrollIndicator: this);
 }

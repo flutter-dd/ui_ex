@@ -18,7 +18,6 @@ extension WidgetsFocusScopeEx<T extends Widget?> on T {
       FocusScope(
         key: key,
         node: node,
-        child: this ?? Container(),
         autofocus: autofocus,
         onFocusChange: onFocusChange,
         canRequestFocus: canRequestFocus,
@@ -26,6 +25,7 @@ extension WidgetsFocusScopeEx<T extends Widget?> on T {
         onKeyEvent: onKeyEvent,
         onKey: onKey,
         debugLabel: debugLabel,
+        child: this ?? Container(),
       );
 }
 
@@ -46,7 +46,6 @@ extension WidgetsFocusEx<T extends Widget?> on T {
   }) =>
       Focus(
         key: key,
-        child: this ?? Container(),
         focusNode: focusNode,
         autofocus: autofocus,
         onFocusChange: onFocusChange,
@@ -57,6 +56,7 @@ extension WidgetsFocusEx<T extends Widget?> on T {
         descendantsAreFocusable: descendantsAreFocusable,
         includeSemantics: includeSemantics,
         debugLabel: debugLabel,
+        child: this ?? Container(),
       );
 }
 

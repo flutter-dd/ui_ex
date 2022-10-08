@@ -15,12 +15,12 @@ extension CupertinoFormSectionEx<T extends Widget> on List<T>? {
   }) =>
       CupertinoFormSection(
         key: key,
-        children: this ?? [],
         header: header,
         footer: footer,
         margin: margin,
         backgroundColor: backgroundColor,
         decoration: decoration,
         clipBehavior: clipBehavior,
+        children: this ?? [],
       );
 }

@@ -13,10 +13,10 @@ extension CupertinoContextMenuActionEx<T extends Widget?> on T {
   }) =>
       CupertinoContextMenuAction(
         key: key,
-        child: this ?? Container(),
         isDefaultAction: isDefaultAction,
         isDestructiveAction: isDestructiveAction,
         onPressed: onPressed,
         trailingIcon: trailingIcon,
+        child: this ?? Container(),
       );
 }
