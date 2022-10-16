@@ -9,6 +9,7 @@ extension MaterialDrawerEx<T extends Widget?> on T {
     Color? backgroundColor,
     double? elevation,
     ShapeBorder? shape,
+    double? width,
     String? semanticLabel,
   }) =>
       Drawer(
@@ -16,6 +17,7 @@ extension MaterialDrawerEx<T extends Widget?> on T {
         backgroundColor: backgroundColor,
         elevation: elevation,
         shape: shape,
+        width: width,
         child: this,
         semanticLabel: semanticLabel,
       );
