@@ -77,6 +77,7 @@ extension WidgetsFixedExtentMetricsEx<T extends int> on T {
     required double? maxScrollExtent,
     required double? pixels,
     required double? viewportDimension,
+    required double devicePixelRatio,
     required AxisDirection axisDirection,
   }) =>
       FixedExtentMetrics(
@@ -85,6 +86,7 @@ extension WidgetsFixedExtentMetricsEx<T extends int> on T {
         pixels: pixels,
         viewportDimension: viewportDimension,
         axisDirection: axisDirection,
+        devicePixelRatio: devicePixelRatio,
         itemIndex: this,
       );
 }

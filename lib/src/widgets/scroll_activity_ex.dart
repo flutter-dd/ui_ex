@@ -44,8 +44,9 @@ extension WidgetsBallisticScrollActivityEx<T extends ScrollActivityDelegate>
   BallisticScrollActivity ballisticScrollActivity(
     Simulation simulation,
     TickerProvider vsync,
+    bool shouldIgnorePointer,
   ) =>
-      BallisticScrollActivity(this, simulation, vsync);
+      BallisticScrollActivity(this, simulation, vsync, shouldIgnorePointer);
 }
 
 extension WidgetsDrivenScrollActivityEx<T extends ScrollActivityDelegate> on T {

@@ -84,7 +84,7 @@ extension CupertinoModalPopupRouteEx<T extends WidgetBuilder> on T {
     String barrierLabel = 'Dismiss',
     Color? barrierColor = kCupertinoModalBarrierColor,
     bool barrierDismissible = true,
-    bool? semanticsDismissible,
+    bool semanticsDismissible = false,
     ImageFilter? filter,
     RouteSettings? settings,
   }) =>

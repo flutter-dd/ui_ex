@@ -32,26 +32,26 @@ extension WidgetsRawDialogRouteEx<T extends RoutePageBuilder> on T {
 
 extension WidgetsFocusTrapEx<T extends Widget?> on T {
   /// FocusTrap
-  FocusTrap focusTrap({
-    required FocusScopeNode focusScopeNode,
-    Key? key,
-  }) =>
-      FocusTrap(
-        focusScopeNode: focusScopeNode,
-        key: key,
-        child: this ?? Container(),
-      );
+  // FocusTrap focusTrap({
+  //   required FocusScopeNode focusScopeNode,
+  //   Key? key,
+  // }) =>
+  //     FocusTrap(
+  //       focusScopeNode: focusScopeNode,
+  //       key: key,
+  //       child: this ?? Container(),
+  //     );
 }
 
 extension WidgetsFocusTrapAreaEx<T extends Widget?> on T {
   /// FocusTrapArea
-  FocusTrapArea focusTrapArea({
-    required FocusNode focusNode,
-    Key? key,
-  }) =>
-      FocusTrapArea(
-        focusNode: focusNode,
-        key: key,
-        child: this ?? Container(),
-      );
+  // FocusTrapArea focusTrapArea({
+  //   required FocusNode focusNode,
+  //   Key? key,
+  // }) =>
+  //     FocusTrapArea(
+  //       focusNode: focusNode,
+  //       key: key,
+  //       child: this ?? Container(),
+  //     );
 }

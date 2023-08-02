@@ -58,6 +58,7 @@ extension WidgetsPageMetricsEx<T extends double?> on T {
     required double? pixels,
     required double? viewportDimension,
     required AxisDirection axisDirection,
+    required double devicePixelRatio,
   }) =>
       PageMetrics(
         minScrollExtent: minScrollExtent,
@@ -66,6 +67,7 @@ extension WidgetsPageMetricsEx<T extends double?> on T {
         viewportDimension: viewportDimension,
         axisDirection: axisDirection,
         viewportFraction: this ?? 1.0,
+        devicePixelRatio: devicePixelRatio,
       );
 }
 

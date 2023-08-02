@@ -140,7 +140,7 @@ extension WidgetsFrameworkBuildContextEx<T extends BuildContext> on T {
     Color barrierColor = kCupertinoModalBarrierColor,
     bool barrierDismissible = true,
     bool useRootNavigator = true,
-    bool? semanticsDismissible,
+    bool semanticsDismissible = false,
     RouteSettings? routeSettings,
   }) =>
       showCupertinoModalPopup<T>(

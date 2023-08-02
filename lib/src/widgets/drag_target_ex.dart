@@ -35,9 +35,8 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
     Axis? axis,
     Widget? childWhenDragging,
     Offset feedbackOffset = Offset.zero,
-    // DragAnchor dragAnchor = DragAnchor.child,
-    Offset Function(Draggable<Object>, BuildContext, Offset)?
-        dragAnchorStrategy,
+    Offset Function(Draggable<Object>, BuildContext, Offset)
+        dragAnchorStrategy = childDragAnchorStrategy,
     Axis? affinity,
     int? maxSimultaneousDrags,
     void Function()? onDragStarted,
@@ -56,7 +55,6 @@ extension WidgetsDraggableEx<T extends Widget?> on T {
         axis: axis,
         childWhenDragging: childWhenDragging,
         feedbackOffset: feedbackOffset,
-        // dragAnchor: dragAnchor,
         dragAnchorStrategy: dragAnchorStrategy,
         affinity: affinity,
         maxSimultaneousDrags: maxSimultaneousDrags,
@@ -81,9 +79,8 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
     Axis? axis,
     Widget? childWhenDragging,
     Offset feedbackOffset = Offset.zero,
-    // DragAnchor dragAnchor = DragAnchor.child,
-    Offset Function(Draggable<Object>, BuildContext, Offset)?
-        dragAnchorStrategy,
+    Offset Function(Draggable<Object>, BuildContext, Offset)
+        dragAnchorStrategy = childDragAnchorStrategy,
     int? maxSimultaneousDrags,
     void Function()? onDragStarted,
     void Function(DragUpdateDetails)? onDragUpdate,
@@ -101,7 +98,6 @@ extension WidgetsLongPressDraggableEx<T extends Widget?> on T {
         axis: axis,
         childWhenDragging: childWhenDragging,
         feedbackOffset: feedbackOffset,
-        // dragAnchor: dragAnchor,
         dragAnchorStrategy: dragAnchorStrategy,
         maxSimultaneousDrags: maxSimultaneousDrags,
         onDragStarted: onDragStarted,

@@ -28,7 +28,7 @@ extension WidgetsInspectorSerializationDelegateEx<T extends String?> on T {
   /// InspectorSerializationDelegate
   InspectorSerializationDelegate inspectorSerializationDelegate({
     bool summaryTree = false,
-    int maxDescendentsTruncatableNode = -1,
+    int maxDescendantsTruncatableNode = -1,
     bool expandPropertyValues = true,
     int subtreeDepth = 1,
     bool includeProperties = false,
@@ -40,7 +40,7 @@ extension WidgetsInspectorSerializationDelegateEx<T extends String?> on T {
       InspectorSerializationDelegate(
         groupName: this,
         summaryTree: summaryTree,
-        maxDescendentsTruncatableNode: maxDescendentsTruncatableNode,
+        maxDescendantsTruncatableNode: maxDescendantsTruncatableNode,
         expandPropertyValues: expandPropertyValues,
         subtreeDepth: subtreeDepth,
         includeProperties: includeProperties,

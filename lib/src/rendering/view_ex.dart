@@ -19,11 +19,11 @@ extension RenderingRenderViewEx<T extends RenderBox?> on T {
   /// RenderView
   RenderView renderView({
     required ViewConfiguration configuration,
-    required FlutterView window,
+    required FlutterView view,
   }) =>
       RenderView(
         child: this,
         configuration: configuration,
-        window: window,
+        view: view,
       );
 }

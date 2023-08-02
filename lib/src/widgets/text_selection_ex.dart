@@ -17,22 +17,23 @@ extension WidgetsTextSelectionEx<T extends BuildContext> on T {
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
     void Function()? onSelectionHandleTapped,
     ClipboardStatusNotifier? clipboardStatus,
+    required TextMagnifierConfiguration magnifierConfiguration,
   }) =>
       TextSelectionOverlay(
-        value: value,
-        context: this,
-        debugRequiredFor: debugRequiredFor,
-        toolbarLayerLink: toolbarLayerLink,
-        startHandleLayerLink: startHandleLayerLink,
-        endHandleLayerLink: endHandleLayerLink,
-        renderObject: renderObject,
-        selectionControls: selectionControls,
-        handlesVisible: handlesVisible,
-        selectionDelegate: selectionDelegate,
-        dragStartBehavior: dragStartBehavior,
-        onSelectionHandleTapped: onSelectionHandleTapped,
-        clipboardStatus: clipboardStatus,
-      );
+          value: value,
+          context: this,
+          debugRequiredFor: debugRequiredFor,
+          toolbarLayerLink: toolbarLayerLink,
+          startHandleLayerLink: startHandleLayerLink,
+          endHandleLayerLink: endHandleLayerLink,
+          renderObject: renderObject,
+          selectionControls: selectionControls,
+          handlesVisible: handlesVisible,
+          selectionDelegate: selectionDelegate,
+          dragStartBehavior: dragStartBehavior,
+          onSelectionHandleTapped: onSelectionHandleTapped,
+          clipboardStatus: clipboardStatus,
+          magnifierConfiguration: magnifierConfiguration);
 }
 
 extension WidgetsTextSelectionGestureDetectorBuilderEx<
@@ -46,20 +47,20 @@ extension WidgetsTextSelectionGestureDetectorEx<T extends Widget?> on T {
   /// TextSelectionGestureDetector
   TextSelectionGestureDetector textSelectionGestureDetector({
     Key? key,
-    void Function(TapDownDetails)? onTapDown,
+    void Function(TapDragDownDetails)? onTapDown,
     void Function(ForcePressDetails)? onForcePressStart,
     void Function(ForcePressDetails)? onForcePressEnd,
     void Function()? onSecondaryTap,
     void Function(TapDownDetails)? onSecondaryTapDown,
-    void Function(TapUpDetails)? onSingleTapUp,
+    void Function(TapDragUpDetails)? onSingleTapUp,
     void Function()? onSingleTapCancel,
     void Function(LongPressStartDetails)? onSingleLongTapStart,
     void Function(LongPressMoveUpdateDetails)? onSingleLongTapMoveUpdate,
     void Function(LongPressEndDetails)? onSingleLongTapEnd,
-    void Function(TapDownDetails)? onDoubleTapDown,
-    void Function(DragStartDetails)? onDragSelectionStart,
-    void Function(DragStartDetails, DragUpdateDetails)? onDragSelectionUpdate,
-    void Function(DragEndDetails)? onDragSelectionEnd,
+    void Function(TapDragDownDetails)? onDoubleTapDown,
+    void Function(TapDragStartDetails)? onDragSelectionStart,
+    void Function(TapDragUpdateDetails)? onDragSelectionUpdate,
+    void Function(TapDragEndDetails)? onDragSelectionEnd,
     HitTestBehavior? behavior,
   }) =>
       TextSelectionGestureDetector(
