@@ -18,9 +18,10 @@ and the Flutter guide for
 ## Getting started
 
 add this line to pubspec.yaml
+
 ```
 dev_dependencies:
-  ui_ex: ^0.1.14
+  ui_ex: ^0.1.15
 
 ```
 
@@ -31,6 +32,7 @@ import 'package:ui_ex/ui_ex.dart';
 ```
 
 ## Usage
+
 simple example,
 
 ```dart
@@ -75,4 +77,3 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 <!-- ## Additional information -->
-
