@@ -3,6 +3,13 @@ part of ui_ex;
 /// 材料文本表单域
 /// TextFormField
 extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
+    return AdaptiveTextSelectionToolbar.editableText(
+      editableTextState: editableTextState,
+    );
+  }
+
   /// TextFormField
   TextFormField textFormField({
     Key? key,
