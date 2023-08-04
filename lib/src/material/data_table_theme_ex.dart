@@ -20,7 +20,8 @@ extension MaterialDataTableThemeDataEx<T extends double?> on T {
   DataTableThemeData dataTableThemeData({
     Decoration? decoration,
     MaterialStateProperty<Color?>? dataRowColor,
-    double? dataRowHeight,
+    double? dataRowMinHeight,
+    double? dataRowMaxHeight,
     TextStyle? dataTextStyle,
     MaterialStateProperty<Color?>? headingRowColor,
     double? headingRowHeight,
@@ -32,7 +33,8 @@ extension MaterialDataTableThemeDataEx<T extends double?> on T {
       DataTableThemeData(
         decoration: decoration,
         dataRowColor: dataRowColor,
-        dataRowHeight: dataRowHeight,
+        dataRowMinHeight: dataRowMinHeight,
+        dataRowMaxHeight: dataRowMaxHeight,
         dataTextStyle: dataTextStyle,
         headingRowColor: headingRowColor,
         headingRowHeight: headingRowHeight,

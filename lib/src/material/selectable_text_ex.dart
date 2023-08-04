@@ -3,6 +3,13 @@ part of ui_ex;
 /// 材质可选文字
 /// SelectableText
 extension MaterialSelectableTextEx<T extends String?> on T {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
+    return AdaptiveTextSelectionToolbar.editableText(
+      editableTextState: editableTextState,
+    );
+  }
+
   /// SelectableText
   SelectableText selectableText({
     Key? key,
@@ -14,7 +21,8 @@ extension MaterialSelectableTextEx<T extends String?> on T {
     double? textScaleFactor,
     bool showCursor = false,
     bool autofocus = false,
-    ToolbarOptions? toolbarOptions,
+    EditableTextContextMenuBuilder? contextMenuBuilder =
+        _defaultContextMenuBuilder,
     int? minLines,
     int? maxLines,
     double cursorWidth = 2.0,
@@ -44,7 +52,7 @@ extension MaterialSelectableTextEx<T extends String?> on T {
         textScaleFactor: textScaleFactor,
         showCursor: showCursor,
         autofocus: autofocus,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         minLines: minLines,
         maxLines: maxLines,
         cursorWidth: cursorWidth,

@@ -34,7 +34,7 @@ extension CupertinoAppEx<T extends String?> on T {
     Map<Type, Action<Intent>>? actions,
     String? restorationScopeId,
     ScrollBehavior? scrollBehavior,
-    bool useInheritedMediaQuery = false,
+    // bool useInheritedMediaQuery = false,
   }) =>
       CupertinoApp(
         key: key,
@@ -65,7 +65,7 @@ extension CupertinoAppEx<T extends String?> on T {
         actions: actions,
         restorationScopeId: restorationScopeId,
         scrollBehavior: scrollBehavior,
-        useInheritedMediaQuery: useInheritedMediaQuery,
+        // useInheritedMediaQuery: useInheritedMediaQuery,
       );
 }
 

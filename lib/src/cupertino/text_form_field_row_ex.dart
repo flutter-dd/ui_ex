@@ -3,6 +3,13 @@ part of ui_ex;
 /// 库比蒂诺文本表单字段行
 /// TextFormFieldRow
 extension CupertinoTextFormFieldRowEx<T extends String?> on T {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
+    return CupertinoAdaptiveTextSelectionToolbar.editableText(
+      editableTextState: editableTextState,
+    );
+  }
+
   /// CupertinoTextFormFieldRow
   CupertinoTextFormFieldRow cupertinoTextFormFieldRow({
     Key? key,
@@ -22,7 +29,8 @@ extension CupertinoTextFormFieldRowEx<T extends String?> on T {
     TextAlignVertical? textAlignVertical,
     bool autofocus = false,
     bool readOnly = false,
-    ToolbarOptions? toolbarOptions,
+    EditableTextContextMenuBuilder? contextMenuBuilder =
+        _defaultContextMenuBuilder,
     bool? showCursor,
     String obscuringCharacter = '•',
     bool obscureText = false,
@@ -74,7 +82,7 @@ extension CupertinoTextFormFieldRowEx<T extends String?> on T {
         textAlignVertical: textAlignVertical,
         autofocus: autofocus,
         readOnly: readOnly,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         showCursor: showCursor,
         obscuringCharacter: obscuringCharacter,
         obscureText: obscureText,

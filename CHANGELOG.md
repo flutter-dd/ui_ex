@@ -47,3 +47,5 @@
 ## [0.1.14] - update Stream and Future
 
 ## [0.1.15] - fix update error
+
+## [1.0.0] - update

@@ -3,6 +3,13 @@ part of ui_ex;
 /// 库比蒂诺文本字段
 /// TextField
 extension CupertinoTextFieldEx<T extends String?> on T {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
+    return CupertinoAdaptiveTextSelectionToolbar.editableText(
+      editableTextState: editableTextState,
+    );
+  }
+
   /// CupertinoTextField
   CupertinoTextField cupertinoTextField({
     Key? key,
@@ -26,7 +33,8 @@ extension CupertinoTextFieldEx<T extends String?> on T {
     TextAlignVertical? textAlignVertical,
     TextDirection? textDirection,
     bool readOnly = false,
-    ToolbarOptions? toolbarOptions,
+    Widget Function(BuildContext, EditableTextState)? contextMenuBuilder =
+        _defaultContextMenuBuilder,
     bool? showCursor,
     bool autofocus = false,
     String obscuringCharacter = '•',
@@ -87,7 +95,7 @@ extension CupertinoTextFieldEx<T extends String?> on T {
         textAlignVertical: textAlignVertical,
         textDirection: textDirection,
         readOnly: readOnly,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         showCursor: showCursor,
         autofocus: autofocus,
         obscuringCharacter: obscuringCharacter,

@@ -19,7 +19,8 @@ extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
     TextAlignVertical? textAlignVertical,
     bool autofocus = false,
     bool readOnly = false,
-    ToolbarOptions? toolbarOptions,
+    Widget Function(BuildContext, EditableTextState)? contextMenuBuilder =
+        _defaultContextMenuBuilder,
     bool? showCursor,
     String obscuringCharacter = '•',
     bool obscureText = false,
@@ -77,7 +78,7 @@ extension MaterialTextFormFieldEx<T extends TextEditingController> on T {
         textAlignVertical: textAlignVertical,
         autofocus: autofocus,
         readOnly: readOnly,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         showCursor: showCursor,
         obscuringCharacter: obscuringCharacter,
         obscureText: obscureText,

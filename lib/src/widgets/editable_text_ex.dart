@@ -60,8 +60,7 @@ extension WidgetsEditableTextEx<T extends TextEditingController> on T {
     ScrollController? scrollController,
     ScrollPhysics? scrollPhysics,
     Color? autocorrectionTextRectColor,
-    ToolbarOptions toolbarOptions = const ToolbarOptions(
-        copy: true, cut: true, paste: true, selectAll: true),
+    Widget Function(BuildContext, EditableTextState)? contextMenuBuilder,
     Iterable<String>? autofillHints = const <String>[],
     AutofillClient? autofillClient,
     Clip clipBehavior = Clip.hardEdge,
@@ -126,7 +125,7 @@ extension WidgetsEditableTextEx<T extends TextEditingController> on T {
         scrollController: scrollController,
         scrollPhysics: scrollPhysics,
         autocorrectionTextRectColor: autocorrectionTextRectColor,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         autofillHints: autofillHints,
         autofillClient: autofillClient,
         clipBehavior: clipBehavior,
@@ -144,15 +143,4 @@ extension WidgetsTextEditingControllerEx<T extends String?> on T {
 
 extension WidgetsToolbarOptionsEx<T extends bool?> on T {
   /// ToolbarOptions
-  ToolbarOptions copyToolbarOptions({
-    bool cut = false,
-    bool paste = false,
-    bool selectAll = false,
-  }) =>
-      ToolbarOptions(
-        copy: this ?? false,
-        cut: cut,
-        paste: paste,
-        selectAll: selectAll,
-      );
 }

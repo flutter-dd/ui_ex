@@ -2,7 +2,7 @@ part of ui_ex;
 
 /// 小部件动画列表
 /// AnimatedList
-extension WidgetsAnimatedListEx<T extends AnimatedListItemBuilder> on T {
+extension WidgetsAnimatedListEx<T extends AnimatedItemBuilder> on T {
   /// AnimatedList
   AnimatedList animatedList({
     Key? key,
@@ -31,7 +31,7 @@ extension WidgetsAnimatedListEx<T extends AnimatedListItemBuilder> on T {
       );
 }
 
-extension WidgetsSliverAnimatedListEx<T extends AnimatedListItemBuilder> on T {
+extension WidgetsSliverAnimatedListEx<T extends AnimatedItemBuilder> on T {
   /// SliverAnimatedList
   SliverAnimatedList sliverAnimatedList({
     Key? key,

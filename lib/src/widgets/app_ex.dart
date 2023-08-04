@@ -38,7 +38,6 @@ extension WidgetsAppEx<T extends Color?> on T {
     Map<ShortcutActivator, Intent>? shortcuts,
     Map<Type, Action<Intent>>? actions,
     String? restorationScopeId,
-    bool useInheritedMediaQuery = false,
   }) =>
       WidgetsApp(
         key: key,
@@ -71,6 +70,5 @@ extension WidgetsAppEx<T extends Color?> on T {
         shortcuts: shortcuts,
         actions: actions,
         restorationScopeId: restorationScopeId,
-        useInheritedMediaQuery: useInheritedMediaQuery,
       );
 }

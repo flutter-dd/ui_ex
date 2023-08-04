@@ -7,7 +7,7 @@ extension WidgetsInteractiveViewerEx<T extends Widget?> on T {
   InteractiveViewer interactiveViewer({
     Key? key,
     Clip clipBehavior = Clip.hardEdge,
-    bool alignPanAxis = false,
+    PanAxis panAxis = PanAxis.free,
     EdgeInsets boundaryMargin = EdgeInsets.zero,
     bool constrained = true,
     double maxScale = 2.5,
@@ -22,7 +22,7 @@ extension WidgetsInteractiveViewerEx<T extends Widget?> on T {
       InteractiveViewer(
         key: key,
         clipBehavior: clipBehavior,
-        alignPanAxis: alignPanAxis,
+        panAxis: panAxis,
         boundaryMargin: boundaryMargin,
         constrained: constrained,
         maxScale: maxScale,

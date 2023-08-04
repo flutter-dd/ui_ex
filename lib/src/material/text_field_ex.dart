@@ -3,6 +3,13 @@ part of ui_ex;
 /// 材料文本字段
 /// TextField
 extension MaterialTextFieldEx<T extends TextEditingController> on T {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
+    return AdaptiveTextSelectionToolbar.editableText(
+      editableTextState: editableTextState,
+    );
+  }
+
   /// TextField
   TextField textField({
     Key? key,
@@ -17,7 +24,8 @@ extension MaterialTextFieldEx<T extends TextEditingController> on T {
     TextAlignVertical? textAlignVertical,
     TextDirection? textDirection,
     bool readOnly = false,
-    ToolbarOptions? toolbarOptions,
+    Widget Function(BuildContext, EditableTextState)? contextMenuBuilder =
+        _defaultContextMenuBuilder,
     bool? showCursor,
     bool autofocus = false,
     String obscuringCharacter = '•',
@@ -77,7 +85,7 @@ extension MaterialTextFieldEx<T extends TextEditingController> on T {
         textAlignVertical: textAlignVertical,
         textDirection: textDirection,
         readOnly: readOnly,
-        toolbarOptions: toolbarOptions,
+        contextMenuBuilder: contextMenuBuilder,
         showCursor: showCursor,
         autofocus: autofocus,
         obscuringCharacter: obscuringCharacter,

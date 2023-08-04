@@ -40,7 +40,6 @@ extension MaterialAppEx<T extends String?> on T {
     Map<Type, Action<Intent>>? actions,
     String? restorationScopeId,
     ScrollBehavior? scrollBehavior,
-    bool useInheritedMediaQuery = false,
   }) =>
       MaterialApp(
         title: this ?? "",
@@ -77,7 +76,6 @@ extension MaterialAppEx<T extends String?> on T {
         actions: actions,
         restorationScopeId: restorationScopeId,
         scrollBehavior: scrollBehavior,
-        useInheritedMediaQuery: useInheritedMediaQuery,
       );
 }
 
