@@ -21,7 +21,7 @@ add this line to pubspec.yaml
 
 ```
 dev_dependencies:
-  ui_ex: ^1.0.1
+  ui_ex: ^1.0.2
 
 ```
 

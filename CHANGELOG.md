@@ -51,3 +51,5 @@
 ## [1.0.0] - update
 
 ## [1.0.1] - fix error
+
+## [1.0.2] - fix error
